@@ -1,0 +1,904 @@
+
+# Military Groups #
+
+# Serpentspine Admin Policies #
+
+serpentspine_innovativeness = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_serpentspine_ideas
+		has_idea_group = innovativeness_ideas
+	}
+	allow = {
+		full_idea_group = AIG_serpentspine_ideas
+		full_idea_group = innovativeness_ideas
+	}
+	
+	idea_cost = -0.075
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+serpentspine_religious = {
+	monarch_power = ADM
+
+	potential = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		has_idea_group = AIG_serpentspine_ideas
+	}
+	
+	allow = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		full_idea_group = AIG_serpentspine_ideas
+	}
+	
+	global_unrest = -1
+	global_missionary_strength = 0.01
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.2 }
+		}
+		
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
+	}
+}
+
+serpentspine_economic = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_serpentspine_ideas
+		has_idea_group = economic_ideas
+	}
+	allow = {
+		full_idea_group = AIG_serpentspine_ideas
+		full_idea_group = economic_ideas
+		NOT = {
+		calc_true_if = {
+			amount = 2
+			has_active_policy = idea_variation_act_556
+			has_active_policy = idea_variation_act_23
+			has_active_policy = idea_variation_act_153
+			has_active_policy = idea_variation_act_169
+			has_active_policy = idea_variation_act_238
+			has_active_policy = idea_variation_act_302
+			has_active_policy = idea_variation_act_340
+			has_active_policy = idea_variation_act_92
+			has_active_policy = idea_variation_act_566
+			has_active_policy = idea_variation_act_532
+			has_active_policy = idea_variation_act_528
+			has_active_policy = idea_variation_act_514
+			has_active_policy = idea_variation_act_503
+			has_active_policy = serpentspine_economic
+			has_active_policy = artificery_economic
+			has_active_policy = homebrew.policy.5
+			has_active_policy = homebrew.policy.46
+			has_active_policy = homebrew.policy.104
+			}
+		}
+	}
+		
+	development_cost = -0.05
+	fort_maintenance_modifier = -0.15
+		
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+serpentspine_expansion = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_serpentspine_ideas
+		has_idea_group = expansion_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_serpentspine_ideas
+		full_idea_group = expansion_ideas
+	}
+
+	governing_capacity_modifier = 0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+serpentspine_administrative = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = AIG_serpentspine_ideas
+	}
+	
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = AIG_serpentspine_ideas
+	}
+
+	min_autonomy_in_territories = -0.1
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+
+serpentspine_humanist = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = AIG_serpentspine_ideas
+	}
+	
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = AIG_serpentspine_ideas
+	}	
+	
+	production_efficiency = 0.1
+	religious_unity = 0.2
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.6
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.2 }
+		}
+		
+		modifier = {
+			factor = 0.6
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}	
+	}
+}
+
+serpentspine_industrial = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_industrial_ideas
+		has_idea_group = AIG_serpentspine_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_industrial_ideas
+		full_idea_group = AIG_serpentspine_ideas
+	}
+
+	production_efficiency = 0.15
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+serpentspine_infrastructure = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = AIG_serpentspine_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = AIG_serpentspine_ideas
+	}
+
+	movement_speed = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+serpentspine_racial_superemacy = {
+	monarch_power = ADM
+
+	potential = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		has_idea_group = AIG_serpentspine_ideas
+	}
+	
+	allow = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		full_idea_group = AIG_serpentspine_ideas
+	}
+
+	build_time = -0.1
+	production_efficiency = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+# End Serpentspine Admin Policies #
+
+# Artificery Admin Policies #
+#artificery-innovativeness has been replaced by a homebrew.policy.97
+
+artificery_religious = {
+	monarch_power = ADM
+
+	potential = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		has_idea_group = AIG_artificery_ideas
+	}
+	
+	allow = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		full_idea_group = AIG_artificery_ideas
+	}
+	
+	global_unrest = -2
+
+	ai_will_do = {
+		factor = 1
+		
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
+	}
+}
+
+artificery_economic = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_artificery_ideas
+		has_idea_group = economic_ideas
+	}
+	allow = {
+		full_idea_group = AIG_artificery_ideas
+		full_idea_group = economic_ideas
+		NOT = {
+		calc_true_if = {
+			amount = 2
+			has_active_policy = idea_variation_act_556
+			has_active_policy = idea_variation_act_23
+			has_active_policy = idea_variation_act_153
+			has_active_policy = idea_variation_act_169
+			has_active_policy = idea_variation_act_238
+			has_active_policy = idea_variation_act_302
+			has_active_policy = idea_variation_act_340
+			has_active_policy = idea_variation_act_92
+			has_active_policy = idea_variation_act_566
+			has_active_policy = idea_variation_act_532
+			has_active_policy = idea_variation_act_528
+			has_active_policy = idea_variation_act_514
+			has_active_policy = idea_variation_act_503
+			has_active_policy = serpentspine_economic
+			has_active_policy = artificery_economic
+			has_active_policy = homebrew.policy.5
+			has_active_policy = homebrew.policy.46
+			has_active_policy = homebrew.policy.104
+			}
+		}
+	}
+		
+	development_cost = -0.1
+		
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+artificery_expansion = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_artificery_ideas
+		has_idea_group = expansion_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_artificery_ideas
+		full_idea_group = expansion_ideas
+	}
+
+	governing_capacity_modifier = 0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+artificery_administrative = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = AIG_artificery_ideas
+	}
+	
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = AIG_artificery_ideas
+	}
+
+	min_autonomy_in_territories = -0.1
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+
+artificery_humanist = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = AIG_artificery_ideas
+	}
+	
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = AIG_artificery_ideas
+	}	
+	
+	production_efficiency = 0.1
+	religious_unity = 0.2
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.6
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.2 }
+		}
+		
+		modifier = {
+			factor = 0.6
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}	
+	}
+}
+
+artificery_industrial = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_industrial_ideas
+		has_idea_group = AIG_artificery_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_industrial_ideas
+		full_idea_group = AIG_artificery_ideas
+	}
+
+	production_efficiency = 0.15
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+artificery_infrastructure = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = AIG_artificery_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = AIG_artificery_ideas
+	}
+
+	caravan_power = 0.25
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+artificery_racial_superemacy = {
+	monarch_power = ADM
+
+	potential = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		has_idea_group = AIG_artificery_ideas
+	}
+	
+	allow = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		full_idea_group = AIG_artificery_ideas
+	}
+
+	innovativeness_gain = 0.5
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+# End Artificery Admin Policies #
+
+# Legionary Admin Policies #
+
+legionary_innovativeness = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_legionary_ideas
+		has_idea_group = innovativeness_ideas
+	}
+	allow = {
+		full_idea_group = AIG_legionary_ideas
+		full_idea_group = innovativeness_ideas
+	}
+	
+	female_advisor_chance = 0.1
+	advisor_pool = 2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+legionary_religious = {
+	monarch_power = ADM
+
+	potential = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		has_idea_group = AIG_legionary_ideas
+	}
+	
+	allow = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		full_idea_group = AIG_legionary_ideas
+	}
+	
+	establish_order_cost = -0.25
+
+	ai_will_do = {
+		factor = 1
+			}
+}
+
+legionary_economic = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_legionary_ideas
+		has_idea_group = economic_ideas
+	}
+	allow = {
+		full_idea_group = AIG_legionary_ideas
+		full_idea_group = economic_ideas
+	}
+		
+	global_tax_modifier = 0.25
+		
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+legionary_expansion = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_legionary_ideas
+		has_idea_group = expansion_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_legionary_ideas
+		full_idea_group = expansion_ideas
+	}
+
+	governing_capacity_modifier = 0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+legionary_administrative = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = AIG_legionary_ideas
+	}
+	
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = AIG_legionary_ideas
+	}
+
+	war_exhaustion = -0.02
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+
+legionary_humanist = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = AIG_legionary_ideas
+	}
+	
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = AIG_legionary_ideas
+	}	
+	
+	production_efficiency = 0.1
+	religious_unity = 0.2
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.6
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.2 }
+		}
+		
+		modifier = {
+			factor = 0.6
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}	
+	}
+}
+
+legionary_industrial = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_industrial_ideas
+		has_idea_group = AIG_legionary_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_industrial_ideas
+		full_idea_group = AIG_legionary_ideas
+	}
+
+	interest = -2
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+legionary_infrastructure = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = AIG_legionary_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = AIG_legionary_ideas
+	}
+
+	movement_speed = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+legionary_racial_superemacy = {
+	monarch_power = ADM
+
+	potential = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		has_idea_group = AIG_legionary_ideas
+	}
+	
+	allow = {
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = AIG_elven_supremacy_ideas
+		}
+		full_idea_group = AIG_legionary_ideas
+	}
+
+	harsh_treatment_cost = -0.25
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+# End Legionary Ideas #
+
+# End Military Groups #
+
+# Diplomatic Groups #
+
+# Magocratic Idea Policies #
+
+magocratic_innovative = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = AIG_magocratic_ideas
+		has_idea_group = innovative_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_magocratic_ideas
+		full_idea_group = innovative_ideas
+	}
+
+	monarch_lifespan = 0.25
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+### Yo this is the most boring shit I've done in my life I'll finish it later, I'll just add some interesting ones first.
+#That's a mood
+
+magocratic_artificery = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = AIG_magocratic_ideas
+		has_idea_group = AIG_artificery_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_magocratic_ideas
+		full_idea_group = AIG_artificery_ideas
+	}
+
+	leader_land_fire = 1
+	army_tradition_decay = 0.002
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+magocratic_serpentspine = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = AIG_magocratic_ideas
+		has_idea_group = AIG_serpentspine_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_magocratic_ideas
+		full_idea_group = AIG_serpentspine_ideas
+		NOT = {
+		calc_true_if = {
+			amount = 2
+			has_active_policy = idea_variation_act_108
+			has_active_policy = idea_variation_act_114
+			has_active_policy = idea_variation_act_132
+			has_active_policy = idea_variation_act_409
+			has_active_policy = idea_variation_act_419
+			has_active_policy = idea_variation_act_450
+			has_active_policy = idea_variation_act_470
+			has_active_policy = idea_variation_act_488
+			has_active_policy = idea_variation_act_497
+			has_active_policy = magocratic_serpentspine
+			}
+		}
+	}
+
+	fire_damage_received = -0.04
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+magocratic_legionary = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = AIG_magocratic_ideas
+		has_idea_group = AIG_legionary_ideas
+	}
+	
+	allow = {
+		full_idea_group = AIG_magocratic_ideas
+		full_idea_group = AIG_legionary_ideas
+	}
+
+	leader_land_manuever = 1
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}

@@ -1,0 +1,28 @@
+########################################
+### Moved files together for  better overview
+########################################
+### policies included that are part of Anbennar MTs (subject to change) ###
+wielders_of_the_flaming_sword_policy = { 
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = religious_ideas
+	}
+	
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = religious_ideas
+	}
+
+	land_morale = 0.05
+	shock_damage = 0.05
+	
+	ai_will_do = {
+		factor = 1.0
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+}
