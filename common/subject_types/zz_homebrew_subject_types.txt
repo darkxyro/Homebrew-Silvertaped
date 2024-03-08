@@ -50,8 +50,8 @@ homebrew_dominion = {
 	modifier_subject = clear
 	modifier_overlord = clear
 	
-	overlord_opinion_modifier = null
-	subject_opinion_modifier = null
+	overlord_opinion_modifier = 50
+	subject_opinion_modifier = 50
 }
 homebrew_client_dominion = {
 	copy_from = homebrew_dominion

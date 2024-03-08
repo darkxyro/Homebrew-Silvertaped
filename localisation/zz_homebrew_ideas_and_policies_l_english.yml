@@ -76,10 +76,9 @@
  homebrew_soft_power:0 "Soft Power"
  homebrew_soft_power_desc:0 "A nation's strength is not measured by their armies or wealth, but by how they can influence others."
  homebrew_co_prosperity:0 "Co-Prosperity"
- homebrew_co_prosperity_desc:0 "By establishing the properity of our subjects, we may in turn enrich ourselves. \n§TEnables subject upgrades for Dominions§!"
+ homebrew_co_prosperity_desc:0 "By establishing the properity of our subjects, we may in turn enrich ourselves. \n§TEnables subject upgrades for Dominions§!\n(§YImperialism§! or §YInfluence Ideas§! are necessary!)"
  hb_disaster_relief:0 "Disaster Relief"
  hb_disaster_relief_desc:0 "Mitigating or avoiding devastation requires the stockpiling and distribution of resources that our administration has grown to excel at."
- 
  
  #replacements for IV 
  staatsverwaltung5:0 "Demands of Loyalty"
@@ -120,9 +119,9 @@
  soldnerheer6: "War Heroes"
  soldnerheer6_desc: "Our military has grown to favor war experience over repetitive drills, and is quick to promote men with exceptional leadership skills."
  soldnerheer7: "Professional Heroism"
- soldnerheer7_desc: "Why should our bands of heroes and professional miltary not unite under one purpose? Some heroes fight for us so often, they may as well be parts of our miltary already. \n§GRecruiting mercenaries does not cost Professionalism§W"
+ soldnerheer7_desc: "Why should our bands of heroes and professional miltary not unite under one purpose? Some heroes fight for us so often, they may as well be parts of our miltary already. \n§GRecruiting mercenaries does not cost Professionalism§W with §YElite Merceneries§! government reform"
  wehrpflicht1: "Conscripted Labor"
- wehrpflicht1_desc: "Our vast surplus of manpower can not only be spent as cannon fodder, but as a state labor force.\n§GEnables a decision to spend £icon_manpower£ to complete the construction of buildable buildings§!\n§GWith §BHigh Sea §Gor §BAmphibious Ideas §Gfinished you can use £icon_sailors£ in provinces with port\n§YCost is modified by building, consctruction cost, construction speed and preexisting construction progress§!"
+ wehrpflicht1_desc: "Our vast surplus of manpower can not only be spent as cannon fodder, but as a state labor force.\n§GEnables a decision to spend £icon_manpower£ to complete the construction of buildable buildings§!\n§GWith §BHigh Sea §Gor §BAmphibious Ideas §Gfinished you can use £icon_sailors£ in provinces with port\n§YCost is modified by building, consctruction cost, construction speed and preexisting construction progress§!\n"
  hb_no_step_back:0 "Not One Step Back!"
  hb_no_step_back_desc:0 "Our rigorous punishments for deserting and refusing orders has made our men more committed to their armies."
  wehrpflicht4: "Lessons of the Past"

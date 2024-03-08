@@ -359,6 +359,9 @@ province_event = {
 						province_id = 742
 						province_id = 778
 						province_id = 779
+						province_id = 643
+						province_id = 4124
+						
 						NOT = {
 							any_neighbor_province = {
 								owner = {

@@ -15585,6 +15585,12 @@ on_company_chartered = {
 
 # ROOT = Overlord, FROM = Minor
 on_dependency_gained = {
+
+	#Silvertapped (for dominions)
+
+	# set_country_flag = has_overriden_color_flag
+	# set_country_flag = has_overriden_name_flag
+
 	# if = {
 	# 	limit = {
 	# 		FROM = {
@@ -15885,6 +15891,17 @@ on_dependency_gained = {
 }
 # ROOT = Overlord, FROM = Minor
 on_dependency_lost = {
+
+	#Silvertaped
+	# if = {
+	# 	limit = { has_country_flag = has_overriden_color_flag}
+	# 	restore_country_color = yes 
+	# }
+	# if = {
+	# 	limit = { has_country_flag = has_overriden_name_flag}
+	# 	restore_country_name = yes
+	# }
+
 	#Anbennar
 	##############################################################################################
 	#If you are adding an action here to automatically flip new vassals to a custom subject type,
@@ -17834,107 +17851,107 @@ on_capital_moved = {
 	}
 }
 
-on_reduced_infrastructure = {  #doesn't work and I don't know how to make it do so
-	#homebrew
-	if = { limit = { ROOT = {has_province_modifier = metropolis_flag_10 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_9 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_9} }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_8 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_8 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_7 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_7 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_6 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_6 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_5 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_5 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_4 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_4 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_3 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_3 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_2 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_2 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				add_province_modifier = { name = metropolis_flag_1 duration = -1 hidden = yes}
-			}
-		}
-		else_if = { limit = {ROOT = {has_province_modifier = metropolis_flag_1 } }
-			ROOT = {
-				clear_metropolis_flags = yes
-				clear_metropolis_planning = yes #these are just in case something broke
-				clear_hold_ei = yes				#cuz i don't know what I am doing
-			}
-		}
+# on_reduced_infrastructure = {  #doesn't work and I don't know how to make it do so, probably doesn't exist
+# 	#homebrew
+# 	if = { limit = { ROOT = {has_province_modifier = metropolis_flag_10 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_9 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_9} }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_8 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_8 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_7 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_7 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_6 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_6 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_5 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_5 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_4 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_4 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_3 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_3 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_2 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_flag_2 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				add_province_modifier = { name = metropolis_flag_1 duration = -1 hidden = yes}
+# 			}
+# 		}
+# 		else_if = { limit = {ROOT = {has_province_modifier = metropolis_flag_1 } }
+# 			ROOT = {
+# 				clear_metropolis_flags = yes
+# 				clear_metropolis_planning = yes #these are just in case something broke
+# 				clear_hold_ei = yes				#cuz i don't know what I am doing
+# 			}
+# 		}
 	
-	if = { limit = { FROM = { has_idea = zentra1 has_country_flag = central_planning_active } } 
+# 	if = { limit = { FROM = { has_idea = zentra1 has_country_flag = central_planning_active } } 
 
-		if = { limit = { ROOT = {has_province_modifier = metropolis_planning_10 has_province_modifier = hold_ei_10 } } 
-			add_central_planning = { level = 9 }
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_9 has_province_modifier = hold_ei_9 } } 
-			add_central_planning = { level = 8 }
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_8 has_province_modifier = hold_ei_8 } } 
-			add_central_planning = { level = 7 }
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_7 has_province_modifier = hold_ei_7 } } 
-			add_central_planning = { level = 6 }
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_6 has_province_modifier = hold_ei_6 } } 
-			add_central_planning = { level = 5 }
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_5 has_province_modifier = hold_ei_5 } } 
-			add_central_planning = { level = 4 }
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_4 has_province_modifier = hold_ei_4 } } 
-			add_central_planning = { level = 3 }
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_3 has_province_modifier = hold_ei_3 } } 
-			add_central_planning = { level = 2 }
-		}
-		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_2 has_province_modifier = hold_ei_2} } 
-			add_central_planning = { level = 1 }
-		}
-		else_if = { limit = { ROOT = { has_province_modifier = metropolis_planning_1  has_province_modifier = hold_ei_1 } }
-		clear_metropolis_flags = yes
-		clear_metropolis_planning = yes #these are just in case something broke
-		clear_hold_ei = yes				#cuz i don't know what I am doing
-		}
+# 		if = { limit = { ROOT = {has_province_modifier = metropolis_planning_10 has_province_modifier = hold_ei_10 } } 
+# 			add_central_planning = { level = 9 }
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_9 has_province_modifier = hold_ei_9 } } 
+# 			add_central_planning = { level = 8 }
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_8 has_province_modifier = hold_ei_8 } } 
+# 			add_central_planning = { level = 7 }
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_7 has_province_modifier = hold_ei_7 } } 
+# 			add_central_planning = { level = 6 }
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_6 has_province_modifier = hold_ei_6 } } 
+# 			add_central_planning = { level = 5 }
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_5 has_province_modifier = hold_ei_5 } } 
+# 			add_central_planning = { level = 4 }
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_4 has_province_modifier = hold_ei_4 } } 
+# 			add_central_planning = { level = 3 }
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_3 has_province_modifier = hold_ei_3 } } 
+# 			add_central_planning = { level = 2 }
+# 		}
+# 		else_if = { limit = { ROOT = {has_province_modifier = metropolis_planning_2 has_province_modifier = hold_ei_2} } 
+# 			add_central_planning = { level = 1 }
+# 		}
+# 		else_if = { limit = { ROOT = { has_province_modifier = metropolis_planning_1  has_province_modifier = hold_ei_1 } }
+# 		clear_metropolis_flags = yes
+# 		clear_metropolis_planning = yes #these are just in case something broke
+# 		clear_hold_ei = yes				#cuz i don't know what I am doing
+# 		}
 	
-	}				
-}
+# 	}				
+# }
 #ROOT = province that was expanded in, FROM = country that did it
 on_expanded_infrastructure = {
 	#homebrew

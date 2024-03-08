@@ -69,6 +69,13 @@ homebrew_make_dominion_vassal = {
 					subject = FROM
 				}
 			}
+			FROM = {
+				set_country_flag = enables_estate_nobles_flag
+				set_country_flag = enables_estate_burghers_flag
+				set_country_flag = enables_estate_church_flag
+				set_country_flag = has_overriden_color_flag
+				set_country_flag = has_overriden_name_flag
+			}
 		}
 		if = { limit = { FROM = { is_subject_of_type = vassal } ai = no }
 			ROOT = {
@@ -77,6 +84,13 @@ homebrew_make_dominion_vassal = {
 					subject = FROM
 				}
 			}
+			FROM = {
+				set_country_flag = enables_estate_nobles_flag
+				set_country_flag = enables_estate_burghers_flag
+				set_country_flag = enables_estate_church_flag
+				set_country_flag = has_overriden_color_flag
+				set_country_flag = has_overriden_name_flag
+			}
 		}
 		else_if = { limit = { FROM = { is_subject_of_type = vassal } ai = yes }
 			ROOT = {
@@ -84,6 +98,13 @@ homebrew_make_dominion_vassal = {
 					subject_type = homebrew_ai_dominion
 					subject = FROM
 				}
+			}
+			FROM = {
+				set_country_flag = enables_estate_nobles_flag
+				set_country_flag = enables_estate_burghers_flag
+				set_country_flag = enables_estate_church_flag
+				set_country_flag = has_overriden_color_flag
+				set_country_flag = has_overriden_name_flag
 			}
 		}
 	}

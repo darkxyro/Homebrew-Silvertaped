@@ -551,72 +551,72 @@ country_decisions = {
 			every_owned_province = {
 				if = { limit = { development = 150 has_province_modifier = metropolis_flag_10 }
 					clear_metropolis_planning = yes #just in case
-					add_province_modifier = { name = metropolis_planning_10 duration = -1}
+					add_province_modifier = { name = metropolis_planning_10 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_10 duration = -1 }
+						add_province_modifier = { name = hold_ei_10 duration = -1 hidden = yes }
 					}
 				}
 				else_if = { limit = { development = 135 has_province_modifier = metropolis_flag_9 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_9 duration = -1}
+					add_province_modifier = { name = metropolis_planning_9 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_9 duration = -1}
+						add_province_modifier = { name = hold_ei_9 duration = -1 hidden = yes}
 					}
 				}
 				else_if = { limit = { development = 120 has_province_modifier = metropolis_flag_8 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_8 duration = -1}
+					add_province_modifier = { name = metropolis_planning_8 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_8 duration = -1  }
+						add_province_modifier = { name = hold_ei_8 duration = -1 hidden = yes  }
 					}
 				}
 				else_if = { limit = { development = 105 has_province_modifier = metropolis_flag_7 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_7 duration = -1}
+					add_province_modifier = { name = metropolis_planning_7 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_7 duration = -1}
+						add_province_modifier = { name = hold_ei_7 duration = -1 hidden = yes}
 					}
 				}
 				else_if = { limit = { development = 90 has_province_modifier = metropolis_flag_6 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_6 duration = -1}
+					add_province_modifier = { name = metropolis_planning_6 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_6 duration = -1}
+						add_province_modifier = { name = hold_ei_6 duration = -1 hidden = yes}
 					}
 				}
 				else_if = { limit = { development = 75 has_province_modifier = metropolis_flag_5 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_5 duration = -1}
+					add_province_modifier = { name = metropolis_planning_5 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_5 duration = -1}
+						add_province_modifier = { name = hold_ei_5 duration = -1 hidden = yes}
 					}
 				}
 				else_if = { limit = { development = 60 has_province_modifier = metropolis_flag_4 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_4 duration = -1}
+					add_province_modifier = { name = metropolis_planning_4 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_4 duration = -1}
+						add_province_modifier = { name = hold_ei_4 duration = -1 hidden = yes}
 					}
 				}
 				else_if = { limit = { development = 45 has_province_modifier = metropolis_flag_3 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_3 duration = -1}
+					add_province_modifier = { name = metropolis_planning_3 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_3 duration = -1}
+						add_province_modifier = { name = hold_ei_3 duration = -1 hidden = yes}
 					}
 				}
 				else_if = { limit = { development = 30 has_province_modifier = metropolis_flag_2 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_2 duration = -1}
+					add_province_modifier = { name = metropolis_planning_2 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_2 duration = -1}
+						add_province_modifier = { name = hold_ei_2 duration = -1 hidden = yes}
 					}
 				}
 				else_if = { limit = { development = 15 has_province_modifier = metropolis_flag_1 }
 					clear_metropolis_planning = yes
-					add_province_modifier = { name = metropolis_planning_1 duration = -1}
+					add_province_modifier = { name = metropolis_planning_1 duration = -1 hidden = yes}
 					if = { limit = { OR = { has_terrain = dwarven_hold has_terrain = dwarven_hold_surface } }
-						add_province_modifier = { name = hold_ei_1 duration = -1}
+						add_province_modifier = { name = hold_ei_1 duration = -1 hidden = yes}
 					}
 				}
 			}
