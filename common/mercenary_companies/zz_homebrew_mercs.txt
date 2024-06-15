@@ -418,7 +418,7 @@ merc_dwarovar_regulars = {
 }
 #heroic coalition
 merc_coalition_army = {
-regiments_per_development = 0.2
+regiments_per_development = 0.1
 	cavalry_weight = 0.2
 	cavalry_cap = 4
 	artillery_weight = 0.4

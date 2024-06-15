@@ -1,2 +1,0 @@
-#empty file used for console "run hb_debug.txt"
-ROOT = { remove_ruler_personality = just_personality add_ruler_personality = scholar_personality}

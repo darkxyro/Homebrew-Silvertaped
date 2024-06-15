@@ -119,7 +119,7 @@
  soldnerheer6: "War Heroes"
  soldnerheer6_desc: "Our military has grown to favor war experience over repetitive drills, and is quick to promote men with exceptional leadership skills."
  soldnerheer7: "Professional Heroism"
- soldnerheer7_desc: "Why should our bands of heroes and professional miltary not unite under one purpose? Some heroes fight for us so often, they may as well be parts of our miltary already. \n§GRecruiting mercenaries does not cost Professionalism§W with §YElite Merceneries§! government reform"
+ soldnerheer7_desc: "Why should our bands of heroes and professional miltary not unite under one purpose? Some heroes fight for us so often, they may as well be parts of our miltary already. \n§GRecruiting mercenaries does not cost Professionalism§W with §YAdventurer Contracts§! government reform"
  wehrpflicht1: "Conscripted Labor"
  wehrpflicht1_desc: "Our vast surplus of manpower can not only be spent as cannon fodder, but as a state labor force.\n§GEnables a decision to spend £icon_manpower£ to complete the construction of buildable buildings§!\n§GWith §BHigh Sea §Gor §BAmphibious Ideas §Gfinished you can use £icon_sailors£ in provinces with port\n§YCost is modified by building, consctruction cost, construction speed and preexisting construction progress§!\n"
  hb_no_step_back:0 "Not One Step Back!"
