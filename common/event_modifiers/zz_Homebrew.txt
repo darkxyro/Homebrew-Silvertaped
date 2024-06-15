@@ -624,8 +624,8 @@ meltingpot_orcish = {
 meltingpot_kobold = {
 	
 	local_build_cost = -0.1
-	local_build_time = -0.05
-	local_hostile_attrition = 0.5
+	regiment_recruit_speed = -0.1
+	local_hostile_attrition = 1
 	picture = "pop_icon_kobold_sa"
 }
 meltingpot_gnollish = {
@@ -644,7 +644,7 @@ meltingpot_harpy = {
 }
 meltingpot_goblin = {
 	
-	local_build_time = -0.1
+	local_regiment_cost = -0.1
 	local_hostile_movement_speed = -0.1
 	local_production_efficiency = 0.1
 	picture = "pop_icon_goblin_sa"
@@ -674,7 +674,7 @@ meltingpot_harimari = {
 	
 	local_tax_modifier = 0.05
  	local_hostile_attrition = 0.5
-	local_state_maintenance_modifier = -0.1
+	local_governing_cost = -0.05
 	picture = "pop_icon_harimari_sa"
 }
 meltingpot_hobgoblin = {
@@ -686,10 +686,9 @@ meltingpot_hobgoblin = {
 }
 meltingpot_lizardfolk = {
 	
-	local_unrest = 2
-	local_state_maintenance_modifier = 0.1
 	local_production_efficiency = 0.05
-	local_hostile_attrition = 0.5
+	ship_recruit_speed = -0.10
+	local_regiment_cost = -0.1
 	picture = "pop_icon_lizardfolk_sa"
 }
 ###wild card###

@@ -361,6 +361,10 @@ province_event = {
 						province_id = 779
 						province_id = 643
 						province_id = 4124
+						province_id = 4201
+						province_id = 4198
+						province_id = 2915
+						province_id = 2895
 						
 						NOT = {
 							any_neighbor_province = {

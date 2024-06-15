@@ -96,6 +96,10 @@ province_event = {
 		hidden_effect = {
 			if = {
 				limit = { trade_goods = damestear }
+				if = {
+					limit = { has_building = tradecompany }
+					set_province_flag = had_tradecompany
+				}
 				change_trade_goods = unknown
 				set_province_flag = province_had_damestear
 			}
@@ -111,6 +115,30 @@ province_event = {
 		if = {
 			limit = { has_province_flag = province_had_damestear }
 			set_from_saved_trade_goods = yes
+			if = {
+				limit = {
+					has_province_flag = had_tradecompany
+				}
+				clr_province_flag = had_tradecompany
+				if = {
+					limit = {
+						num_free_building_slots = 1
+						OR = {
+							trade_goods = ivory
+							trade_goods = slaves
+							trade_goods = spices
+							trade_goods = cloves
+							trade_goods = fur
+							trade_goods = incense
+							trade_goods = precursor_relics
+							trade_goods = damestear
+						}
+					}
+					hidden_effect = {
+						add_building = tradecompany
+					}
+				}
+			}
 			remove_province_modifier = hold_foundry
 			remove_province_modifier = hold_foundry_2
 			hidden_effect = { 
@@ -118,7 +146,6 @@ province_event = {
 				clr_province_flag = province_had_damestear
 			}
 		}
-		hidden_effect = { REB = { subtract_variable = { num_damestear = 1 } } }
 	}
 }
 
@@ -171,8 +198,8 @@ country_event = {
 	option = {
         name = damestear.3.a
         ai_chance = { factor = 100 }
-		save_trade_goods = yes
 		event_target:province = {
+			save_trade_goods = yes
 			hidden_effect = {
 				if = {
 					limit = { has_idea = AIG_mining_regulations }
@@ -314,7 +341,6 @@ country_event = {
 	option = {
         name = damestear.4.a
         ai_chance = { factor = 100 }
-		save_trade_goods = yes
 		event_target:damestear_province = {
 			if = { #homebrew
 				limit = { has_idea = AIG_mining_regulations }

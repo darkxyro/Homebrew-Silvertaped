@@ -744,17 +744,8 @@ stehendesheer0 = {
 		drill_gain_modifier = 0.2
 		army_tradition_decay = -0.005
 	}
-	stehendesheer6 = {  #There is no special_unit_fraction for all of them? Also don't know which are used by Anbennar
-		special_unit_forcelimit = 0.1
-		allowed_cossack_fraction = 0.1
-		allowed_rajput_fraction = 0.1
-		allowed_rev_guard_fraction = 0.1
-		allowed_streltsy_fraction = 0.1
-		allowed_tercio_fraction = 0.1
-		allowed_samurai_fraction = 0.1
-		allowed_musketeer_fraction = 0.1
-		allowed_mamluks_fraction = 0.1
-		allowed_qizilbash_fraction = 0.1
+	stehendesheer6 = { 
+		special_unit_forcelimit = 0.2
 	}
 	stehendesheer7 = {
 		siege_ability = 0.1
@@ -830,9 +821,10 @@ soldnerheer0 = {
 	soldnerheer6 = {
 		allow_mercenary_drill = yes
 		army_tradition_from_battle = 0.5
+		merc_leader_army_tradition = 0.6
 	}
 	soldnerheer7 = {
-		allow_mercenaries_to_split = yes
+		#allow_mercenaries_to_split = yes  #Merging doesn't work for some reason
 		yearly_army_professionalism = 0.001
 	}
 

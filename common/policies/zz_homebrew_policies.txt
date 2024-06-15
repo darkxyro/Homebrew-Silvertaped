@@ -1181,7 +1181,7 @@ homebrew.policy.58 = {
 		factor = 1
 	}
 }
-homebrew.policy.58 = {
+homebrew.policy.59 = {
 	monarch_power = MIL
 
 	potential = {
