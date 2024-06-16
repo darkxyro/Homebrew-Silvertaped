@@ -72,7 +72,7 @@ country_event = {
 				modifier = {
 					factor = 5
 					has_country_modifier = command_enthusiasm_for_life
-			}
+				}
 				random_owned_province = {
 					limit = {
 						has_small_hobgoblin_minority_trigger = yes
@@ -94,9 +94,9 @@ country_event = {
 							unrest = 10
 							devastation = 25
 							has_oppressed_hobgoblin_minority_trigger = yes
+						}
 					}
 				}
-			}
 				modifier = {
 					factor = 0.33
 					has_country_modifier = racial_focus_hobgoblin
@@ -114,6 +114,8 @@ country_event = {
 					OR = {
 						has_country_modifier = racial_pop_hobgoblin_purge
 						has_country_modifier = racial_pop_hobgoblin_expulsion
+					}
+				}
 			}
 			1 = {
 				trigger = {
@@ -135,17 +137,18 @@ country_event = {
 					}
 					province_event = { id = racial_pop_events_hobgoblin.5 }
 				}
+				}
 			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = hobgoblin }
-		}
+				}
 				modifier = {
 					factor = 2
 					fast_owns_num_pops_of_race = { race = hobgoblin amount = 4 }
-	}
+				}
 				country_event = { id = racial_pop_events_hobgoblin.6 }
-	}
+			}
 			1 = { #Migration from neighboring country
 				trigger = {
 					pop_external_migration_trigger = { neighbor = yes race = hobgoblin }
@@ -153,45 +156,45 @@ country_event = {
 				modifier = {
 					factor = 2
 					has_country_modifier = racial_focus_hobgoblin
-			}
+				}
 				modifier = {
 					factor = 2
 					AND = {
 						has_country_modifier = racial_focus_hobgoblin
 						NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 1 } }
-		}
-	}
-			modifier = {
-				factor = 1.5
-					num_of_cities = 10
-					NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 5 } }
-		}
+					}
+				}
+				modifier = {
+					factor = 1.5
+						num_of_cities = 10
+						NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 5 } }
+				}
 				modifier = {
 					factor = 1.5
 					num_of_cities = 25
 					NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 10 } }
-		}
+				}
 				modifier = {
 					factor = 1.5
 					num_of_cities = 50
 					NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 25 } }
-	}
-			modifier = {
-				factor = 1.5
-					num_of_cities = 100
-					NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 50 } }
-			}
-			modifier = {
-				factor = 0.5
-					low_tolerance_hobgoblin_race_trigger = yes
-			}
+				}
+				modifier = {
+					factor = 1.5
+						num_of_cities = 100
+						NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 50 } }
+				}
+				modifier = {
+					factor = 0.5
+						low_tolerance_hobgoblin_race_trigger = yes
+				}
 				modifier = {
 					factor = 2
 					culture_is_hobgoblin = yes
-		}
+				}
 		
 				country_event = { id = racial_pop_events_hobgoblin.7 }
-		}
+			}
 			#events 100-200 are reserved for custom migration events, put their triggers here
 			}
 		}
@@ -1069,8 +1072,8 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -100
 		generic_start_purge = { race = hobgoblin }
+		}
 	}
-	
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1182,8 +1185,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
+		}
 	}
-	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1384,8 +1387,8 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -50
 		generic_start_expulsion = { race = hobgoblin }
+		}
 	}
-	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1496,8 +1499,8 @@ country_event = {
 			}
 		}
 		
+		}
 	}
-	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1528,8 +1531,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_hobgoblin.24 }
 		}
+		}
 	}
-	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j
@@ -2357,12 +2360,12 @@ country_event = {
 					}
 				}
 			
-			add_permanent_province_modifier = { name = expulsion_unrest_modifier duration = 18250 }
-		}
+				add_permanent_province_modifier = { name = expulsion_unrest_modifier duration = 18250 }
+			}
 		
-		medium_decrease_of_hobgoblin_tolerance_effect = yes
+			medium_decrease_of_hobgoblin_tolerance_effect = yes
+		}
 	}
-	
 }
 
 
@@ -2851,11 +2854,11 @@ country_event = {
 			
 			add_permanent_province_modifier = { name = purge_unrest_modifier duration = 9125 }
 			
-		}
+			}
 		
-		large_decrease_of_hobgoblin_tolerance_effect = yes
+			large_decrease_of_hobgoblin_tolerance_effect = yes
+		}
 	}
-	
 	
 }
 
@@ -3480,11 +3483,11 @@ country_event = {
 					}
 				}
 			
-		}
+			}
 		
-		medium_decrease_of_hobgoblin_tolerance_effect = yes
+			medium_decrease_of_hobgoblin_tolerance_effect = yes
+		}
 	}
-	
 	
 }
 

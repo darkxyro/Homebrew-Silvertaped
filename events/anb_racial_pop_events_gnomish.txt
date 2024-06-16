@@ -84,9 +84,9 @@ country_event = {
 							unrest = 10
 							devastation = 25
 							has_oppressed_gnomish_minority_trigger = yes
+						}
 					}
 				}
-			}
 				modifier = {
 					factor = 0.33
 					has_country_modifier = racial_focus_gnomish
@@ -104,6 +104,8 @@ country_event = {
 					OR = {
 						has_country_modifier = racial_pop_gnomish_purge
 						has_country_modifier = racial_pop_gnomish_expulsion
+					}
+				}
 			}
 			1 = {
 				trigger = {
@@ -114,28 +116,29 @@ country_event = {
 						is_colonial_nation = yes
 						NOT = { OR = { is_subject_of_type = homebrew_dominion is_subject_of_type = homebrew_client_dominion } }
 					}
-				random_owned_province = {
-					limit = {
-						has_gnomish_minority_trigger = yes
-						OR = {
-							unrest = 10
-							devastation = 25
-							has_oppressed_gnomish_minority_trigger = yes
+					random_owned_province = {
+						limit = {
+							has_gnomish_minority_trigger = yes
+							OR = {
+								unrest = 10
+								devastation = 25
+								has_oppressed_gnomish_minority_trigger = yes
+							}
 						}
+						province_event = { id = racial_pop_events_gnomish.5 }
 					}
-					province_event = { id = racial_pop_events_gnomish.5 }
 				}
 			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = gnomish }
-		}
+				}
 				modifier = {
 					factor = 2
 					fast_owns_num_pops_of_race = { race = gnomish amount = 4 }
-	}
+				}
 				country_event = { id = racial_pop_events_gnomish.6 }
-	}
+			}
 			1 = { #Migration from neighboring country
 				trigger = {
 					pop_external_migration_trigger = { neighbor = yes race = gnomish }
@@ -143,48 +146,49 @@ country_event = {
 				modifier = {
 					factor = 2
 					has_country_modifier = racial_focus_gnomish
-			}
+				}
 				modifier = {
 					factor = 2
 					AND = {
 						has_country_modifier = racial_focus_gnomish
 						NOT = { fast_owns_num_pops_of_race = { race = gnomish amount = 1 } }
-		}
-	}
-			modifier = {
-				factor = 1.5
-					num_of_cities = 10
-					NOT = { fast_owns_num_pops_of_race = { race = gnomish amount = 5 } }
-		}
+					}
+				}
+				modifier = {
+					factor = 1.5
+						num_of_cities = 10
+						NOT = { fast_owns_num_pops_of_race = { race = gnomish amount = 5 } }
+				}
 				modifier = {
 					factor = 1.5
 					num_of_cities = 25
 					NOT = { fast_owns_num_pops_of_race = { race = gnomish amount = 10 } }
-		}
+				}
 				modifier = {
 					factor = 1.5
 					num_of_cities = 50
 					NOT = { fast_owns_num_pops_of_race = { race = gnomish amount = 25 } }
-	}
-			modifier = {
-				factor = 1.5
-					num_of_cities = 100
-					NOT = { fast_owns_num_pops_of_race = { race = gnomish amount = 50 } }
-			}
-			modifier = {
-				factor = 0.5
-					low_tolerance_gnomish_race_trigger = yes
-			}
+				}
+				modifier = {
+					factor = 1.5
+						num_of_cities = 100
+						NOT = { fast_owns_num_pops_of_race = { race = gnomish amount = 50 } }
+				}
+				modifier = {
+					factor = 0.5
+						low_tolerance_gnomish_race_trigger = yes
+				}
 				modifier = {
 					factor = 2
 					culture_is_gnomish = yes
-		}
+				}
 		
 				country_event = { id = racial_pop_events_gnomish.7 }
-		}
-			#events 100-200 are reserved for custom migration events, put their triggers here
 			}
+			#events 100-200 are reserved for custom migration events, put their triggers here
 		}
+	}
+	
 }
 		
 #generic migration arrival notif - for destination
@@ -1053,8 +1057,8 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -100
 		generic_start_purge = { race = gnomish }
+		}
 	}
-	
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1166,8 +1170,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
+		}
 	}
-	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1376,8 +1380,8 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -50
 		generic_start_expulsion = { race = gnomish }
+		}
 	}
-	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1488,8 +1492,8 @@ country_event = {
 			}
 		}
 		
+		}
 	}
-	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1520,8 +1524,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_gnomish.24 }
 		}
+		}
 	}
-	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j
@@ -2351,11 +2355,11 @@ country_event = {
 				}
 			
 			add_permanent_province_modifier = { name = expulsion_unrest_modifier duration = 18250 }
-		}
+			}
 		
-		medium_decrease_of_gnomish_tolerance_effect = yes
+			medium_decrease_of_gnomish_tolerance_effect = yes
+		}
 	}
-	
 }
 
 
@@ -2847,11 +2851,11 @@ country_event = {
 			
 			add_permanent_province_modifier = { name = purge_unrest_modifier duration = 9125 }
 			
-		}
+			}
 		
-		large_decrease_of_gnomish_tolerance_effect = yes
+			large_decrease_of_gnomish_tolerance_effect = yes
+		}
 	}
-	
 	
 }
 
@@ -3476,11 +3480,11 @@ country_event = {
 					}
 				}
 			
-		}
+			}
 		
-		medium_decrease_of_gnomish_tolerance_effect = yes
+			medium_decrease_of_gnomish_tolerance_effect = yes
+		}
 	}
-	
 	
 }
 

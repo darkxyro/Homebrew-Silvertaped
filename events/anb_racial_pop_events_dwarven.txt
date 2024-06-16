@@ -84,9 +84,10 @@ country_event = {
 							unrest = 10
 							devastation = 25
 							has_oppressed_dwarven_minority_trigger = yes
+						}
 					}
 				}
-			}
+			
 				modifier = {
 					factor = 0.33
 					has_country_modifier = racial_focus_dwarven
@@ -104,6 +105,8 @@ country_event = {
 					OR = {
 						has_country_modifier = racial_pop_dwarven_purge
 						has_country_modifier = racial_pop_dwarven_expulsion
+					}
+				}
 			}
 			1 = {
 				trigger = {
@@ -125,17 +128,18 @@ country_event = {
 					}
 					province_event = { id = racial_pop_events_dwarven.5 }
 				}
+				}
 			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = dwarven }
-		}
+				}
 				modifier = {
 					factor = 2
 					fast_owns_num_pops_of_race = { race = dwarven amount = 4 }
-	}
+				}
 				country_event = { id = racial_pop_events_dwarven.6 }
-	}
+			}
 			1 = { #Migration from neighboring country
 				trigger = {
 					pop_external_migration_trigger = { neighbor = yes race = dwarven }
@@ -143,50 +147,52 @@ country_event = {
 				modifier = {
 					factor = 2
 					has_country_modifier = racial_focus_dwarven
-			}
+				}
 				modifier = {
 					factor = 2
 					AND = {
 						has_country_modifier = racial_focus_dwarven
 						NOT = { fast_owns_num_pops_of_race = { race = dwarven amount = 1 } }
-		}
-	}
-			modifier = {
-				factor = 1.5
-					num_of_cities = 10
-					NOT = { fast_owns_num_pops_of_race = { race = dwarven amount = 5 } }
-		}
+					}
+				}
+				modifier = {
+					factor = 1.5
+						num_of_cities = 10
+						NOT = { fast_owns_num_pops_of_race = { race = dwarven amount = 5 } }
+				}
 				modifier = {
 					factor = 1.5
 					num_of_cities = 25
 					NOT = { fast_owns_num_pops_of_race = { race = dwarven amount = 10 } }
-		}
+				}
 				modifier = {
 					factor = 1.5
 					num_of_cities = 50
 					NOT = { fast_owns_num_pops_of_race = { race = dwarven amount = 25 } }
-	}
-			modifier = {
-				factor = 1.5
-					num_of_cities = 100
-					NOT = { fast_owns_num_pops_of_race = { race = dwarven amount = 50 } }
-			}
-			modifier = {
-				factor = 0.5
-					low_tolerance_dwarven_race_trigger = yes
-			}
+				}
+				modifier = {
+					factor = 1.5
+						num_of_cities = 100
+						NOT = { fast_owns_num_pops_of_race = { race = dwarven amount = 50 } }
+				}
+				modifier = {
+					factor = 0.5
+						low_tolerance_dwarven_race_trigger = yes
+				}
 				modifier = {
 					factor = 2
 					culture_is_dwarven = yes
-		}
+				}
 		
 				country_event = { id = racial_pop_events_dwarven.7 }
-		}
+			}
 			#events 100-200 are reserved for custom migration events, put their triggers here
 			}
-		}
-}
+	}
 		
+	
+}
+
 #generic migration arrival notif - for destination
 country_event = {
 	id = racial_pop_events_dwarven.1
@@ -201,7 +207,7 @@ country_event = {
 		event_target:destination_province = {
 			owned_by = ROOT
 			}
-		}
+	}
 		
 	option = {
 		name = racial_pop_events_dwarven.1.a
@@ -244,7 +250,7 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				low_tolerance_dwarven_race_trigger = yes
-	}
+			}
 			modifier = {
 				factor = 2
 				NOT = { stability = 0 }
@@ -308,7 +314,7 @@ province_event = {
 		name = racial_pop_events_dwarven.4.a
 		ai_chance = { factor = 1 }
 			add_dwarven_minority_size_effect = yes
-		}
+	}
 	
 }
 
@@ -367,7 +373,7 @@ country_event = {
 		event_target:destination_province = {
 			racial_pop_migration_arrive = { race = dwarven }
 		}
-		}
+	}
 		
 	#They can do as they please
 	option = {		
@@ -423,7 +429,7 @@ country_event = {
 				choose_pop_origin_province = { race = dwarven }
 				}
 			}
-		}
+	}
 		
 	#Invite the migrants
 	option = {		
@@ -569,7 +575,7 @@ country_event = {
 		remove_country_modifier = non_primary_refugees
 		event_target:destination_province = { racial_pop_migration_arrive = { race = dwarven } }
 		generic_decrease_of_racial_tolerance_effect = { race = dwarven medium = yes }
-				}
+	}
 
 	#special option for primary culture 
 	option = {
@@ -725,7 +731,7 @@ country_event = {
 		#Add Minority to New Province
 		event_target:destination_province = { racial_pop_migration_arrive = { race = dwarven } }
 		generic_decrease_of_racial_tolerance_effect = { race = dwarven medium = yes }
-		}
+	}
 		
 	#special option for primary culture 
 	option = {
@@ -1071,8 +1077,8 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -100
 		generic_start_purge = { race = dwarven }
+		}
 	}
-	
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1186,8 +1192,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
+		}
 	}
-	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1387,8 +1393,8 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -50
 		generic_start_expulsion = { race = dwarven }
+		}
 	}
-	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1499,8 +1505,8 @@ country_event = {
 			}
 		}
 		
+		}
 	}
-	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1527,7 +1533,7 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_dip_power = -50
 		generic_start_focus = { race = dwarven }
-		
+		}
 		hidden_effect = {
 			country_event = { id = racial_pop_events_dwarven.24 }
 		}
@@ -1569,7 +1575,7 @@ country_event = {
 			country_event = { id = racial_pop_misc.3 }
 		}
 	}
-}	
+}
 
 
 #Expulsion Reveal
@@ -2361,14 +2367,14 @@ country_event = {
 					}
 				}
 			
-			add_permanent_province_modifier = { name = expulsion_unrest_modifier duration = 18250 }
-		}
+				add_permanent_province_modifier = { name = expulsion_unrest_modifier duration = 18250 }
+			}
 		
-		medium_decrease_of_dwarven_tolerance_effect = yes
-	}
+			medium_decrease_of_dwarven_tolerance_effect = yes
+		}
 	
+	}
 }
-
 
 #Purge - Minority Purged
 country_event = {
@@ -2856,14 +2862,15 @@ country_event = {
 					}
 				}
 			
-			add_permanent_province_modifier = { name = purge_unrest_modifier duration = 9125 }
+				add_permanent_province_modifier = { name = purge_unrest_modifier duration = 9125 }
 			
-		}
+			}
 		
-		large_decrease_of_dwarven_tolerance_effect = yes
+			large_decrease_of_dwarven_tolerance_effect = yes
+		}
+	
+	
 	}
-	
-	
 }
 
 
@@ -3487,12 +3494,13 @@ country_event = {
 					}
 				}
 			
-		}
+			}
 		
-		medium_decrease_of_dwarven_tolerance_effect = yes
+			medium_decrease_of_dwarven_tolerance_effect = yes
+		}
+	
+	
 	}
-	
-	
 }
 
 
