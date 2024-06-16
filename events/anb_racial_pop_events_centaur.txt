@@ -84,9 +84,9 @@ country_event = {
 							unrest = 10
 							devastation = 25
 							has_oppressed_centaur_minority_trigger = yes
+						}
 					}
 				}
-			}
 				modifier = {
 					factor = 0.33
 					has_country_modifier = racial_focus_centaur
@@ -104,6 +104,8 @@ country_event = {
 					OR = {
 						has_country_modifier = racial_pop_centaur_purge
 						has_country_modifier = racial_pop_centaur_expulsion
+					}
+				}
 			}
 			1 = {
 				trigger = {
@@ -125,17 +127,18 @@ country_event = {
 					}
 					province_event = { id = racial_pop_events_centaur.5 }
 				}
+				}
 			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = centaur }
-		}
+				}
 				modifier = {
 					factor = 2
 					fast_owns_num_pops_of_race = { race = centaur amount = 4 }
-	}
+				}
 				country_event = { id = racial_pop_events_centaur.6 }
-	}
+			}
 			1 = { #Migration from neighboring country
 				trigger = {
 					pop_external_migration_trigger = { neighbor = yes race = centaur }
@@ -143,48 +146,48 @@ country_event = {
 				modifier = {
 					factor = 2
 					has_country_modifier = racial_focus_centaur
-			}
+				}
 				modifier = {
 					factor = 2
 					AND = {
 						has_country_modifier = racial_focus_centaur
 						NOT = { fast_owns_num_pops_of_race = { race = centaur amount = 1 } }
-		}
-	}
-			modifier = {
-				factor = 1.5
-					num_of_cities = 10
-					NOT = { fast_owns_num_pops_of_race = { race = centaur amount = 5 } }
-		}
+					}
+				}
+				modifier = {
+					factor = 1.5
+						num_of_cities = 10
+						NOT = { fast_owns_num_pops_of_race = { race = centaur amount = 5 } }
+				}
 				modifier = {
 					factor = 1.5
 					num_of_cities = 25
 					NOT = { fast_owns_num_pops_of_race = { race = centaur amount = 10 } }
-		}
+				}
 				modifier = {
 					factor = 1.5
 					num_of_cities = 50
 					NOT = { fast_owns_num_pops_of_race = { race = centaur amount = 25 } }
-	}
-			modifier = {
-				factor = 1.5
-					num_of_cities = 100
-					NOT = { fast_owns_num_pops_of_race = { race = centaur amount = 50 } }
-			}
-			modifier = {
-				factor = 0.5
-					low_tolerance_centaur_race_trigger = yes
-			}
+				}
+				modifier = {
+					factor = 1.5
+						num_of_cities = 100
+						NOT = { fast_owns_num_pops_of_race = { race = centaur amount = 50 } }
+				}
+				modifier = {
+					factor = 0.5
+						low_tolerance_centaur_race_trigger = yes
+				}
 				modifier = {
 					factor = 2
 					culture_is_centaur = yes
-		}
+				}
 		
 				country_event = { id = racial_pop_events_centaur.7 }
-		}
-			#events 100-200 are reserved for custom migration events, put their triggers here
 			}
+			#events 100-200 are reserved for custom migration events, put their triggers here
 		}
+	}
 }
 		
 #generic migration arrival notif - for destination
@@ -840,7 +843,7 @@ country_event = {
 		}
 		picture = POP_POLICY_NONE_eventPicture
 	}
-	
+
 	is_triggered_only = yes
 	
 	#Go back - for ai only
@@ -1061,8 +1064,8 @@ country_event = {
 		custom_tooltip = pop_menu_purge_desc_tt
 		generic_start_purge = { race = centaur }
 			add_adm_power = -100
-		}
-	
+	}
+
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1165,17 +1168,17 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -100
 		
-		hidden_effect = {
-			if = { limit = { ai = no }
-				set_country_flag = just_stopped_purging
-				country_event = { id = racial_pop_events_centaur.24 }
-			}
-			else = {
-				clr_country_flag = racial_pop_menu_opened
+			hidden_effect = {
+				if = { limit = { ai = no }
+					set_country_flag = just_stopped_purging
+					country_event = { id = racial_pop_events_centaur.24 }
+				}
+				else = {
+					clr_country_flag = racial_pop_menu_opened
+				}
 			}
 		}
 	}
-	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1380,8 +1383,8 @@ country_event = {
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -50
 		generic_start_expulsion = { race = centaur }
+		}
 	}
-	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1492,6 +1495,7 @@ country_event = {
 			}
 		}
 		
+		}
 	}
 	
 	#Cannot Stop Expelling
@@ -1524,8 +1528,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_centaur.24 }
 		}
+		}
 	}
-	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j
@@ -2364,6 +2368,7 @@ country_event = {
 		medium_decrease_of_centaur_tolerance_effect = yes
 	}
 	
+	}
 }
 
 
@@ -2865,6 +2870,7 @@ country_event = {
 	}
 	
 	
+	}
 }
 
 
@@ -3502,6 +3508,7 @@ country_event = {
 	}
 	
 	
+	}
 }
 
 
