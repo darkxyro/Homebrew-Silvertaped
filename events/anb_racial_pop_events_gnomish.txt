@@ -1056,8 +1056,9 @@ country_event = {
 		
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -100
+		}	
 		generic_start_purge = { race = gnomish }
-		}
+		
 	}
 	#Cannot Purge
 	option = {		
@@ -1160,7 +1161,7 @@ country_event = {
 		generic_end_purge = { race = gnomish }
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -100
-		
+		}
 		hidden_effect = {
 			if = { limit = { ai = no }
 				set_country_flag = just_stopped_purging
@@ -1170,7 +1171,7 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
-		}
+		
 	}
 	#Cannot End Purge
 	option = {		
@@ -1379,8 +1380,9 @@ country_event = {
 		custom_tooltip = pop_menu_expel_desc_tt
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -50
+		}	
 		generic_start_expulsion = { race = gnomish }
-		}
+		
 	}
 	#Cannot Expel
 	option = {		
@@ -1483,6 +1485,7 @@ country_event = {
 		generic_end_expulsion = { race = gnomish }
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -50
+		}
 		hidden_effect = {
 			if = { limit = { ai = no }
 				country_event = { id = racial_pop_events_gnomish.24 }
@@ -1492,7 +1495,7 @@ country_event = {
 			}
 		}
 		
-		}
+		
 	}
 	#Cannot Stop Expelling
 	option = {		
@@ -1519,12 +1522,13 @@ country_event = {
 		custom_tooltip = pop_menu_focus_desc_tt
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_dip_power = -50
+		}	
 		generic_start_focus = { race = gnomish }
 		
 		hidden_effect = {
 			country_event = { id = racial_pop_events_gnomish.24 }
 		}
-		}
+		
 	}
 	#Cannot set focus
 	option = {		
