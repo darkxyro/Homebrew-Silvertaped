@@ -600,7 +600,7 @@ iv_modifier_event_134 = {
 }
 
 iv_modifier_event_135 = {
-	yearly_army_professionalism = 0.05
+	yearly_army_professionalism = 0.005
 }
 
 iv_modifier_event_136 = {

@@ -11,5 +11,5 @@ dependencies={
 	"Anbennar-PublicFork"
 	"Anbennar-Steam-Release"
 }
-supported_version="1.37.*"
+supported_version="1.37.*.*"
 remote_file_id="3105283657"

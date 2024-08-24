@@ -1193,8 +1193,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
-		}
 	}
+	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
