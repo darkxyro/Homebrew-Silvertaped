@@ -21,6 +21,7 @@ country_event = {
 				}
 		OR = {
 				has_estate_privilege = estate_mages_battlemage_academies
+			has_estate_privilege = estate_mages_archaic_traditions
 			has_country_flag = anbennar_T5_ruinborn_magic_warwizards
 			}
 			has_idea = hb_magical_tournaments
@@ -115,6 +116,11 @@ country_event = {
 			}
 		}
 		modifier = {
+			factor = 0.5
+			has_estate_privilege = estate_mages_archaic_traditions
+				
+		}
+		modifier = {
 			factor = 2
 			has_estate = estate_mages
 			NOT = {
@@ -135,7 +141,7 @@ country_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.5
 			AND = {
 				has_estate = estate_mages
 				has_estate_privilege = estate_mages_battlemage_academies
@@ -1001,6 +1007,7 @@ country_event = {
 			has_manufactory_trigger = no
 			is_territory = no
 			is_state_core = ROOT	
+			has_any_blorc_camp = no
 		}
 	}
 	
@@ -1022,6 +1029,7 @@ country_event = {
 					has_manufactory_trigger = no
 					is_territory = no
 					is_state_core = ROOT		
+					has_any_blorc_camp = no	
 				}
 				save_event_target_as = mage_school_built_province
 			}
@@ -1311,7 +1319,10 @@ country_event = {
 			has_estate = estate_mages
 			has_estate = estate_acolytes
 		}
+		OR = {
+			has_estate_privilege = estate_mages_archaic_traditions
 		has_estate_privilege = estate_mages_battlemage_academies
+		}
 		if = {
 			limit = {
 				has_estate = estate_mages

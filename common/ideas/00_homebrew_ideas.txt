@@ -1,7 +1,7 @@
 #reference for ez replacement/purging: gross0 handel0 galle0 flottenbasis0
 #reminder to check and replace vanilla tags/regions
 
-homebrew_highseas_ideas = {
+naval_ideas = {
 	category = DIP
 	
 	bonus = {
@@ -86,7 +86,7 @@ homebrew_amphibious_ideas = {
 	}
 	trigger = {
 		primitives = no
-		NOT = { has_idea_group = homebrew_highseas_ideas }
+		NOT = { has_idea_group = naval_ideas }
 	}
 	homebrew_marineracademies2 = {
 		global_sailors_modifier = 0.25

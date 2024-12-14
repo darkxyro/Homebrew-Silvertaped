@@ -31,6 +31,10 @@ country_event = {
 			factor = 10
 			has_country_modifier = racial_focus_goblin
 		}
+		modifier = {
+			factor = 1.5
+			has_government_attribute = more_migration_and_tolerance
+		}
 	}
 	
 	option = {
@@ -106,16 +110,6 @@ country_event = {
 						has_country_modifier = racial_pop_goblin_expulsion
 					}
 				}
-			}	
-			1 = {
-				trigger = {
-					num_of_cities = 2	#you have something to migrate to
-					
-					#Country that tolerates race
-					any_subject_country = { 
-						is_colonial_nation = yes
-						NOT = { OR = { is_subject_of_type = homebrew_dominion is_subject_of_type = homebrew_client_dominion } }
-					}
 					random_owned_province = {
 					limit = {
 						has_goblin_minority_trigger = yes
@@ -128,7 +122,6 @@ country_event = {
 					province_event = { id = racial_pop_events_goblin.5 }
 					}
 				}
-			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = goblin }
@@ -186,6 +179,31 @@ country_event = {
 				country_event = { id = racial_pop_events_goblin.7 }
 			}	
 			#events 100-200 are reserved for custom migration events, put their triggers here
+			3 = {
+				trigger = {
+					num_of_colonists = 1
+					num_of_colonies = 1
+					NOT = {
+						capital_scope = {
+							OR = {
+								continent = north_america
+								continent = south_america
+							}
+						}
+					}
+					any_owned_province = {
+						culture_is_goblin = yes
+					}
+					any_owned_province = {
+						is_colony = yes
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+				country_event = { id = racial_pop_events_goblin.100 }
+			}
 		}
 	}
 }
@@ -1045,6 +1063,10 @@ country_event = {
 				factor = 10
 				has_country_modifier = dwarven_administration
 			}
+			modifier = { #-Special - dwarven slavers won't purge their slaves
+				factor = 0
+				tag = I08 #Haraz Orldhum
+			}
 			modifier = {  #karashar wants vassals to kill
 				factor = 3
 				overlord = {
@@ -1071,7 +1093,6 @@ country_event = {
 			add_adm_power = -100
 		}	
 		generic_start_purge = { race = goblin }
-		
 	}
 	
 	#Cannot Purge
@@ -1192,8 +1213,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
-	
 	}
+	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1385,6 +1406,10 @@ country_event = {
 				factor = 10
 				has_country_modifier = dwarven_administration
 			}
+			modifier = { #-Special - dwarven slavers won't expel their slaves
+				factor = 0
+				tag = I08 #Haraz Orldhum
+			}
         }
 		
 		hidden_effect = {
@@ -1400,8 +1425,8 @@ country_event = {
 			add_adm_power = -50
 		}	
 		generic_start_expulsion = { race = goblin }
-		
 	}
+	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1520,8 +1545,8 @@ country_event = {
 			}
 		}
 		
-		
 	}
+	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1545,7 +1570,14 @@ country_event = {
 			can_focus_race = { RACE = goblin }
 		}
 		custom_tooltip = pop_menu_focus_desc_tt
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { NOT = { 
+						OR = {
+							has_idea = homebrew_x_for_xians
+							has_country_flag = focusing_is_free_flag
+						} 
+					}
+			}
 			add_dip_power = -50
 		}	
 		generic_start_focus = { race = goblin }
@@ -1553,8 +1585,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_goblin.24 }
 		}
-		
 	}
+	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j
@@ -3785,5 +3817,42 @@ country_event = {
 
 	option = {
 		name = racial_pop_events_goblin.99.a
+	}
+}
+
+##Flavour Migration Events
+country_event = {	#Send Smallfolks to Aelantir
+	id = racial_pop_events_goblin.100
+	title = racial_pop_events_goblin.100.t
+	desc = racial_pop_events_goblin.100.d
+	picture = muslimgfx_COLONIZATION_eventPicture
+	is_triggered_only = yes
+	trigger = {}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { culture_is_goblin = yes }
+				save_event_target_as = settlers_origin
+			}	
+			random_owned_province = {
+				limit = { is_colony = yes }
+				save_event_target_as = settlers_destinations
+			}
+		}
+	}
+
+	option = {
+		name = racial_pop_events_goblin.100.1
+		goto = settlers_destinations
+		add_treasury = -50
+		tolerance_generic_3_effect = { race = goblin }
+	}
+
+	option = {
+		name = racial_pop_events_goblin.100.2
+		goto = settlers_destinations
+		tolerance_generic_3_effect = { race = goblin }
+		medium_decrease_of_goblin_tolerance_effect = yes
 	}
 }

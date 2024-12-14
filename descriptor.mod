@@ -1,15 +1,12 @@
 version="0.1"
 tags={
 	"Alternative History"
-	"Total Conversion"
-	"Fantasy"
-	"Balance"
 }
-name="Homebrew - Silvertaped"
+name="HB - Silvertaped (Bitbucket)"
 dependencies={
 	"Anbennar: A Fantasy Total Conversion"
 	"Anbennar-PublicFork"
 	"Anbennar-Steam-Release"
 }
-supported_version="1.37.*.*"
-remote_file_id="3105283657"
+supported_version="v1.37.2.0"
+remote_file_id="3316462216"

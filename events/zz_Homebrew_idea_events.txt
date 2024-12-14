@@ -1903,7 +1903,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		full_idea_group = monstrous_ideas
+		has_country_flag = removing_monstrous
+		has_idea_group = monstrous_ideas
 		NOT = { has_country_flag = demonsterize_event }
 	}
 	immediate = { set_country_flag = demonsterize_event }

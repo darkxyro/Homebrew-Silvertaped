@@ -297,7 +297,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_propaganda0"
+		name = "GFX_idea_court_ideas"
 		texturefile = "gfx//interface//ideas//idea_propaganda.tga"
 		noOfFrames = 1
 		

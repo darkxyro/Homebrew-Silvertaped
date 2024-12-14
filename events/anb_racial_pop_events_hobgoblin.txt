@@ -35,6 +35,10 @@ country_event = {
 			factor = 5
 			has_country_modifier = command_enthusiasm_for_life
 		}
+		modifier = {
+			factor = 1.5
+			has_government_attribute = more_migration_and_tolerance
+		}
 	}
 	
 	option = {
@@ -116,16 +120,6 @@ country_event = {
 						has_country_modifier = racial_pop_hobgoblin_expulsion
 					}
 				}
-			}
-			1 = {
-				trigger = {
-					num_of_cities = 2	#you have something to migrate to
-					
-					#Country that tolerates race
-					any_subject_country = { 
-						is_colonial_nation = yes
-						NOT = { OR = { is_subject_of_type = homebrew_dominion is_subject_of_type = homebrew_client_dominion } }
-					}
 				random_owned_province = {
 					limit = {
 						has_hobgoblin_minority_trigger = yes
@@ -138,7 +132,6 @@ country_event = {
 					province_event = { id = racial_pop_events_hobgoblin.5 }
 				}
 				}
-			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = hobgoblin }
@@ -1073,8 +1066,8 @@ country_event = {
 			add_adm_power = -100
 		}	
 		generic_start_purge = { race = hobgoblin }
-		
 	}
+	
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1186,8 +1179,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
-		
 	}
+	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1389,8 +1382,8 @@ country_event = {
 			add_adm_power = -50
 		}	
 		generic_start_expulsion = { race = hobgoblin }
-		
 	}
+	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1502,8 +1495,8 @@ country_event = {
 			}
 		}
 		
-		
 	}
+	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1527,7 +1520,14 @@ country_event = {
 			can_focus_race = { RACE = hobgoblin }
 		}
 		custom_tooltip = pop_menu_focus_desc_tt
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { NOT = { 
+						OR = {
+							has_idea = homebrew_x_for_xians
+							has_country_flag = focusing_is_free_flag
+						} 
+					}
+			}
 			add_dip_power = -50
 		}	
 		generic_start_focus = { race = hobgoblin }
@@ -1535,8 +1535,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_hobgoblin.24 }
 		}
-		
 	}
+	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j
@@ -2839,6 +2839,9 @@ country_event = {
 		
 		#Remove Minority from Origin Province
 		event_target:racial_pop_province_origin = {
+
+			hidden_effect = { remove_racial_majority = { race = hobgoblin } } # delete immediately so no minority left
+
 			add_devastation = 25
 			change_culture = ROOT
 			change_religion = ROOT

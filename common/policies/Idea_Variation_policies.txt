@@ -1011,13 +1011,13 @@ idea_variation_act_585 = {
 	monarch_power = ADM
 	
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = economic_ideas
 		
 	}
 	
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = economic_ideas
 	}	
 	
@@ -1055,7 +1055,7 @@ idea_variation_act_586 = {
 	potential = {
 		has_idea_group = administrative_ideas
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -1063,7 +1063,7 @@ idea_variation_act_586 = {
 	allow = {
 		full_idea_group = administrative_ideas
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}	
@@ -1102,7 +1102,7 @@ idea_variation_act_587 = {
 	potential = {
 		has_idea_group = expansion_ideas
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -1110,7 +1110,7 @@ idea_variation_act_587 = {
 	allow = {
 		full_idea_group = expansion_ideas
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}	
@@ -2424,13 +2424,13 @@ idea_variation_act_624 = {
 	monarch_power = DIP
 	
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = plutocracy_ideas
 		
 	}
 	
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = plutocracy_ideas
 	}	
 	
@@ -2454,13 +2454,13 @@ idea_variation_act_625 = {
 	monarch_power = DIP
 	
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = staatsverwaltung0
 		
 	}
 	
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = staatsverwaltung0
 	}	
 	
@@ -2519,13 +2519,13 @@ idea_variation_act_627 = {
 	monarch_power = DIP
 	
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = festung0
 		
 	}
 	
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = festung0
 	}	
 	
@@ -3341,7 +3341,7 @@ idea_variation_act_653 = {
 	potential = {
 		has_idea_group = kriegsproduktion0
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 		
@@ -3349,7 +3349,7 @@ idea_variation_act_653 = {
 	allow = {
 		full_idea_group = kriegsproduktion0
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}	
@@ -3370,13 +3370,13 @@ idea_variation_act_654 = {
 	monarch_power = DIP		# Marine
 	
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = quality_ideas
 		
 		
 	}
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = quality_ideas
 		
 	}	
@@ -3398,7 +3398,7 @@ idea_variation_act_655 = {
 	potential = {
 		has_idea_group = innovativeness_ideas
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -3406,7 +3406,7 @@ idea_variation_act_655 = {
 	allow = {
 		full_idea_group = innovativeness_ideas
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}	
@@ -3433,7 +3433,7 @@ idea_variation_act_656 = {
 	potential = {
 
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 		
@@ -3445,7 +3445,7 @@ idea_variation_act_656 = {
 	}
 	allow = {
 		OR = {
-			full_idea_group = homebrew_highseas_ideas
+			full_idea_group = naval_ideas
 			full_idea_group = homebrew_amphibious_ideas
 			}
 		OR = {
@@ -3532,7 +3532,7 @@ idea_variation_act_659 = {
 	potential = {
 		has_idea_group = humanist_ideas 
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -3540,7 +3540,7 @@ idea_variation_act_659 = {
 	allow = {
 		full_idea_group = humanist_ideas 
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}	
@@ -3728,7 +3728,7 @@ idea_variation_act_3 = {
 		has_idea_group = staatsverwaltung0
 		OR = {
 		has_idea_group = homebrew_amphibious_ideas
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		}
 		
 	}
@@ -3736,7 +3736,7 @@ idea_variation_act_3 = {
 		full_idea_group = staatsverwaltung0
 		OR = {
 		full_idea_group = homebrew_amphibious_ideas
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		}
 	}
 	
@@ -4059,12 +4059,12 @@ idea_variation_act_664 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = waffenqualitat0
 			
 	}
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = waffenqualitat0
 		
 	}
@@ -4295,12 +4295,12 @@ idea_variation_act_23 = {
 
 	potential = {
 		has_idea_group = justiz0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		full_idea_group = justiz0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -5177,12 +5177,12 @@ idea_variation_act_58 = {
 
 	potential = {
 		has_idea_group = generalstab0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 			
 	}
 	allow = {
 		full_idea_group = generalstab0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 
 	}
 	
@@ -5212,7 +5212,7 @@ idea_variation_act_59 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		OR = {
 		has_idea_group = theocracy_gov_ideas
 		has_idea_group = aristocracy_ideas
@@ -5221,7 +5221,7 @@ idea_variation_act_59 = {
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		OR = {
 		full_idea_group = theocracy_gov_ideas
 		full_idea_group = aristocracy_ideas
@@ -5245,12 +5245,12 @@ idea_variation_act_60 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = wehrpflicht0
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = wehrpflicht0
 	}
 	
@@ -5270,12 +5270,12 @@ idea_variation_act_61 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = offensive_ideas
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = offensive_ideas
 	}
 	
@@ -5291,12 +5291,12 @@ idea_variation_act_62 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = innovativeness_ideas
 		
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = innovativeness_ideas
 	}
 	
@@ -5348,7 +5348,7 @@ idea_variation_act_64 = {
 
 		OR = {
 		has_idea_group = homebrew_amphibious_ideas
-		has_idea_group = homebrew_highseas_ideas	
+		has_idea_group = naval_ideas	
 		}
 		
 		
@@ -5360,7 +5360,7 @@ idea_variation_act_64 = {
 	allow = {
 		OR = {
 			full_idea_group = homebrew_amphibious_ideas
-			full_idea_group = homebrew_highseas_ideas
+			full_idea_group = naval_ideas
 			}
 
 			full_idea_group = waffenqualitat0
@@ -5910,12 +5910,12 @@ idea_variation_act_82 = {
 
 	potential = {
 		has_idea_group = generalstab0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 			
 	}
 	allow = {
 		full_idea_group = generalstab0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	discipline = 0.035
@@ -6121,7 +6121,7 @@ idea_variation_act_89 = {
 		current_age = age_of_discovery
 		has_idea_group = stehendesheer0
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -6130,7 +6130,7 @@ idea_variation_act_89 = {
 		current_age = age_of_discovery
 		full_idea_group = stehendesheer0
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -6150,7 +6150,7 @@ idea_variation_act_89_1 = {
 		current_age = age_of_reformation
 		has_idea_group = stehendesheer0
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -6159,7 +6159,7 @@ idea_variation_act_89_1 = {
 		current_age = age_of_reformation
 		full_idea_group = stehendesheer0
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -6179,7 +6179,7 @@ idea_variation_act_89_2 = {
 		current_age = age_of_absolutism
 		has_idea_group = stehendesheer0
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -6188,7 +6188,7 @@ idea_variation_act_89_2 = {
 		current_age = age_of_absolutism
 		full_idea_group = stehendesheer0
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -6208,7 +6208,7 @@ idea_variation_act_89_3 = {
 		current_age = age_of_revolutions
 		has_idea_group = stehendesheer0
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -6217,7 +6217,7 @@ idea_variation_act_89_3 = {
 		current_age = age_of_revolutions
 		full_idea_group = stehendesheer0
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -6566,12 +6566,12 @@ idea_variation_act_101 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = festung0
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = festung0
 	}
 	
@@ -7708,12 +7708,12 @@ idea_variation_act_144 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = administrative_ideas
 		
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = administrative_ideas
 		
 		NOT = {
@@ -7744,12 +7744,12 @@ idea_variation_act_145 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = humanist_ideas 
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = humanist_ideas 
 	}
 	
@@ -7766,12 +7766,12 @@ idea_variation_act_146 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = expansion_ideas
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = expansion_ideas
 	}
 	
@@ -7787,7 +7787,7 @@ idea_variation_act_147 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		OR = {
 		has_idea_group = religious_ideas   
 		has_idea_group = AIG_elven_supremacy_ideas
@@ -7795,7 +7795,7 @@ idea_variation_act_147 = {
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		OR = {
 			full_idea_group = religious_ideas 
 			full_idea_group = AIG_elven_supremacy_ideas
@@ -7815,12 +7815,12 @@ idea_variation_act_148 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = plutocracy_ideas
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = plutocracy_ideas
 	}
 	
@@ -7836,12 +7836,12 @@ idea_variation_act_149 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = defensive_ideas
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = defensive_ideas
 	}
 	
@@ -7859,13 +7859,13 @@ idea_variation_act_150 = {
 
 	potential = {
 		current_age = age_of_discovery
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = quantity_ideas
 			
 	}
 	allow = {
 		current_age = age_of_discovery
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = quantity_ideas
 	}
 	
@@ -7883,13 +7883,13 @@ idea_variation_act_150_1 = {
 
 	potential = {
 		current_age = age_of_reformation
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = quantity_ideas
 			
 	}
 	allow = {
 		current_age = age_of_reformation
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = quantity_ideas
 	}
 	
@@ -7907,13 +7907,13 @@ idea_variation_act_150_2 = {
 
 	potential = {
 		current_age = age_of_absolutism
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = quantity_ideas
 			
 	}
 	allow = {
 		current_age = age_of_absolutism
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = quantity_ideas
 	}
 	
@@ -7931,13 +7931,13 @@ idea_variation_act_150_3 = {
 
 	potential = {
 		current_age = age_of_revolutions
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = quantity_ideas
 			
 	}
 	allow = {
 		current_age = age_of_revolutions
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = quantity_ideas
 	}
 	
@@ -7954,12 +7954,12 @@ idea_variation_act_151 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = quality_ideas
 		
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = quality_ideas
 	}
 	
@@ -7978,12 +7978,12 @@ idea_variation_act_152 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = justiz0
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = justiz0
 		
 		NOT = {
@@ -8015,12 +8015,12 @@ idea_variation_act_153 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = AIG_infrastructure_ideas
 		
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = AIG_infrastructure_ideas
 		
 		NOT = {
@@ -8059,12 +8059,12 @@ idea_variation_act_154 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = staatsverwaltung0
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = staatsverwaltung0
 	}
 	
@@ -8081,12 +8081,12 @@ idea_variation_act_155 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = gesundheit0
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = gesundheit0
 	}
 	
@@ -8103,12 +8103,12 @@ idea_variation_act_156 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = stehendesheer0
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = stehendesheer0
 	}
 	
@@ -8163,13 +8163,13 @@ idea_variation_act_15 = {
 
 	potential = {
 		has_idea_group = economic_ideas
-		has_idea_group = propaganda0	
+		has_idea_group = court_ideas	
 		
 	}
 	allow = {
 	
 		full_idea_group = economic_ideas
-		full_idea_group = propaganda0 
+		full_idea_group = court_ideas 
 		
 	}
 	
@@ -8197,12 +8197,12 @@ idea_variation_act_158 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = soldnerheer0 
 			
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = soldnerheer0 
 	}
 	
@@ -8222,12 +8222,12 @@ idea_variation_act_159 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = waffenqualitat0
 		
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = waffenqualitat0
 	}
 	
@@ -8245,12 +8245,12 @@ idea_variation_act_160 = {
 	monarch_power = MIL 		# Besonderer Fall
 
 	potential = {
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		has_idea_group = kriegsproduktion0
 		
 	}
 	allow = {
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		full_idea_group = kriegsproduktion0
 	}
 	
@@ -13745,7 +13745,7 @@ monarch_power = DIP
 	potential = {
 		has_idea_group = wehrpflicht0
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -13753,7 +13753,7 @@ monarch_power = DIP
 	allow = {
 		full_idea_group = wehrpflicht0
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -13773,7 +13773,7 @@ monarch_power = ADM
 	potential = {
 		has_idea_group = gesundheit0
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -13781,7 +13781,7 @@ monarch_power = ADM
 	allow = {
 		full_idea_group = gesundheit0
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -13808,7 +13808,7 @@ monarch_power = ADM
 	potential = {
 		has_idea_group = AIG_infrastructure_ideas
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 		
@@ -13816,7 +13816,7 @@ monarch_power = ADM
 	allow = {
 		full_idea_group = AIG_infrastructure_ideas
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -13843,7 +13843,7 @@ monarch_power = DIP
 	potential = {
 		has_idea_group = quantity_ideas
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -13851,7 +13851,7 @@ monarch_power = DIP
 	allow = {
 		full_idea_group = quantity_ideas
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -13879,7 +13879,7 @@ monarch_power = ADM
 
 		OR = {
 		has_idea_group = homebrew_amphibious_ideas
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		
 		}
 		
@@ -13893,7 +13893,7 @@ monarch_power = ADM
 	allow = {
 		OR = {
 			full_idea_group = homebrew_amphibious_ideas
-			full_idea_group = homebrew_highseas_ideas
+			full_idea_group = naval_ideas
 			}
 		OR = {
 		full_idea_group = theocracy_gov_ideas
@@ -13921,7 +13921,7 @@ monarch_power = DIP
 		potential = {
 		has_idea_group = soldnerheer0 
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -13929,7 +13929,7 @@ monarch_power = DIP
 	allow = {
 		full_idea_group = soldnerheer0 
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -13957,7 +13957,7 @@ monarch_power = DIP
 		potential = {
 		has_idea_group = justiz0
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -13965,7 +13965,7 @@ monarch_power = DIP
 	allow = {
 		full_idea_group = justiz0
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -13992,7 +13992,7 @@ monarch_power = DIP
 		potential = {
 		has_idea_group = defensive_ideas
 		OR = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
 		}
 			
@@ -14000,7 +14000,7 @@ monarch_power = DIP
 	allow = {
 		full_idea_group = defensive_ideas
 		OR = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
 		}
 	}
@@ -14017,12 +14017,12 @@ idea_variation_act_363 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = offensive_ideas
 			
 	}
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = offensive_ideas
 	}
 	
@@ -14046,12 +14046,12 @@ idea_variation_act_364 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = offensive_ideas
 			
 	}
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = offensive_ideas
 	}
 	
@@ -14075,12 +14075,12 @@ idea_variation_act_365 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = economic_ideas
 			
 	}
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = economic_ideas
 	}
 	
@@ -14110,12 +14110,12 @@ idea_variation_act_366 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = plutocracy_ideas
 			
 	}
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = plutocracy_ideas
 	}
 
@@ -14303,12 +14303,12 @@ idea_variation_act_371 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		has_idea_group = festung0
 			
 	}
 	allow = {
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 		full_idea_group = festung0
 	}
 	
@@ -14857,12 +14857,12 @@ idea_variation_act_392 = {
 
 	potential = {
 		has_idea_group = militarismus0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 			
 	}
 	allow = {
 		full_idea_group = militarismus0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	heavy_ship_power = 0.15				# Marine
@@ -14901,12 +14901,12 @@ idea_variation_act_394 = {
 
 	potential = {
 		has_idea_group = militarismus0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		
 	}
 	allow = {
 		full_idea_group = militarismus0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	light_ship_power = 0.15				# Marine
@@ -15008,12 +15008,12 @@ idea_variation_act_398 = {
 
 	potential = {
 		has_idea_group = militarismus0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		full_idea_group = militarismus0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	war_exhaustion = -0.02
@@ -15772,7 +15772,7 @@ idea_variation_act_421 = {
 		has_idea_group = AIG_serpentspine_ideas
 		has_idea_group = AIG_legionary_ideas
 		}
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 			
 	}
 	allow = {
@@ -15781,7 +15781,7 @@ idea_variation_act_421 = {
 		full_idea_group = AIG_serpentspine_ideas
 		full_idea_group = AIG_legionary_ideas
 		}
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	navy_tradition = 1
@@ -15833,7 +15833,7 @@ idea_variation_act_423 = {
 		full_idea_group = AIG_serpentspine_ideas
 		full_idea_group = AIG_legionary_ideas
 		}
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 			
 	}
 	allow = {
@@ -15842,7 +15842,7 @@ idea_variation_act_423 = {
 		full_idea_group = AIG_serpentspine_ideas
 		full_idea_group = AIG_legionary_ideas
 		}
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	heavy_ship_power = 0.15
@@ -15969,7 +15969,7 @@ idea_variation_act_427 = {
 		has_idea_group = AIG_serpentspine_ideas
 		has_idea_group = AIG_legionary_ideas
 		}
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 			
 	}
 	allow = {
@@ -15978,7 +15978,7 @@ idea_variation_act_427 = {
 		full_idea_group = AIG_serpentspine_ideas
 		full_idea_group = AIG_legionary_ideas
 		}
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	global_unrest = -2
@@ -16223,7 +16223,7 @@ idea_variation_act_435 = {
 
 		OR = {
 		has_idea_group = homebrew_amphibious_ideas
-		has_idea_group = homebrew_highseas_ideas	
+		has_idea_group = naval_ideas	
 		}
 		has_idea_group = quality_ideas
 		
@@ -16232,7 +16232,7 @@ idea_variation_act_435 = {
 	allow = {
 		OR = {
 			full_idea_group = homebrew_amphibious_ideas
-			full_idea_group = homebrew_highseas_ideas
+			full_idea_group = naval_ideas
 			}
 		
 			full_idea_group = quality_ideas
@@ -16265,7 +16265,7 @@ idea_variation_act_436 = {
 
 		OR = {
 		has_idea_group = homebrew_amphibious_ideas
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		}
 		has_idea_group = generalstab0
 		
@@ -16274,7 +16274,7 @@ idea_variation_act_436 = {
 	allow = {
 		OR = {
 			full_idea_group = homebrew_amphibious_ideas
-			full_idea_group = homebrew_highseas_ideas
+			full_idea_group = naval_ideas
 			}
 		
 			full_idea_group = generalstab0
@@ -16305,12 +16305,12 @@ idea_variation_act_437 = {
 
 	potential = {
 		has_idea_group = kriegsproduktion0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		full_idea_group = kriegsproduktion0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	trade_efficiency = 0.1
@@ -16756,12 +16756,12 @@ idea_variation_act_455 = {
 
 	potential = {
 		has_idea_group = shock0
-		has_idea_group = homebrew_highseas_ideas 
+		has_idea_group = naval_ideas 
 		
 	}
 	allow = {
 		full_idea_group = shock0
-		full_idea_group = homebrew_highseas_ideas 
+		full_idea_group = naval_ideas 
 	}
 	
 	heavy_ship_power = 0.15						# Marine
@@ -16778,12 +16778,12 @@ idea_variation_act_456 = {
 
 	potential = {
 		has_idea_group = shock0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		
 	}
 	allow = {
 		full_idea_group = shock0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	light_ship_power = 0.2						# Marine
@@ -16891,13 +16891,13 @@ idea_variation_act_461 = {
 	potential = {
 		current_age = age_of_discovery
 		has_idea_group = shock0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		current_age = age_of_discovery
 		full_idea_group = shock0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	global_manpower = 2.5
@@ -16915,13 +16915,13 @@ idea_variation_act_461_1 = {
 	potential = {
 		current_age = age_of_reformation
 		has_idea_group = shock0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		current_age = age_of_reformation
 		full_idea_group = shock0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	global_manpower = 5
@@ -16939,13 +16939,13 @@ idea_variation_act_461_2 = {
 	potential = {
 		current_age = age_of_absolutism
 		has_idea_group = shock0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		current_age = age_of_absolutism
 		full_idea_group = shock0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	global_manpower = 7.5
@@ -16963,13 +16963,13 @@ idea_variation_act_461_3 = {
 	potential = {
 		current_age = age_of_revolutions
 		has_idea_group = shock0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		current_age = age_of_revolutions
 		full_idea_group = shock0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	global_manpower = 10.0
@@ -17704,12 +17704,12 @@ idea_variation_act_485 = {
 
 	potential = {
 		has_idea_group = fire0
-		has_idea_group = homebrew_highseas_ideas 
+		has_idea_group = naval_ideas 
 		
 	}
 	allow = {
 		full_idea_group = fire0
-		full_idea_group = homebrew_highseas_ideas 
+		full_idea_group = naval_ideas 
 	}
 	
 	heavy_ship_power = 0.15				# Marine
@@ -17726,12 +17726,12 @@ idea_variation_act_486 = {
 
 	potential = {
 		has_idea_group = fire0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		
 	}
 	allow = {
 		full_idea_group = fire0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 
 	light_ship_power = 0.3				# Marine
@@ -17852,12 +17852,12 @@ idea_variation_act_491 = {
 
 	potential = {
 		has_idea_group = fire0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		full_idea_group = fire0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -18336,12 +18336,12 @@ idea_variation_act_508 = {
 
 	potential = {
 		has_idea_group = zentra0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		
 	}
 	allow = {
 		full_idea_group = zentra0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	naval_forcelimit_modifier = 0.15
@@ -18359,12 +18359,12 @@ idea_variation_act_509 = {
 
 	potential = {
 		has_idea_group = zentra0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		
 	}
 	allow = {
 		full_idea_group = zentra0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	naval_forcelimit_modifier = 0.33
@@ -18563,12 +18563,12 @@ idea_variation_act_514 = {
 
 	potential = {
 		has_idea_group = zentra0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		full_idea_group = zentra0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 		NOT = {
 		calc_true_if = {
 			amount = 2
@@ -19192,12 +19192,12 @@ idea_variation_act_537 = {
 
 	potential = {
 		has_idea_group = dezentra0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		
 	}
 	allow = {
 		full_idea_group = dezentra0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	naval_morale = 0.15				# Marine
@@ -19214,12 +19214,12 @@ idea_variation_act_538 = {
 
 	potential = {
 		has_idea_group = dezentra0
-		has_idea_group = homebrew_highseas_ideas
+		has_idea_group = naval_ideas
 		
 	}
 	allow = {
 		full_idea_group = dezentra0
-		full_idea_group = homebrew_highseas_ideas
+		full_idea_group = naval_ideas
 	}
 	
 	heavy_ship_power = 0.075
@@ -19329,12 +19329,12 @@ idea_variation_act_543 = {
 
 	potential = {
 		has_idea_group = dezentra0
-		has_idea_group = propaganda0
+		has_idea_group = court_ideas
 		
 	}
 	allow = {
 		full_idea_group = dezentra0
-		full_idea_group = propaganda0
+		full_idea_group = court_ideas
 	}
 	
 	yearly_absolutism = 1.0

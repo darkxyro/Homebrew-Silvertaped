@@ -31,6 +31,10 @@ country_event = {
 			factor = 10
 			has_country_modifier = racial_focus_orcish
 		}
+		modifier = {
+			factor = 1.5
+			has_government_attribute = more_migration_and_tolerance
+		}
 	}
 	
 	option = {
@@ -75,7 +79,6 @@ country_event = {
 					province_event = { id = racial_pop_events_orcish.4 }
 				}
 			}
-
 			15 = { #random pop shrinkage
 				trigger = {
 					if = { limit = { ai = yes } fast_owns_num_pops_of_race = { race = orcish amount = 2 } }
@@ -110,16 +113,6 @@ country_event = {
 							has_country_modifier = racial_pop_orcish_expulsion
 						}
 				}
-			}
-			1 = {
-				trigger = {
-					num_of_cities = 2	#you have something to migrate to
-					
-					#Country that tolerates race
-					any_subject_country = { 
-						is_colonial_nation = yes
-						NOT = { OR = { is_subject_of_type = homebrew_dominion is_subject_of_type = homebrew_client_dominion } }
-					}
 				random_owned_province = {
 					limit = {
 						has_orcish_minority_trigger = yes
@@ -132,7 +125,6 @@ country_event = {
 					province_event = { id = racial_pop_events_orcish.5 }
 				}
 				}
-			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = orcish }
@@ -1073,6 +1065,14 @@ country_event = {
 				factor = 10
 				has_country_modifier = dwarven_administration
 			}
+			modifier = { #-Special - dwarven slavers won't purge their slaves
+				factor = 0
+				OR = {
+					tag = A73 #Silverforge
+					tag = G90 #Asraport
+					tag = I08 #Haraz Orldhum
+				}
+			}
 			modifier = { #Corintar shoudn't purge orcs
 				factor = 0
 				tag = B02
@@ -1092,8 +1092,8 @@ country_event = {
 			add_adm_power = -100
 		}	
 		generic_start_purge = { race = orcish }
-		
 	}
+	
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1212,8 +1212,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
-		
 	}
+	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1397,9 +1397,13 @@ country_event = {
 				factor = 0.1
 				has_country_modifier = orcish_slaves_in_colonies
 			}
-			modifier = { #-Special - Silverforge wont expel its slaves
+			modifier = { #-Special - dwarven slavers won't expel their slaves
 				factor = 0
-				tag = A73
+				OR = {
+					tag = A73 #Silverforge
+					tag = G90 #Asraport
+					tag = I08 #Haraz Orldhum
+				}
 			}
 			modifier = { #Corintar shoudn't expel orcs
 				factor = 0
@@ -1432,8 +1436,8 @@ country_event = {
 			add_adm_power = -50
 		}	
 		generic_start_expulsion = { race = orcish }
-		
 	}
+	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1552,8 +1556,8 @@ country_event = {
 			}
 		}
 		
-		
 	}
+	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1577,7 +1581,14 @@ country_event = {
 			can_focus_race = { RACE = orcish }
 		}
 		custom_tooltip = pop_menu_focus_desc_tt
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { NOT = { 
+						OR = {
+							has_idea = homebrew_x_for_xians
+							has_country_flag = focusing_is_free_flag
+						} 
+					}
+			}
 			add_dip_power = -50
 		}	
 		generic_start_focus = { race = orcish }
@@ -1585,8 +1596,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_orcish.24 }
 		}
-		
 	}
+	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j

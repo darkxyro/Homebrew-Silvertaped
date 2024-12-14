@@ -31,6 +31,10 @@ country_event = {
 			factor = 10
 			has_country_modifier = racial_focus_lizardfolk
 		}
+		modifier = {
+			factor = 1.5
+			has_government_attribute = more_migration_and_tolerance
+		}
 	}
 	
 	option = {
@@ -106,16 +110,6 @@ country_event = {
 						has_country_modifier = racial_pop_lizardfolk_expulsion
 					}
 				}
-			}
-			1 = {
-				trigger = {
-					num_of_cities = 2	#you have something to migrate to
-					
-					#Country that tolerates race
-					any_subject_country = { 
-						is_colonial_nation = yes
-						NOT = { OR = { is_subject_of_type = homebrew_dominion is_subject_of_type = homebrew_client_dominion } }
-					}
 				random_owned_province = {
 					limit = {
 						has_lizardfolk_minority_trigger = yes
@@ -128,7 +122,6 @@ country_event = {
 					province_event = { id = racial_pop_events_lizardfolk.5 }
 				}
 				}
-			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = lizardfolk }
@@ -465,7 +458,6 @@ country_event = {
 		hidden_effect = { event_target:origin_province = { owner = { country_event = { id = racial_pop_events_lizardfolk.3 } } } }
 	}
 	
-	
 	#Close our borders
 	option = {		
 		name = racial_pop_events_lizardfolk.7.c
@@ -698,7 +690,7 @@ country_event = {
 	option = {		
 		name = racial_pop_events_lizardfolk.11.b
 		trigger = {
-			
+			culture_is_lizardfolk = no
 		}
 		ai_chance = {
 			factor = 50
@@ -1057,8 +1049,8 @@ country_event = {
 			add_adm_power = -100
 		}	
 		generic_start_purge = { race = lizardfolk }
-		
 	}
+	
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1170,8 +1162,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
-		
 	}
+	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1493,8 +1485,8 @@ country_event = {
 			}
 		}
 		
-		
 	}
+	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1518,7 +1510,14 @@ country_event = {
 			can_focus_race = { RACE = lizardfolk }
 		}
 		custom_tooltip = pop_menu_focus_desc_tt
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { NOT = { 
+						OR = {
+							has_idea = homebrew_x_for_xians
+							has_country_flag = focusing_is_free_flag
+						} 
+					}
+			}
 			add_dip_power = -50
 		}	
 		generic_start_focus = { race = lizardfolk }
@@ -1526,8 +1525,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_lizardfolk.24 }
 		}
-		
 	}
+	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j
@@ -1756,6 +1755,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.75
+			fast_owns_num_pops_of_race = { race = lizardfolk amount = 25 } # this must at least be true for the below to be true, and is much faster
 			calc_true_if = {
 				all_owned_province = {
 					has_lizardfolk_minority_trigger = yes
