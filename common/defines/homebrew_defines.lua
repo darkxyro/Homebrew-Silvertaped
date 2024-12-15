@@ -12,7 +12,7 @@ NDefines.NCountry.PS_BUY_IDEA = 300 -- -25%
 NDefines.NCountry.PS_FACTION_BOOST = 25 -- Faction Rework, having a faction in power is more meaningful and should be harder to force
 NDefines.NCountry.INNOVATIVENESS_FIRST_PICKED_IDEA = 1.0 -- from 2
 NDefines.NCountry.MAX_ACTIVE_POLICIES = 9	-- from 5, go crazy!
-NDefines.NCountry.BASE_POSSIBLE_POLICIES = 3 -- vanilla value, kept in file just in case I revert changes
+NDefines.NCountry.BASE_POSSIBLE_POLICIES = 4 -- vanilla value, kept in file just in case I revert changes
 NDefines.NCountry.ABANDON_IDEAGROUP_REFUND = 0.25 -- from 10%, because why not?
 
 NDefines.NEconomy.EDICTS_COST_INCREASE = 1.0 -- -50% to account for the base increase

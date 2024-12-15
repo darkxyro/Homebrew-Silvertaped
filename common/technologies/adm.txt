@@ -32,7 +32,6 @@ technology = { #Tribal Government
 
 	warcamp = yes
 	guild_hall = yes
-	native_fortified_house = yes
 	quest_board = yes
 	foragers_camp = yes
 	pioneer_office = yes
@@ -259,6 +258,7 @@ technology = { #Metallurgy
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
+	
 	mills = yes
 	production_efficiency 	=	0.02
 

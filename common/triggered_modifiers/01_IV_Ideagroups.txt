@@ -511,117 +511,117 @@ kolo5_2_bonus = {
 
 
 
-#kriegsprod_forcelimit_1 = {
-#	potential = {
-#		has_idea_group = kriegsproduktion0
-#		current_age = age_of_reformation
-#	}
-#	trigger = {
-#		has_idea = kriegsproduktion4
-#		current_age = age_of_reformation
-#	}
-#	naval_forcelimit = 15
-#	land_forcelimit = 7
-#}
+kriegsprod_forcelimit_1 = {
+	potential = {
+		has_idea_group = kriegsproduktion0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = kriegsproduktion4
+		current_age = age_of_reformation
+	}
+	naval_forcelimit = 15
+	land_forcelimit = 7
+}
 
-#kriegsprod_forcelimit_2 = {
-#	potential = {
-#		has_idea_group = kriegsproduktion0
-#		current_age = age_of_absolutism
-#	}
-#	trigger = {
-#		has_idea = kriegsproduktion4
-#		current_age = age_of_absolutism
-#	}
-#	naval_forcelimit = 30
-#	land_forcelimit = 14
-#}
+kriegsprod_forcelimit_2 = {
+	potential = {
+		has_idea_group = kriegsproduktion0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = kriegsproduktion4
+		current_age = age_of_absolutism
+	}
+	naval_forcelimit = 30
+	land_forcelimit = 14
+}
 
-#kriegsprod_forcelimit_3 = {
-#	potential = {
-#		has_idea_group = kriegsproduktion0
-#		current_age = age_of_revolutions
-#	}
-#	trigger = {
-#		has_idea = kriegsproduktion4
-#		current_age = age_of_revolutions
-#	}
-#	naval_forcelimit = 45
-#	land_forcelimit = 21
-#}
+kriegsprod_forcelimit_3 = {
+	potential = {
+		has_idea_group = kriegsproduktion0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = kriegsproduktion4
+		current_age = age_of_revolutions
+	}
+	naval_forcelimit = 45
+	land_forcelimit = 21
+}
 
-#full_merc_1 = {
-#	potential = {
-#		has_idea_group = soldnerheer0
-#		army_professionalism = 0.9
-#	}
-#	trigger = {
-#		full_idea_group = soldnerheer0
-#		army_professionalism = 0.9
-#	}
-#	yearly_army_professionalism = -0.025
-#	
-#}
+full_merc_1 = {
+	potential = {
+		has_idea_group = soldnerheer0
+		army_professionalism = 0.9
+	}
+	trigger = {
+		full_idea_group = soldnerheer0
+		army_professionalism = 0.9
+	}
+	yearly_army_professionalism = -0.025
+	
+}
 
-#full_merc_2 = {
-#	potential = {
-#		has_idea_group = soldnerheer0
-#		army_professionalism = 0.8
-#		NOT = { army_professionalism = 0.9 }
-#	}
-#	trigger = {
-#		full_idea_group = soldnerheer0
-#		army_professionalism = 0.8
-#		NOT = { army_professionalism = 0.9 }
-#	}
-#	yearly_army_professionalism = -0.02
-#	
-#}
+full_merc_2 = {
+	potential = {
+		has_idea_group = soldnerheer0
+		army_professionalism = 0.8
+		NOT = { army_professionalism = 0.9 }
+	}
+	trigger = {
+		full_idea_group = soldnerheer0
+		army_professionalism = 0.8
+		NOT = { army_professionalism = 0.9 }
+	}
+	yearly_army_professionalism = -0.02
+	
+}
 
-#full_merc_3 = {
-#	potential = {
-#		has_idea_group = soldnerheer0
-#		army_professionalism = 0.7
-#		NOT = { army_professionalism = 0.8 }
-#		
-#	}
-#	trigger = {
-#		full_idea_group = soldnerheer0
-#		army_professionalism = 0.7
-#		NOT = { army_professionalism = 0.8 }
-#	}
-#	yearly_army_professionalism = -0.015
-#	
-#}
+full_merc_3 = {
+	potential = {
+		has_idea_group = soldnerheer0
+		army_professionalism = 0.7
+		NOT = { army_professionalism = 0.8 }
+		
+	}
+	trigger = {
+		full_idea_group = soldnerheer0
+		army_professionalism = 0.7
+		NOT = { army_professionalism = 0.8 }
+	}
+	yearly_army_professionalism = -0.015
+	
+}
 
-#full_merc_4 = {
-#	potential = {
-#		has_idea_group = soldnerheer0
-#		army_professionalism = 0.6
-#		NOT = { army_professionalism = 0.7 }
-#	}
-#	trigger = {
-#		full_idea_group = soldnerheer0
-#		army_professionalism = 0.6
-#		NOT = { army_professionalism = 0.7 }
-#		
-#	}
-#	yearly_army_professionalism = -0.01
-#	
-#}
+full_merc_4 = {
+	potential = {
+		has_idea_group = soldnerheer0
+		army_professionalism = 0.6
+		NOT = { army_professionalism = 0.7 }
+	}
+	trigger = {
+		full_idea_group = soldnerheer0
+		army_professionalism = 0.6
+		NOT = { army_professionalism = 0.7 }
+		
+	}
+	yearly_army_professionalism = -0.01
+	
+}
 
-#full_merc_5 = {
-#	potential = {
-#		has_idea_group = soldnerheer0
-#		army_professionalism = 0.5
-#		NOT = { army_professionalism = 0.6 }
-#	}
-#	trigger = {
-#		full_idea_group = soldnerheer0
-#		army_professionalism = 0.5
-#		NOT = { army_professionalism = 0.6 }
-#	}
-#	yearly_army_professionalism = -0.005
-#	
-#}
+full_merc_5 = {
+	potential = {
+		has_idea_group = soldnerheer0
+		army_professionalism = 0.5
+		NOT = { army_professionalism = 0.6 }
+	}
+	trigger = {
+		full_idea_group = soldnerheer0
+		army_professionalism = 0.5
+		NOT = { army_professionalism = 0.6 }
+	}
+	yearly_army_professionalism = -0.005
+	
+}
 

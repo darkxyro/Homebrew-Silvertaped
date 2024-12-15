@@ -31,6 +31,10 @@ country_event = {
 			factor = 10
 			has_country_modifier = racial_focus_kobold
 		}
+		modifier = {
+			factor = 1.5
+			has_government_attribute = more_migration_and_tolerance
+		}
 	}
 	
 	option = {
@@ -106,16 +110,6 @@ country_event = {
 						has_country_modifier = racial_pop_kobold_expulsion
 					}
 				}
-			}
-			1 = {
-				trigger = {
-					num_of_cities = 2	#you have something to migrate to
-					
-					#Country that tolerates race
-					any_subject_country = { 
-						is_colonial_nation = yes
-						NOT = { OR = { is_subject_of_type = homebrew_dominion is_subject_of_type = homebrew_client_dominion } }
-					}
 				random_owned_province = {
 					limit = {
 						has_kobold_minority_trigger = yes
@@ -128,7 +122,6 @@ country_event = {
 					province_event = { id = racial_pop_events_kobold.5 }
 				}
 				}
-			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = kobold }
@@ -186,6 +179,31 @@ country_event = {
 				country_event = { id = racial_pop_events_kobold.7 }
 			}
 			#events 100-200 are reserved for custom migration events, put their triggers here
+			3 = {
+				trigger = {
+					num_of_colonists = 1
+					num_of_colonies = 1
+					NOT = {
+						capital_scope = {
+							OR = {
+								continent = north_america
+								continent = south_america
+							}
+						}
+					}
+					any_owned_province = {
+						culture_is_kobold = yes
+					}
+					any_owned_province = {
+						is_colony = yes
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+				country_event = { id = racial_pop_events_kobold.100 }
+			}
 			}
 		}
 }
@@ -1060,8 +1078,8 @@ country_event = {
 			add_adm_power = -100
 		}
 		generic_start_purge = { race = kobold }
-		
 	}
+	
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1173,8 +1191,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
-		
 	}
+	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1381,8 +1399,8 @@ country_event = {
 			add_adm_power = -50
 		}	
 		generic_start_expulsion = { race = kobold }
-		
 	}
+	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1494,8 +1512,8 @@ country_event = {
 			}
 		}
 		
-		
 	}
+	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1519,7 +1537,14 @@ country_event = {
 			can_focus_race = { RACE = kobold }
 		}
 		custom_tooltip = pop_menu_focus_desc_tt
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { NOT = { 
+						OR = {
+							has_idea = homebrew_x_for_xians
+							has_country_flag = focusing_is_free_flag
+						} 
+					}
+			}
 			add_dip_power = -50
 		}	
 		generic_start_focus = { race = kobold }
@@ -1527,8 +1552,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_kobold.24 }
 		}
-		
 	}
+	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j
@@ -3752,5 +3777,41 @@ country_event = {
 	option = {
 		name = racial_pop_events_kobold.99.a
 	}
+}
 
+##Flavour Migration Events
+country_event = {	#Send Smallfolks to Aelantir
+	id = racial_pop_events_kobold.100
+	title = racial_pop_events_kobold.100.t
+	desc = racial_pop_events_kobold.100.d
+	picture = muslimgfx_COLONIZATION_eventPicture
+	is_triggered_only = yes
+	trigger = {}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { culture_is_kobold = yes }
+				save_event_target_as = settlers_origin
+			}	
+			random_owned_province = {
+				limit = { is_colony = yes }
+				save_event_target_as = settlers_destinations
+			}
+		}
+	}
+
+	option = {
+		name = racial_pop_events_kobold.100.1
+		goto = settlers_destinations
+		add_treasury = -50
+		tolerance_generic_3_effect = { race = kobold }
+	}
+
+	option = {
+		name = racial_pop_events_kobold.100.2
+		goto = settlers_destinations
+		tolerance_generic_3_effect = { race = kobold }
+		medium_decrease_of_kobold_tolerance_effect = yes
+	}
 }

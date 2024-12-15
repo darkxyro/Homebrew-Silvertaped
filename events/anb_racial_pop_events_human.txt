@@ -31,6 +31,10 @@ country_event = {
 			factor = 10
 			has_country_modifier = racial_focus_human
 		}
+		modifier = {
+			factor = 1.5
+			has_government_attribute = more_migration_and_tolerance
+		}
 	}
 	
 	option = {
@@ -106,16 +110,6 @@ country_event = {
 						has_country_modifier = racial_pop_human_expulsion
 					}
 				}
-			}
-			1 = {
-				trigger = {
-					num_of_cities = 2	#you have something to migrate to
-					
-					#Country that tolerates race
-					any_subject_country = { 
-						is_colonial_nation = yes
-						NOT = { OR = { is_subject_of_type = homebrew_dominion is_subject_of_type = homebrew_client_dominion } }
-					}
 				random_owned_province = {
 					limit = {
 						has_human_minority_trigger = yes
@@ -128,7 +122,6 @@ country_event = {
 					province_event = { id = racial_pop_events_human.5 }
 				}
 				}
-			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = human }
@@ -1069,8 +1062,8 @@ country_event = {
 			add_adm_power = -100
 		}
 		generic_start_purge = { race = human }
-		
 	}
+	
 	#Cannot Purge
 	option = {		
 		name = racial_pop_events_all_races.12.b
@@ -1169,7 +1162,8 @@ country_event = {
 			}
 		}
 		custom_tooltip = pop_menu_purge_desc_tt
-		remove_country_modifier = racial_pop_human_purge
+		generic_end_purge = { race = human }
+		
 		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
 			add_adm_power = -100
 		}
@@ -1182,8 +1176,8 @@ country_event = {
 				clr_country_flag = racial_pop_menu_opened
 			}
 		}
-		
 	}
+	
 	#Cannot End Purge
 	option = {		
 		name = racial_pop_events_all_races.12.dd
@@ -1397,8 +1391,8 @@ country_event = {
 			add_adm_power = -50
 		}	
 		generic_start_expulsion = { race = human }
-		
 	}
+	
 	#Cannot Expel
 	option = {		
 		name = racial_pop_events_all_races.12.f
@@ -1510,8 +1504,8 @@ country_event = {
 			}
 		}
 		
-		
 	}
+	
 	#Cannot Stop Expelling
 	option = {		
 		name = racial_pop_events_all_races.12.h
@@ -1535,7 +1529,14 @@ country_event = {
 			can_focus_race = { RACE = human }
 		}
 		custom_tooltip = pop_menu_focus_desc_tt
-		if = { limit = { NOT = { has_idea = homebrew_x_for_xians } }
+		if = { 
+			limit = { NOT = { 
+						OR = {
+							has_idea = homebrew_x_for_xians
+							has_country_flag = focusing_is_free_flag
+						} 
+					}
+			}
 			add_dip_power = -50
 		}	
 		generic_start_focus = { race = human }
@@ -1543,8 +1544,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = racial_pop_events_human.24 }
 		}
-		
 	}
+	
 	#Cannot set focus
 	option = {		
 		name = racial_pop_events_all_races.12.j
@@ -3526,7 +3527,7 @@ country_event = {
 		any_owned_province = {
 			is_city = yes
 			has_human_majority_trigger = yes
-			culture_is_human = yes
+			#culture_is_human = yes
 			NOT = { unrest = 20 }
 		}
 	}

@@ -26,7 +26,7 @@ country_decisions = {
 #		major = yes
 #		potential = {
 #			
-#			has_idea = foreign_embassies_2
+#			has_idea = foreign_embassies
 #			
 #			is_vassal = no
 #			
@@ -61,7 +61,7 @@ country_decisions = {
 #			
 #			}
 #			
-#			has_idea = foreign_embassies_2
+#			has_idea = foreign_embassies
 #			is_at_war = no
 #			stability = 1 
 #			prestige = 10
@@ -224,7 +224,7 @@ country_decisions = {
 		}
 	}
 
-
+}
 ##############################################
 ###### Sailor/Manpower Conversion Decision
 ##############################################	

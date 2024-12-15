@@ -118,7 +118,7 @@ emergency_exit = {
 evocation_drones = {
 	is_rajput_modifier = yes
 
-	infantry_shock = 0.15
+	infantry_fire = 0.15
 }
 homebrew_mining_regulations_damestear = {
 	trade_goods_size = 1
@@ -788,6 +788,7 @@ wildcard_pwc = {
 }
 wildcard_culture_convert = {
 	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.25
 }
 wildcard_liberty = {
 	reduced_liberty_desire = 10
