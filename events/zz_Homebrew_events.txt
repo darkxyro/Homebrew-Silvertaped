@@ -385,6 +385,8 @@ province_event = {
 						province_id = 678 #Gelkalis MT
 
 						province_id = 2895 #Dwarovrod
+						province_id = 4300 #Dwarovrod / Gronstunad MT
+						province_id = 4302 #Dwarovrod / Gronstunad MT
 
 						has_active_triggered_province_modifier = harpy_roost
 						

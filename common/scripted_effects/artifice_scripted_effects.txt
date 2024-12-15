@@ -220,7 +220,7 @@ update_artifice_points = {
 				}
 				change_variable = {
 					which = MaxArtificePoints
-					which = ArtificePointsDamestear
+					which = ArtificePointsRelics
 				}
 			}
 

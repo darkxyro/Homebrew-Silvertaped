@@ -3705,9 +3705,21 @@ ramparts = {
 	}
 	build_trigger = {
 		NOT = { has_province_modifier = adjacent_fort_penalty }
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
 	}
 	keep_trigger = {
 		NOT = { has_province_modifier = adjacent_fort_penalty }
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
 	}
 	modifier = {
 		fort_level = 1
@@ -4302,7 +4314,13 @@ mage_tower = {
 	build_trigger = {
 		OR = {
 			OR = {
-				FROM = { NOT = { has_country_flag = banned_magic } }
+				OR = {
+					AND = {
+						FROM = { has_country_flag = banned_magic }
+						FROM = { has_idea = AIG_artificer_grants }
+					}
+					FROM = { NOT = { has_country_flag = banned_magic } }
+				}
 				FROM = { is_subject_of = Y63 }
 			}
 			FROM = { has_country_modifier = command_the_korashi_secret }
