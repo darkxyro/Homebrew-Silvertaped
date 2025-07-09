@@ -90,30 +90,30 @@ country_event = {
 		}
 		
 		#Effect
-		if = { 
-			limit = { 
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+		if = {
+			limit = {
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
 					}
 					has_country_flag = homebrew_powerful_spell 
-				} 
+				}
 			}
 			add_country_modifier = {
 				name = magic_estate_magnificent_feast_3
 				duration = 3650
 			}
 		}
-		else_if = { 
-			limit = { 
+		else_if = {
+			limit = {
 				OR = {
-					estate_influence = { estate = estate_mages influence = 33 } 
+					estate_influence = { estate = estate_mages influence = 33 }
 					has_country_flag = shadow_pact_sorcerer_effect
 				}
 				NOT = { has_country_flag = tughayasa_reward_estate }
- 			}
+			}
 			add_country_modifier = {
 				name = magic_estate_magnificent_feast_2
 				duration = 3650
@@ -132,8 +132,17 @@ country_event = {
 				duration = 3650
 			}
 		}
+		if = {
+			limit = {
+				has_country_modifier = U10_extravagant_surplus
+			}
+			add_country_modifier = {
+				name = U10_khet_feast
+				duration = 3650
+			}
+		}
 		clr_country_flag = shadow_pact_sorcerer_effect
-		
+
 		custom_tooltip = magic_feast_desc_tt
 	}
 	
@@ -161,8 +170,8 @@ country_event = {
 				add_dip_power = -50
 			}
 			else = {
-			add_dip_power = -100
-		}
+				add_dip_power = -100
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.9 } }
 			if = {
@@ -170,8 +179,8 @@ country_event = {
 				add_dip_power = -45
 			}
 			else = {
-			add_dip_power = -90
-		}
+				add_dip_power = -90
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.8 } }
 			if = {
@@ -179,8 +188,8 @@ country_event = {
 				add_dip_power = -40
 			}
 			else = {
-			add_dip_power = -80
-		}
+				add_dip_power = -80
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.7 } }
 			if = {
@@ -188,8 +197,8 @@ country_event = {
 				add_dip_power = -35
 			}
 			else = {
-			add_dip_power = -70
-		}
+				add_dip_power = -70
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.6 } }
 			if = {
@@ -197,8 +206,8 @@ country_event = {
 				add_dip_power = -30
 			}
 			else = {
-			add_dip_power = -60
-		}
+				add_dip_power = -60
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.5 } }
 			if = {
@@ -206,8 +215,8 @@ country_event = {
 				add_dip_power = -25
 			}
 			else = {
-			add_dip_power = -50
-		}
+				add_dip_power = -50
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.4 } }
 			if = {
@@ -215,8 +224,8 @@ country_event = {
 				add_dip_power = -20
 			}
 			else = {
-			add_dip_power = -40
-		}
+				add_dip_power = -40
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.3 } }
 			if = {
@@ -224,8 +233,8 @@ country_event = {
 				add_dip_power = -15
 			}
 			else = {
-			add_dip_power = -30
-		}
+				add_dip_power = -30
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.2 } }
 			if = {
@@ -233,23 +242,23 @@ country_event = {
 				add_dip_power = -10
 			}
 			else = {
-			add_dip_power = -20
-		}
+				add_dip_power = -20
+			}
 		}
 		else = {
 			if = {
 				limit = { has_country_flag = shadow_pact_sorcerer_effect }
 				add_dip_power = -5
 			}
-		else = {
-			add_dip_power = -10
-		}
+			else = {
+				add_dip_power = -10
+			}
 		}
 		
-		if = { 
-			limit = { 
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+		if = {
+			limit = {
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
@@ -268,13 +277,13 @@ country_event = {
 				}
 			}
 		}
-		else_if = { 
-			limit = { 
+		else_if = {
+			limit = {
 				OR = {
-					estate_influence = { estate = estate_mages influence = 33 } 
+					estate_influence = { estate = estate_mages influence = 33 }
 					has_country_flag = shadow_pact_sorcerer_effect
 				}
-				NOT = { has_country_flag = tughayasa_reward_estate } 
+				NOT = { has_country_flag = tughayasa_reward_estate }
 			}
 			custom_tooltip = plant_growth_2_tooltip
 			hidden_effect = {
@@ -312,8 +321,18 @@ country_event = {
 				}
 			}
 		}
+		if = { #MAGICREWORK
+			limit = { has_country_flag = toarnaire_fifth_family }
+			every_owned_province = {
+				limit = {  toarnaire_wine_mage_tower = yes }
+				add_province_modifier = {
+					name = toarnaire_wine
+					duration = 3650
+				}
+			}
+		}
 		clr_country_flag = shadow_pact_sorcerer_effect
-		
+
 		custom_tooltip = plant_growth_devastation_tooltip
 		hidden_effect = { country_event = { id = magic_estate.100 } } #Devastation ticks up
 		
@@ -337,8 +356,8 @@ country_event = {
 					add_dip_power = -50
 				}
 				else = {
-				add_dip_power = -100
-			}
+					add_dip_power = -100
+				}
 			}
 			else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.9 } }
 				if = {
@@ -346,8 +365,8 @@ country_event = {
 					add_dip_power = -45
 				}
 				else = {
-				add_dip_power = -90
-			}
+					add_dip_power = -90
+				}
 			}
 			else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.8 } }
 				if = {
@@ -355,8 +374,8 @@ country_event = {
 					add_dip_power = -40
 				}
 				else = {
-				add_dip_power = -80
-			}
+					add_dip_power = -80
+				}
 			}
 			else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.7 } }
 				if = {
@@ -364,8 +383,8 @@ country_event = {
 					add_dip_power = -35
 				}
 				else = {
-				add_dip_power = -70
-			}
+					add_dip_power = -70
+				}
 			}
 			else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.6 } }
 				if = {
@@ -373,8 +392,8 @@ country_event = {
 					add_dip_power = -30
 				}
 				else = {
-				add_dip_power = -60
-			}
+					add_dip_power = -60
+				}
 			}
 			else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.5 } }
 				if = {
@@ -382,8 +401,8 @@ country_event = {
 					add_dip_power = -25
 				}
 				else = {
-				add_dip_power = -50
-			}
+					add_dip_power = -50
+				}
 			}
 			else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.4 } }
 				if = {
@@ -391,8 +410,8 @@ country_event = {
 					add_dip_power = -20
 				}
 				else = {
-				add_dip_power = -40
-			}
+					add_dip_power = -40
+				}
 			}
 			else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.3 } }
 				if = {
@@ -400,8 +419,8 @@ country_event = {
 					add_dip_power = -15
 				}
 				else = {
-				add_dip_power = -30
-			}
+					add_dip_power = -30
+				}
 			}
 			else_if = { limit = { check_variable = { which = amount_of_farm_good_provinces value = 0.2 } }
 				if = {
@@ -409,17 +428,17 @@ country_event = {
 					add_dip_power = -10
 				}
 				else = {
-				add_dip_power = -20
-			}
+					add_dip_power = -20
+				}
 			}
 			else = {
 				if = {
 					limit = { has_country_flag = shadow_pact_sorcerer_effect }
 					add_dip_power = -5
 				}
-			else = {
-				add_dip_power = -10
-			}
+				else = {
+					add_dip_power = -10
+				}
 			}
 			
 			if = {
@@ -501,16 +520,16 @@ country_event = {
 			add_adm_power = -15	
 			add_dip_power = -15
 		}
-		else = { 
-			add_years_of_income = -0.5 
+		else = {
+			add_years_of_income = -0.5
 			add_adm_power = -30	
 			add_dip_power = -30
 		}
 		
-		if = { 
-			limit = { 
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+		if = {
+			limit = {
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
@@ -528,13 +547,13 @@ country_event = {
 				ROOT = { add_spy_network_from = { who = PREV value = -30 } }
 			}
 		}
-		else_if = { 
-			limit = { 
+		else_if = {
+			limit = {
 				OR = {
-				estate_influence = { estate = estate_mages influence = 33 } 
+					estate_influence = { estate = estate_mages influence = 33 }
 					has_country_flag = shadow_pact_sorcerer_effect
 				}
-				NOT = { has_country_flag = tughayasa_reward_estate } 
+				NOT = { has_country_flag = tughayasa_reward_estate }
 			}
 			add_country_modifier = {
 				name = magic_estate_scrying_rivals_2
@@ -590,9 +609,9 @@ country_event = {
 				add_dip_power = -15
 			}
 			else = {
-			add_years_of_income = -0.5
-			add_adm_power = -30	
-			add_dip_power = -30
+				add_years_of_income = -0.5
+				add_adm_power = -30	
+				add_dip_power = -30
 			}
 			
 			if = {
@@ -694,17 +713,17 @@ country_event = {
 			}
 			else = {
 				add_years_of_income = -0.5
-			add_adm_power = -60	
+				add_adm_power = -60	
 			}
 		}
 		
 		every_country = { limit = { is_neighbor_of  = ROOT }
 			remove_fow = 120
 		}	
-		if = { 
-			limit = { 
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+		if = {
+			limit = {
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
@@ -806,17 +825,17 @@ country_event = {
 		}
 		else_if = {
 			limit = { has_country_flag = shadow_pact_sorcerer_effect }
-				add_years_of_income = -0.25
-				add_adm_power = -30
+			add_years_of_income = -0.25
+			add_adm_power = -30
 		}
 		else = {
 			add_years_of_income = -0.5
-		add_adm_power = -60	
+			add_adm_power = -60
 		}
 		
-		if = { 
-			limit = { 
-				OR = { 
+		if = {
+			limit = {
+				OR = {
 					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
@@ -881,7 +900,7 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-				has_country_flag = command_enslaved_the_oracle_flag
+					has_country_flag = command_enslaved_the_oracle_flag
 					has_country_flag = shadow_pact_sorcerer_effect
 				}
 			}
@@ -895,11 +914,11 @@ country_event = {
 			add_mil_power = -30
 		}
 	
-		if = { 
-			limit = { 
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
-						AND = {
+		if = {
+			limit = {
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
+					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
 					}
@@ -977,11 +996,11 @@ country_event = {
 			add_adm_power = -30	
 			add_mil_power = -30
 		
-			if = { 
-				limit = { 
-					OR = { 
-						estate_influence = { estate = estate_mages influence = 66 } 
-										AND = {
+			if = {
+				limit = {
+					OR = {
+						estate_influence = { estate = estate_mages influence = 66 }
+						AND = {
 							estate_influence = { estate = estate_mages influence = 33 }
 							has_country_flag = shadow_pact_sorcerer_effect
 						}
@@ -1056,14 +1075,14 @@ country_event = {
 			}
 			add_years_of_income = -0.25
 		}
-		else = { 
-			add_years_of_income = -0.5 
+		else = {
+			add_years_of_income = -0.5
 		}
 		
-		if = { 
-			limit = { 
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+		if = {
+			limit = {
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
@@ -1126,145 +1145,145 @@ country_event = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -50
 			}
 			else = {
-			add_mil_power = -100
-		}
+				add_mil_power = -100
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_broad_ward_provinces value = 0.8 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -45
 			}
 			else = {
-			add_mil_power = -90
-		}
+				add_mil_power = -90
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_broad_ward_provinces value = 0.7 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -40
 			}
 			else = {
-			add_mil_power = -80
-		}
+				add_mil_power = -80
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_broad_ward_provinces value = 0.6 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -35
 			}
 			else = {
-			add_mil_power = -70
-		}
+				add_mil_power = -70
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_broad_ward_provinces value = 0.5 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -30
 			}
 			else = {
-			add_mil_power = -60
-		}
+				add_mil_power = -60
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_broad_ward_provinces value = 0.4 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -25
 			}
 			else = {
-			add_mil_power = -50
-		}
+				add_mil_power = -50
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_broad_ward_provinces value = 0.3 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -20
 			}
 			else = {
-			add_mil_power = -40
-		}
+				add_mil_power = -40
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_broad_ward_provinces value = 0.2 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -15
 			}
 			else = {
-			add_mil_power = -30
-		}
+				add_mil_power = -30
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_broad_ward_provinces value = 0.1 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -10
 			}
 			else = {
-			add_mil_power = -20
-		}
+				add_mil_power = -20
+			}
 		}
 		else = {
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -5
 			}
-		else = {
-			add_mil_power = -10
-		}
+			else = {
+				add_mil_power = -10
+			}
 		}
 		
-		if = { 
-			limit = { 
-				OR = { 
+		if = {
+			limit = {
+				OR = {
 					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
@@ -1294,8 +1313,8 @@ country_event = {
 					add_temporary_windward_level = {
 						level = 1
 						length = 3650
-			}
-		}
+					}
+				}
 			}
 		}
 		else_if = {
@@ -1323,11 +1342,11 @@ country_event = {
 				if = {
 					limit = {
 						region = alecand_region
-			}
+					}
 					add_temporary_windward_level = {
 						level = 1
 						length = 3650
-		}
+					}
 				}
 			}
 		}
@@ -1408,144 +1427,144 @@ country_event = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -100
 			}
 			else = {
-			add_mil_power = -200
-		}
+				add_mil_power = -200
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_narrow_ward_provinces value = 0.8 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -90
 			}
 			else = {
-			add_mil_power = -180
-		}
+				add_mil_power = -180
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_narrow_ward_provinces value = 0.7 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -80
 			}
 			else = {
-			add_mil_power = -160
-		}
+				add_mil_power = -160
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_narrow_ward_provinces value = 0.6 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -70
 			}
 			else = {
-			add_mil_power = -140
-		}
+				add_mil_power = -140
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_narrow_ward_provinces value = 0.5 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -60
 			}
 			else = {
-			add_mil_power = -120
-		}
+				add_mil_power = -120
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_narrow_ward_provinces value = 0.4 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -50
 			}
 			else = {
-			add_mil_power = -100
-		}
+				add_mil_power = -100
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_narrow_ward_provinces value = 0.3 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -40
 			}
 			else = {
-			add_mil_power = -80
-		}
+				add_mil_power = -80
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_narrow_ward_provinces value = 0.2 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -30
 			}
 			else = {
-			add_mil_power = -60
-		}
+				add_mil_power = -60
+			}
 		}
 		else_if = { limit = { check_variable = { which = amount_of_narrow_ward_provinces value = 0.1 } }
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
-				}
+						has_country_flag = shadow_pact_sorcerer_effect
+					}
 				}
 				add_mil_power = -20
 			}
 			else = {
-			add_mil_power = -40
-		}
+				add_mil_power = -40
+			}
 		}
 		else = {
 			if = {
 				limit = {
 					OR = {
 						has_country_flag = half_off_wards_flag
-					has_country_flag = shadow_pact_sorcerer_effect
+						has_country_flag = shadow_pact_sorcerer_effect
 					}
 				}
 				add_mil_power = -10
 			}
-		else = {
-			add_mil_power = -20
+			else = {
+				add_mil_power = -20
+			}
 		}
-		}
-		if = { 
-			limit = { 
-				OR = { 
+		if = {
+			limit = {
+				OR = {
 					estate_influence = { estate = estate_mages influence = 66 }
 						AND = {
 							estate_influence = { estate = estate_mages influence = 33 }
@@ -1574,11 +1593,11 @@ country_event = {
 				if = {
 					limit = {
 						region = alecand_region
-			}
+					}
 					add_temporary_windward_level = {
 						level = 2
 						length = 3650
-		}
+					}
 				}
 			}
 		}
@@ -1610,12 +1629,12 @@ country_event = {
 				if = {
 					limit = {
 						region = alecand_region
-			}
+					}
 					add_temporary_windward_level = {
 						level = 2
 						length = 3650
 					}
-		}
+				}
 			}
 		}
 		else_if = { limit = { NOT = { has_country_flag = tughayasa_reward_estate } }
@@ -1686,7 +1705,10 @@ country_event = {
 	option = {	#Available
 		name = magic_estate.1.k
 		trigger = {
-			has_consort = yes
+			OR = {
+				has_consort = yes
+				eligble_for_harpy_harem_events = yes
+			}
 			has_government_attribute = heir
 			is_lesser_in_union = no
 			NOT = { ruler_is_immortal = yes } # No lich babies	
@@ -1730,6 +1752,12 @@ country_event = {
 		if = { limit = { has_heir = yes }
 			add_legitimacy = -10
 		}
+		if = {
+			limit = {
+				culture_group = harpy
+			}
+			add_dip_power = -50
+		}
 		if = { 
 			limit = {
 				OR = {
@@ -1752,15 +1780,24 @@ country_event = {
 		name = magic_estate.1.kx
 		trigger = {
 			ai = no
-			OR = {
-				has_consort = no
-				NOT = { has_government_attribute = heir }
-				is_lesser_in_union = yes
-				ruler_is_immortal = yes # No lich babies
-			}
+			NOT = {
+                AND = {
+                    OR = {
+                        has_consort = yes
+                        eligble_for_harpy_harem_events = yes
+                    }
+                    has_government_attribute = heir
+                    is_lesser_in_union = no
+                    NOT = { ruler_is_immortal = yes } # No lich babies    
+                }
+            }
 		}
 		
-		if = { limit = { has_consort = no }
+		if = { 
+			limit = { 
+				has_consort = no 
+				NOT = { eligble_for_harpy_harem_events = yes } 
+			}
 			custom_tooltip = magic_need_consort_tt
 		}
 		if = { limit = { NOT = { has_government_attribute = heir } }
@@ -1857,8 +1894,8 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.33
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
@@ -1912,8 +1949,8 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.75
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
@@ -1961,8 +1998,8 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.75
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
@@ -2046,8 +2083,8 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.75
-				OR = { 
-					estate_influence = { estate = estate_mages influence = 66 } 
+				OR = {
+					estate_influence = { estate = estate_mages influence = 66 }
 					AND = {
 						estate_influence = { estate = estate_mages influence = 33 }
 						has_country_flag = shadow_pact_sorcerer_effect
@@ -2146,7 +2183,7 @@ country_event = {
 			define_heir = {
 				dynasty = ROOT
 				claim = 100
-			    female = yes
+				female = yes
 			}
 		}
 		set_heir_mage_effect = yes
@@ -2505,6 +2542,7 @@ country_event = {
 		is_part_of_hre = yes
 		exists = A85
 		NOT = { has_estate_privilege = estate_mages_organization_magisterium } #in case someone flipped back
+		NOT = { has_country_flag = impeached_magisterium }
 	}
 	
 	option = { # Refuse

@@ -11,7 +11,7 @@ country_event = {
 	hidden = yes
 	
 	is_triggered_only = yes
-	
+
 	trigger = {
 		if = {
 			limit = { ai = no }
@@ -47,12 +47,12 @@ country_event = {
 			2 = { }
 			# ensure there's an empty option first in case none of the others are available
 			# and also because this one should be picked rarely even if the others are available
-						
+
 			#ai external migration simulation
 			10 = {
 				trigger = {
 					ai_external_migration_trigger = { race = hobgoblin }
-						}
+				}
 				modifier = {
 					factor = 0.5
 					all_neighbor_country = {
@@ -107,8 +107,8 @@ country_event = {
 					NOT = {
 						has_country_modifier = racial_pop_hobgoblin_purge
 						has_country_modifier = racial_pop_hobgoblin_expulsion
-						}
 					}
+				}
 				modifier = {
 					factor = 0.67
 					ai = yes
@@ -131,7 +131,7 @@ country_event = {
 					}
 					province_event = { id = racial_pop_events_hobgoblin.5 }
 				}
-				}
+			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = hobgoblin }
@@ -159,8 +159,8 @@ country_event = {
 				}
 				modifier = {
 					factor = 1.5
-						num_of_cities = 10
-						NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 5 } }
+					num_of_cities = 10
+					NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 5 } }
 				}
 				modifier = {
 					factor = 1.5
@@ -174,25 +174,25 @@ country_event = {
 				}
 				modifier = {
 					factor = 1.5
-						num_of_cities = 100
-						NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 50 } }
+					num_of_cities = 100
+					NOT = { fast_owns_num_pops_of_race = { race = hobgoblin amount = 50 } }
 				}
 				modifier = {
 					factor = 0.5
-						low_tolerance_hobgoblin_race_trigger = yes
+					low_tolerance_hobgoblin_race_trigger = yes
 				}
 				modifier = {
 					factor = 2
 					culture_is_hobgoblin = yes
 				}
-		
+				
 				country_event = { id = racial_pop_events_hobgoblin.7 }
 			}
 			#events 100-200 are reserved for custom migration events, put their triggers here
 			}
 		}
 }
-		
+
 #generic migration arrival notif - for destination
 country_event = {
 	id = racial_pop_events_hobgoblin.1
@@ -200,15 +200,15 @@ country_event = {
 	desc = racial_pop_events_hobgoblin.1.d
 	picture = CITY_DEVELOPMENT_eventPicture
 	goto = destination_province
-		
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 		event_target:destination_province = {
 			owned_by = ROOT
-			}
 		}
-		
+	}
+
 	option = {
 		name = racial_pop_events_hobgoblin.1.a
 		event_target:destination_province = {
@@ -224,9 +224,9 @@ country_event = {
 	desc = racial_pop_events_hobgoblin.2.d
 	picture = BAD_WITH_MONARCH_eventPicture
 	goto = origin_province
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = racial_pop_events_hobgoblin.2.a
 		add_prestige = -5
@@ -240,9 +240,9 @@ country_event = {
 	desc = racial_pop_events_hobgoblin.3.d
 	picture = REFUGEES_ESCAPING_eventPicture
 	goto = origin_province
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #good luck in [destination country]!
 		name = racial_pop_events_hobgoblin.3.a
 		ai_chance = {
@@ -250,7 +250,7 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				low_tolerance_hobgoblin_race_trigger = yes
-	}
+			}
 			modifier = {
 				factor = 2
 				NOT = { stability = 0 }
@@ -258,8 +258,8 @@ country_event = {
 			modifier = {	#this is to push refugees essentially
 				factor = 1.5
 				is_at_war = yes
-				}
-				}
+			}
+		}
 
 		if = {
 			limit = {
@@ -267,7 +267,7 @@ country_event = {
 			}
 			clr_country_flag = migration_bribe_@FROM
 			add_dip_power = 50
-			}
+		}
 		racial_pop_migration_random_leave = { race = hobgoblin }
 		FROM = {
 			country_event = { id = racial_pop_events_hobgoblin.1 days = 1 random = 364 }
@@ -295,7 +295,7 @@ country_event = {
 		hidden_effect = {
 			FROM = {
 				country_event = { id = racial_pop_events_hobgoblin.2 days = 1 random = 364 }
-		}
+			}
 		}
 	}
 }
@@ -313,8 +313,8 @@ province_event = {
 	option = {		#The more the merrier?
 		name = racial_pop_events_hobgoblin.4.a
 		ai_chance = { factor = 1 }
-			add_hobgoblin_minority_size_effect = yes
-		}
+		add_hobgoblin_minority_size_effect = yes
+	}
 	
 }
 
@@ -357,7 +357,7 @@ country_event = {
 	}
 	
 	#Fund the migration
-	option = {		
+	option = {
 		name = racial_pop_events_hobgoblin.6.a
 		goto = destination_province
 		ai_chance = {
@@ -373,14 +373,14 @@ country_event = {
 		event_target:destination_province = {
 			racial_pop_migration_arrive = { race = hobgoblin }
 		}
-		}
-		
+	}
+	
 	#They can do as they please
 	option = {		
 		name = racial_pop_events_hobgoblin.6.b
 		ai_chance = {
 			factor = 50
-			}
+		}
 		event_target:origin_province = { racial_pop_migration_leave = { race = hobgoblin } }
 		event_target:destination_province = {
 			racial_pop_migration_arrive = { race = hobgoblin }
@@ -427,10 +427,10 @@ country_event = {
 					pop_wants_to_leave = { race = hobgoblin }
 				}
 				choose_pop_origin_province = { race = hobgoblin }
-				}
 			}
 		}
-		
+	}
+	
 	#Invite the migrants
 	option = {		
 		name = racial_pop_events_hobgoblin.7.a
@@ -450,7 +450,7 @@ country_event = {
 		if = {
 			limit = { event_target:origin_province = { owner = { ai = yes } } }
 			custom_tooltip = racial_pop_migration_happens_tt
-			}
+		}
 		else = {
 			custom_tooltip = racial_pop_migration_bribe_tt
 		}
@@ -459,17 +459,17 @@ country_event = {
 	}
 	
 	#Let them do as they wish 
-	option = {		
+	option = {
 		name = racial_pop_events_hobgoblin.7.b
 		ai_chance = {
 			factor = 50
-				}
+		}
 		custom_tooltip = racial_pop_migration_attempt_tt
 		hidden_effect = { event_target:origin_province = { owner = { country_event = { id = racial_pop_events_hobgoblin.3 } } } }
 	}
-	
+
 	#Close our borders
-	option = {		
+	option = {
 		name = racial_pop_events_hobgoblin.7.c
 		ai_chance = {
 			factor = 50
@@ -571,11 +571,11 @@ country_event = {
 		hidden_effect = {
 			var_effect = { effect = add_treasury var = ducats_gained_on_exploit sign = + }
 			var_effect_granular = { effect = add_manpower var = manpower_gained_on_exploit sign = + }
-				}
+		}
 		remove_country_modifier = non_primary_refugees
 		event_target:destination_province = { racial_pop_migration_arrive = { race = hobgoblin } }
 		generic_decrease_of_racial_tolerance_effect = { race = hobgoblin medium = yes }
-			}
+	}
 
 	#special option for primary culture 
 	option = {
@@ -583,7 +583,7 @@ country_event = {
 		highlight = yes
 		trigger = {
 			culture_is_hobgoblin = yes
-				}
+		}
 		ai_chance = { factor = 1000 }
 		event_target:destination_province = {
 			random_list = {
@@ -627,7 +627,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			event_target:racial_pop_migration_country  = {
+			event_target:racial_pop_migration_country = {
 				country_event = {
 					id = racial_pop_events_hobgoblin.11
 					days = 31
@@ -734,15 +734,15 @@ country_event = {
 		#Add Minority to New Province
 		event_target:destination_province = { racial_pop_migration_arrive = { race = hobgoblin } }
 		generic_decrease_of_racial_tolerance_effect = { race = hobgoblin medium = yes }
-		}
-		
+	}
+
 	#special option for primary culture 
 	option = {
 		name = racial_pop_events_hobgoblin.10.p
 		highlight = yes
 		trigger = {
 			culture_is_hobgoblin = yes
-				}
+		}
 		ai_chance = { factor = 1000 }
 		event_target:destination_province = {
 			random_list = {
@@ -787,14 +787,14 @@ country_event = {
 		}
 		
 		random = {
-		chance = 50
+			chance = 50
 			event_target:destination_province = { racial_pop_migration_arrive = { race = hobgoblin} }
-			}
+		}
 		add_mil_power = -30
-			if = {
+		if = {
 			limit = { culture_is_hobgoblin = yes }
 			remove_country_modifier = primary_refugees
-			}
+		}
 		else = {
 			remove_country_modifier = non_primary_refugees
 		}
@@ -887,7 +887,7 @@ country_event = {
 				factor = 1.5
 				low_tolerance_hobgoblin_race_trigger = yes
 				fast_owns_num_pops_of_race = { race = hobgoblin amount = 20 }
-				}
+			}
 			modifier = { #+Negative stability blames issues on other races
 				factor = 1.25
 				stability = -3
@@ -1091,6 +1091,7 @@ country_event = {
 		name = racial_pop_events_all_races.12.c
 		trigger = {
 			has_country_modifier = racial_pop_hobgoblin_purge
+			NOT = { has_country_flag = cannot_end_hobgoblin_purge }
 			adm_power = 100
 		}
 		
@@ -1186,11 +1187,21 @@ country_event = {
 		name = racial_pop_events_all_races.12.dd
 		trigger = {
 			has_country_modifier = racial_pop_hobgoblin_purge
-			NOT = { adm_power = 100 }
+			OR = {
+				NOT = { adm_power = 100 }
+				has_country_flag = cannot_end_hobgoblin_purge
+			}
 		}
 		ai_chance = { factor = 0 }
 		custom_tooltip = pop_menu_purge_desc_tt
-		custom_tooltip = pop_menu_cannot_stop_purge_not_enough_adm_tt
+		if = {
+			limit = { has_country_flag = cannot_end_hobgoblin_purge }
+			custom_tooltip = purge_cannot_end_tt
+		}
+		if = {
+			limit = { NOT = { adm_power = 100 } }
+			custom_tooltip = pop_menu_cannot_stop_purge_not_enough_adm_tt 
+		}
 		hidden_effect = {
 			country_event = { id = racial_pop_events_hobgoblin.24 }
 		}
@@ -1529,7 +1540,7 @@ country_event = {
 					}
 			}
 			add_dip_power = -50
-		}	
+		}
 		generic_start_focus = { race = hobgoblin }
 		
 		hidden_effect = {
@@ -1569,7 +1580,7 @@ country_event = {
 		name = racial_pop_events_all_races.12.z
 		trigger = { ai = no }
 		hidden_effect = {
-			country_event = { id = racial_pop_misc.3 }
+			country_event = { id = racial_pop_misc.1 }
 		}
 	}
 }	
@@ -1729,7 +1740,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_hobgoblin_expulsion
-		
+	
 		fast_owns_num_pops_of_race = { race = hobgoblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_hobgoblin_minority_trigger = yes
@@ -1741,6 +1752,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_hobgoblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_hobgoblin_expulsion
 		}
 		modifier = {
 			factor = 0.1
@@ -1982,7 +1997,7 @@ country_event = {
 					has_saved_event_target = racial_pop_migration_country
 				}
 				#Calls Migrants Arrive to Migration Country
-				event_target:racial_pop_migration_country  = {
+				event_target:racial_pop_migration_country = {
 					country_event = {
 						id = racial_pop_events_hobgoblin.10
 						days = 14
@@ -2054,7 +2069,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_hobgoblin_expulsion
-		
+	
 		fast_owns_num_pops_of_race = { race = hobgoblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_hobgoblin_majority_trigger = yes
@@ -2068,6 +2083,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_hobgoblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_hobgoblin_expulsion
 		}
 		modifier = {
 			factor = 0.1
@@ -2323,7 +2342,7 @@ country_event = {
 					has_saved_event_target = racial_pop_migration_country
 				}
 				#Calls Migrants Arrive to Migration Country
-				event_target:racial_pop_migration_country  = {
+				event_target:racial_pop_migration_country = {
 					country_event = {
 						id = racial_pop_events_hobgoblin.10
 						days = 14
@@ -2370,6 +2389,7 @@ country_event = {
 			medium_decrease_of_hobgoblin_tolerance_effect = yes
 		}
 	}
+	
 }
 
 
@@ -2395,6 +2415,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_hobgoblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_hobgoblin_purging
 		}
 		modifier = {
 			factor = 0.1
@@ -2641,6 +2665,10 @@ country_event = {
 			has_country_modifier = racial_focus_hobgoblin
 		}
 		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_hobgoblin_purging
+		}
+		modifier = {
 			factor = 0.1
 			fast_owns_num_pops_of_race = { race = hobgoblin amount = 100 } # this must at least be true for the below to be true, and is much faster
 			calc_true_if = {
@@ -2867,6 +2895,7 @@ country_event = {
 		}
 	}
 	
+	
 }
 
 
@@ -2881,7 +2910,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_hobgoblin_purge
-		
+	
 		fast_owns_num_pops_of_race = { race = hobgoblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_hobgoblin_minority_trigger = yes
@@ -2893,6 +2922,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_hobgoblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_hobgoblin_purging
 		}
 		modifier = {
 			factor = 0.1
@@ -3134,7 +3167,7 @@ country_event = {
 					has_saved_event_target = racial_pop_migration_country
 				}
 				#Calls Migrants Arrive to Migration Country
-				event_target:racial_pop_migration_country  = {
+				event_target:racial_pop_migration_country = {
 					country_event = {
 						id = racial_pop_events_hobgoblin.10
 						days = 14
@@ -3178,7 +3211,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_hobgoblin_purge
-		
+	
 		fast_owns_num_pops_of_race = { race = hobgoblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_hobgoblin_majority_trigger = yes
@@ -3192,6 +3225,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_hobgoblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_hobgoblin_purging
 		}
 		modifier = {
 			factor = 0.1
@@ -3447,7 +3484,7 @@ country_event = {
 					has_saved_event_target = racial_pop_migration_country
 				}
 				#Calls Migrants Arrive to Migration Country
-				event_target:racial_pop_migration_country  = {
+				event_target:racial_pop_migration_country = {
 					country_event = {
 						id = racial_pop_events_hobgoblin.10
 						days = 14
@@ -3495,6 +3532,7 @@ country_event = {
 			medium_decrease_of_hobgoblin_tolerance_effect = yes
 		}
 	}
+	
 	
 }
 

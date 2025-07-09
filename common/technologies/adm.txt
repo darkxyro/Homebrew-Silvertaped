@@ -117,7 +117,7 @@ technology = { #Workshop
 		feudalism = 0.5
 		renaissance = 0.3
 	}
-	
+
 	#Workshop
 	farm_estate = yes
 	workshop = yes
