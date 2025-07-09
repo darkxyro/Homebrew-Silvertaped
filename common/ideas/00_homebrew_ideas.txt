@@ -40,6 +40,8 @@ naval_ideas = {
 	}
 	homebrew_signalspells = {
 		global_naval_engagement_modifier = 0.15
+		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
+		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
 	
 	ai_will_do = {
@@ -112,6 +114,8 @@ homebrew_amphibious_ideas = {
 	}
 	homebrew_coastalformations = {
 		disengagement_chance = 0.05
+		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
+		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
 	
 	ai_will_do = {

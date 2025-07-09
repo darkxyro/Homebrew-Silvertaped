@@ -45,15 +45,15 @@ philosopher = {
 	}	
 	
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
-				# has_country_flag = fin_fine_finances_flag 
-			# }
-		# }
-		# modifier = {
-			# global_tax_modifier = 0.05
-		# }
-	# }
+	# 	trigger = { 
+	# 		owner = { 
+	# 			has_country_flag = fin_fine_finances_flag 
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		global_tax_modifier = 0.05
+	# 	}
+	# }	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -63,16 +63,6 @@ philosopher = {
 		modifier = {
 			#meritocracy = 0.25
 			republican_tradition = 0.02 
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = a95_ryalan_dream
-			}
-		}
-		modifier = {
-			idea_cost = -0.02
 		}
 	}
 
@@ -85,15 +75,15 @@ philosopher = {
 	# 	modifier = { meritocracy = 0.25 }
 	# }
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
+	# 	trigger = { 
+	# 		owner = { 
 	# 			has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			# }
-		# }
-		# modifier = {
+	# 		}
+	# 	}
+	# 	modifier = {
 	# 		development_cost = -0.02
-		# }
-	# }	
+	# 	}
+	# }
 	# skill_scaled_modifier = {
 	# 	trigger = {
 	# 		owner = { has_country_modifier = eng_foreign_religious_control }
@@ -106,22 +96,12 @@ philosopher = {
 				has_government_attribute = advisors_generate_innovativeness 
 			}
 		}
-		modifier = { 
+		modifier = {
 			yearly_innovativeness = 0.02 
 		}
 	}
 
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_government_mechanic = persian_influence_mechanic
-			}
-		}
-		modifier = {
-			monthly_persian_influence = 0.1
-		}
-	}
-
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -129,6 +109,22 @@ philosopher = {
 			}
 		}
 		modifier = { idea_cost = -0.02 }
+	}
+	
+	skill_scaled_modifier = {
+		trigger = { owner = { mission_completed = R11_golden_age } }
+		modifier = { manpower_in_own_culture_provinces = 0.02 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = a95_ryalan_dream
+			}
+		}
+		modifier = {
+			idea_cost = -0.02
+		}
 	}
 
 	chance = {
@@ -143,17 +139,17 @@ philosopher = {
 ######################################################
 natural_scientist = {
 	monarch_power = ADM
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -183,27 +179,17 @@ natural_scientist = {
 			governing_capacity_modifier = 0.05
 		}
 	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = a95_ryalan_dream
-			}
-		}
-		modifier = {
-			global_monthly_devastation = -0.05
-		}
-	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
-				# has_country_flag = fin_fine_finances_flag 
-			# }
-		# }
-		# modifier = {
-			# global_tax_modifier = 0.05
-		# }
-	# }
+	# 	trigger = { 
+	# 		owner = { 
+	# 			has_country_flag = fin_fine_finances_flag 
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		global_tax_modifier = 0.05
+	# 	}
+	# }	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -217,8 +203,8 @@ natural_scientist = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
+	# 	trigger = { 
+	# 		owner = {  
 	# 			is_emperor_of_china = yes 
 	# 		}
 	# 	}
@@ -228,12 +214,12 @@ natural_scientist = {
 	# 	trigger = { 
 	# 		owner = { 
 	# 			has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			# }
-		# }
-		# modifier = {
+	# 		}
+	# 	}
+	# 	modifier = {
 	# 		development_cost = -0.02
-		# }
-	# }	
+	# 	}
+	# }
 	# skill_scaled_modifier = {
 	# 	trigger = {
 	# 		owner = { has_country_modifier = eng_foreign_religious_control }
@@ -241,24 +227,36 @@ natural_scientist = {
 	# 	modifier = { tolerance_heretic = 1 }
 	# }
 
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = persian_influence_mechanic
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_persian_influence = 0.03
+	#	}
+	#}
+
+	#Anbennar
 	skill_scaled_modifier = {
-		trigger = {
-			owner = { 
-				has_government_mechanic = persian_influence_mechanic
+		trigger = { 
+			owner = {  
+				has_age_ability = ab_sun_cult_resurgence
 			}
 		}
-		modifier = { 
-			monthly_persian_influence = 0.03
-		}
+		modifier = { monthly_reform_progress = 0.06 }
 	}
 
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_age_ability = ab_sun_cult_resurgence
+				has_country_flag = a95_ryalan_dream
+			}
 		}
+		modifier = {
+			global_monthly_devastation = -0.05
 		}
-		modifier = { monthly_reform_progress = 0.06 }
 	}
 
 	chance = {
@@ -273,17 +271,17 @@ natural_scientist = {
 ######################################################
 artist = {
 	monarch_power = ADM
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -313,27 +311,17 @@ artist = {
 			governing_capacity_modifier = 0.05
 		}
 	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = a95_ryalan_dream
-			}
-		}
-		modifier = {
-			tolerance_own = 0.5
-		}
-	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
-				# has_country_flag = fin_fine_finances_flag 
-			# }
-		# }
-		# modifier = {
-			# global_tax_modifier = 0.05
-		# }
-	# }
+	# 	trigger = { 
+	# 		owner = { 
+	# 			has_country_flag = fin_fine_finances_flag 
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		global_tax_modifier = 0.05
+	# 	}
+	# }	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -347,15 +335,15 @@ artist = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
+	# 	trigger = { 
+	# 		owner = {  
 	# 			is_emperor_of_china = yes 
-			# }
-		# }
-		# modifier = {
-			# meritocracy = 0.25
-		# }
-	# }	
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		meritocracy = 0.25
+	# 	}
+	# }
 
 	# skill_scaled_modifier = {
 	# 	trigger = { 
@@ -374,19 +362,31 @@ artist = {
 	# 	modifier = { tolerance_own = 1 }
 	# }
 
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = persian_influence_mechanic
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_persian_influence = 0.1
+	#	}
+	#}
+
+	#Anbennar
 	skill_scaled_modifier = {
-		trigger = {
+		trigger = { 
 			owner = { 
-				has_government_mechanic = persian_influence_mechanic
+				has_country_flag = a95_ryalan_dream
 			}
 		}
-		modifier = { 
-			monthly_persian_influence = 0.1
+		modifier = {
+			tolerance_own = 0.5
 		}
 	}
 
 	skill_scaled_modifier = {
-		trigger = { 
+		trigger = {
 			owner = { 
 				tag = B32
 				has_country_flag = lianne_auern_available
@@ -440,6 +440,16 @@ artist = {
 		modifier = { land_morale = 0.02 }
 	}
 
+	skill_scaled_modifier = {
+		trigger = { owner = { mission_completed = R11_four_season } }
+		modifier = { build_cost = -0.01 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = { owner = { has_country_flag = pashaine_artist_idea_cost } }
+		modifier = { idea_cost = -0.025 }
+	}
+
 	chance = {
 		factor = 1
 	}
@@ -460,17 +470,17 @@ artist = {
 ######################################################
 treasurer = {
 	monarch_power = ADM
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -500,17 +510,17 @@ treasurer = {
 			governing_capacity_modifier = 0.05
 		}
 	}
-	
+
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
-				# has_country_flag = fin_fine_finances_flag 
-			# }
-		# }
-		# modifier = {
-			# global_tax_modifier = 0.05
-		# }
-	# }
+	# 	trigger = { 
+	# 		owner = { 
+	# 			has_country_flag = fin_fine_finances_flag 
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		global_tax_modifier = 0.05
+	# 	}
+	# }	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -524,8 +534,8 @@ treasurer = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
+	# 	trigger = { 
+	# 		owner = {  
 	# 			is_emperor_of_china = yes 
 	# 		}
 	# 	}
@@ -535,12 +545,12 @@ treasurer = {
 	# 	trigger = { 
 	# 		owner = { 
 	# 			has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			# }
-		# }
-		# modifier = {
+	# 		}
+	# 	}
+	# 	modifier = {
 	# 		development_cost = -0.02
-		# }
-	# }	
+	# 	}
+	# }
 	# skill_scaled_modifier = {
 	# 	trigger = {
 	# 		owner = { has_country_modifier = eng_foreign_religious_control }
@@ -548,26 +558,27 @@ treasurer = {
 	# 	modifier = { religious_unity = 0.15 }
 	# }
 
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { 
-				has_government_mechanic = persian_influence_mechanic
-			}
-		}
-		modifier = { 
-			monthly_persian_influence = 0.03
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = persian_influence_mechanic
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_persian_influence = 0.03
+	#	}
+	#}
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
-			owner = { 
+			owner = {  
 				has_age_ability = ab_sun_cult_resurgence
-		}
+			}
 		}
 		modifier = { build_cost = -0.02 }
 	}
-
+	
 	chance = {
 		factor = 1
 	}
@@ -580,17 +591,17 @@ treasurer = {
 ######################################################
 theologian = {
 	monarch_power = ADM
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 	
 	# Bonus
 	global_unrest = -2
@@ -611,15 +622,15 @@ theologian = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
-				# has_country_flag = fin_fine_finances_flag 
-			# }
-		# }
-		# modifier = {
-			# global_tax_modifier = 0.05
-		# }
-	# }
+	# 	trigger = { 
+	# 		owner = { 
+	# 			has_country_flag = fin_fine_finances_flag 
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		global_tax_modifier = 0.05
+	# 	}
+	# }	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -633,8 +644,8 @@ theologian = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
+	# 	trigger = { 
+	# 		owner = {  
 	# 			is_emperor_of_china = yes 
 	# 		}
 	# 	}
@@ -644,12 +655,12 @@ theologian = {
 	# 	trigger = { 
 	# 		owner = { 
 	# 			has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			# }
-		# }
-		# modifier = {
+	# 		}
+	# 	}
+	# 	modifier = {
 	# 		development_cost = -0.02
-		# }
-	# }	
+	# 	}
+	# }
 	# skill_scaled_modifier = {
 	# 	trigger = {
 	# 		owner = { has_country_modifier = eng_foreign_religious_control }
@@ -662,22 +673,23 @@ theologian = {
 				has_government_attribute = advisors_generate_innovativeness 
 			}
 		}
-		modifier = { 
+		modifier = {
 			yearly_innovativeness = 0.02 
 		}
 	}
 
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_government_mechanic = persian_influence_mechanic
-			}
-		}
-		modifier = {
-			monthly_persian_influence = 0.03
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = persian_influence_mechanic
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_persian_influence = 0.03
+	#	}
+	#}
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -708,17 +720,17 @@ theologian = {
 ######################################################
 master_of_mint = {
 	monarch_power = ADM
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 	
 	# Bonus
 	inflation_reduction = 0.10
@@ -739,15 +751,15 @@ master_of_mint = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
-				# has_country_flag = fin_fine_finances_flag 
-			# }
-		# }
-		# modifier = {
-			# global_tax_modifier = 0.05
-		# }
-	# }
+	# 	trigger = { 
+	# 		owner = { 
+	# 			has_country_flag = fin_fine_finances_flag 
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		global_tax_modifier = 0.05
+	# 	}
+	# }	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -761,8 +773,8 @@ master_of_mint = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
+	# 	trigger = { 
+	# 		owner = {  
 	# 			is_emperor_of_china = yes 
 	# 		}
 	# 	}
@@ -772,49 +784,50 @@ master_of_mint = {
 	# 	trigger = { 
 	# 		owner = { 
 	# 			has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			# }
-		# }
-		# modifier = {
+	# 		}
+	# 	}
+	# 	modifier = {
 	# 		development_cost = -0.02
 	# 	}
 	# }
 	# skill_scaled_modifier = {
 	# 	trigger = {
 	# 		owner = { has_country_modifier = eng_foreign_religious_control }
-		# }
+	# 	}
 	# 	modifier = { religious_unity = 0.15 }
-	# }	
+	# }
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
 				has_government_attribute = advisors_generate_innovativeness 
 			}
 		}
-		modifier = { 
+		modifier = {
 			yearly_innovativeness = 0.02 
 		}
 	}
 
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_government_mechanic = persian_influence_mechanic
-			}
-		}
-		modifier = {
-			monthly_persian_influence = 0.1
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = persian_influence_mechanic
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_persian_influence = 0.1
+	#	}
+	#}
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
 				has_age_ability = ab_sun_cult_resurgence
+			}
 		}
-	}
 		modifier = { interest = -0.2 }
 	}
-
+	
 	chance = {
 		factor = 1
 	}
@@ -831,17 +844,17 @@ master_of_mint = {
 ######################################################
 inquisitor = {
 	monarch_power = ADM
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 	allow_only_owner_religion = yes
 	
 	# Bonus
@@ -863,15 +876,15 @@ inquisitor = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
-				# has_country_flag = fin_fine_finances_flag 
-			# }
-		# }
-		# modifier = {
-			# global_tax_modifier = 0.05
-		# }
-	# }
+	# 	trigger = { 
+	# 		owner = { 
+	# 			has_country_flag = fin_fine_finances_flag 
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		global_tax_modifier = 0.05
+	# 	}
+	# }	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -885,8 +898,8 @@ inquisitor = {
 	}
 
 	# skill_scaled_modifier = {
-		# trigger = { 
-			# owner = { 
+	# 	trigger = { 
+	# 		owner = {  
 	# 			is_emperor_of_china = yes 
 	# 		}
 	# 	}
@@ -896,40 +909,40 @@ inquisitor = {
 	# 	trigger = { 
 	# 		owner = { 
 	# 			has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			# }
-		# }
-		# modifier = {
+	# 		}
+	# 	}
+	# 	modifier = {
 	# 		development_cost = -0.02
 	# 	}
-		# }
+	# }
 	# skill_scaled_modifier = {
 	# 	trigger = {
 	# 		owner = { has_country_modifier = eng_foreign_religious_control }
 	# 	}
 	# 	modifier = { global_heretic_missionary_strength = 0.01 }
-	# }	
+	# }
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
 				has_government_attribute = advisors_generate_innovativeness 
 			}
 		}
-		modifier = { 
+		modifier = {
 			yearly_innovativeness = 0.02 
 		}
 	}
 
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_government_mechanic = persian_influence_mechanic
-			}
-		}
-		modifier = {
-			monthly_persian_influence = 0.1
-		}
-	}
-
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = persian_influence_mechanic
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_persian_influence = 0.1
+	#	}
+	#}
+	
 	# skill_scaled_modifier = {
 	# 	trigger = { 
 	# 		owner = { 
@@ -941,6 +954,7 @@ inquisitor = {
 	# 	}
 	# }
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -979,17 +993,17 @@ inquisitor = {
 ######################################################
 statesman = {
 	monarch_power = DIP
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1004,7 +1018,7 @@ statesman = {
 	
 	# Bonus
 	diplomatic_reputation = 1
-	
+
 	# skill_scaled_modifier = {
 	# 	trigger = {
 	# 		owner = { 
@@ -1023,7 +1037,7 @@ statesman = {
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = { 
+		modifier = {
 			republican_tradition = 0.02 
 		}
 	}
@@ -1053,6 +1067,7 @@ statesman = {
 		}
 	}
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -1074,8 +1089,8 @@ statesman = {
 	}
 	
 	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
+		trigger = {
+			owner = {
 				has_government_mechanic = kalsyto_influence_mechanic
 			}
 		}
@@ -1096,17 +1111,17 @@ statesman = {
 ######################################################
 naval_reformer = {
 	monarch_power = DIP
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1133,31 +1148,7 @@ naval_reformer = {
 	# 		culture_conversion_cost = -0.05
 	# 	}
 	# }
-	
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { 
-				has_government_attribute = republican_tradition_from_advisors 
-				NOT = { tag = event_target:feiten_or_was_feiten_target }
-				NOT = { has_country_flag = feiten_airfleet_captain_unlocked }
-			}
-		}
-		modifier = { 
-			republican_tradition = 0.02 
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				tag = event_target:feiten_or_was_feiten_target
-				has_country_flag = feiten_airfleet_captain_unlocked
-			}
-		}
-		modifier = {
-			movement_speed = 0.025
-			movement_speed_in_fleet_modifier = 0.2
-		}
-	}
+
 	# skill_scaled_modifier = {
 	# 	trigger = { 
 	# 		owner = { 
@@ -1175,6 +1166,7 @@ naval_reformer = {
 	# 	}
 	# }
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -1205,6 +1197,32 @@ naval_reformer = {
 			monthly_kalsyto_influence = 0.03
 		}
 	}
+		
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+				NOT = { tag = event_target:feiten_or_was_feiten_target }
+				NOT = { has_country_flag = feiten_airfleet_captain_unlocked }
+			}
+		}
+		modifier = {
+			republican_tradition = 0.02 
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				tag = event_target:feiten_or_was_feiten_target
+				has_country_flag = feiten_airfleet_captain_unlocked
+			}
+		}
+		modifier = {
+			movement_speed = 0.025
+			movement_speed_in_fleet_modifier = 0.2
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -1226,17 +1244,17 @@ naval_reformer = {
 ######################################################
 trader = {
 	monarch_power = DIP
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1279,7 +1297,7 @@ trader = {
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = { 
+		modifier = {
 			republican_tradition = 0.02 
 		}
 	}
@@ -1301,6 +1319,7 @@ trader = {
 	# 	}
 	# }
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -1311,7 +1330,7 @@ trader = {
 	}
 	
 	skill_scaled_modifier = {
-		trigger = { 
+		trigger = {
 			owner = { 
 				has_country_modifier = I98_drug_complacency
 			}
@@ -1348,17 +1367,17 @@ trader = {
 ######################################################
 spymaster = {
 	monarch_power = DIP
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1391,7 +1410,7 @@ spymaster = {
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = { 
+		modifier = {
 			republican_tradition = 0.02 
 		}
 	}
@@ -1403,27 +1422,18 @@ spymaster = {
 	# 	}
 	# 	modifier = { meritocracy = 0.25 }
 	# }
-	#Cestirmark - Eldritch investigators
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_estate_privilege = estate_adventurers_organization_scp_bureau
-			}
-		}
-		modifier = {
-			idea_cost = -0.02
-		}
-	}
+
 	# skill_scaled_modifier = {
 	# 	trigger = { 
 	# 		owner = { has_country_flag = mng_trade_eff_per_dip_advisor_level_flag }
 	# 	}
-	# 	modifier = {
+	# 	modifier = { 
 	# 		meritocracy = 0.25 
 	# 		trade_efficiency = 0.02
 	# 	}
 	# }
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -1455,6 +1465,18 @@ spymaster = {
 		}
 	}
 
+		#Cestirmark - Eldritch investigators
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_estate_privilege = estate_adventurers_organization_scp_bureau
+			}
+		}
+		modifier = {
+			idea_cost = -0.02
+		}
+	}
+
 	chance = {
 		factor = 1
 	}
@@ -1467,17 +1489,17 @@ spymaster = {
 ######################################################
 colonial_governor = {
 	monarch_power = DIP
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1510,7 +1532,7 @@ colonial_governor = {
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = { 
+		modifier = {
 			republican_tradition = 0.02 
 		}
 	}
@@ -1532,9 +1554,10 @@ colonial_governor = {
 	# 	}
 	# }
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
-			owner = { 
+			owner = {  
 				has_age_ability = ab_sun_cult_resurgence
 			}
 		}
@@ -1562,7 +1585,7 @@ colonial_governor = {
 			monthly_kalsyto_influence = 0.03
 		}
 	}
-
+	
 	chance = {
 		factor = 1
 		modifier = {
@@ -1588,17 +1611,17 @@ colonial_governor = {
 ######################################################
 diplomat = {
 	monarch_power = DIP
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#kill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1631,7 +1654,7 @@ diplomat = {
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = { 
+		modifier = {
 			republican_tradition = 0.02 
 		}
 	}
@@ -1653,6 +1676,7 @@ diplomat = {
 	# 	}
 	# }
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -1674,8 +1698,8 @@ diplomat = {
 	}
 	
 	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
+		trigger = {
+			owner = {
 				has_government_mechanic = kalsyto_influence_mechanic
 			}
 		}
@@ -1683,7 +1707,7 @@ diplomat = {
 			monthly_kalsyto_influence = 0.1
 		}
 	}
-
+	
 	chance = {
 		factor = 1
 	}
@@ -1696,17 +1720,17 @@ diplomat = {
 ######################################################
 navigator = {
 	monarch_power = DIP
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1739,7 +1763,7 @@ navigator = {
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = { 
+		modifier = {
 			republican_tradition = 0.02 
 		}
 	}
@@ -1761,6 +1785,7 @@ navigator = {
 	# 	}
 	# }
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -1771,7 +1796,7 @@ navigator = {
 	}
 
 	skill_scaled_modifier = {
-		trigger = { 
+		trigger = {
 			owner = { 
 				has_country_modifier = I98_drug_complacency
 			}
@@ -1780,10 +1805,10 @@ navigator = {
 			global_unrest = -0.5 
 		}
 	}
-
+	
 	skill_scaled_modifier = {
 		trigger = {
-			owner = { 
+			owner = {
 				has_government_mechanic = kalsyto_influence_mechanic
 			}
 		}
@@ -1820,17 +1845,17 @@ navigator = {
 ######################################################
 army_reformer = {
 	monarch_power = MIL
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1845,7 +1870,7 @@ army_reformer = {
 	
 	# Bonus
 	land_morale = 0.10
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -1866,15 +1891,31 @@ army_reformer = {
 	# 	modifier = { meritocracy = 0.25 }
 	# }
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
-			owner = { 
+			owner = {  
 				has_age_ability = ab_sun_cult_resurgence
 			}
 		}
 		modifier = { free_land_leader_pool = 1 }
 	}
-
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = U10_military_path_1
+			}
+		}
+		modifier = { assault_fort_ability = 0.25 artillery_barrage_cost = -0.25 }
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = U10_military_path_2
+			}
+		}
+		modifier = { attrition = -0.2 attrition = 1 }
+	}
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
@@ -1909,17 +1950,17 @@ army_reformer = {
 ######################################################
 army_organiser = {
 	monarch_power = MIL
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1934,7 +1975,7 @@ army_organiser = {
 	
 	# Bonus
 	land_forcelimit_modifier = 0.10
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -1955,9 +1996,10 @@ army_organiser = {
 	# 	modifier = { meritocracy = 0.25 }
 	# }
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
-			owner = { 
+			owner = {  
 				has_age_ability = ab_sun_cult_resurgence
 			}
 		}
@@ -1996,6 +2038,17 @@ army_organiser = {
 			global_autonomy = -0.02
 		}
 	}
+	
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = bladeskeep_monument_nationalism_upgrade 
+			}
+		}
+		modifier = {
+			years_of_nationalism = -1
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -2009,17 +2062,17 @@ army_organiser = {
 ######################################################
 commandant = {
 	monarch_power = MIL
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -2034,7 +2087,7 @@ commandant = {
 	
 	# Bonus
 	discipline = 0.05
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -2055,9 +2108,10 @@ commandant = {
 	# 	modifier = { meritocracy = 0.25 }
 	# }
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
-			owner = { 
+			owner = {  
 				has_age_ability = ab_sun_cult_resurgence
 			}
 		}
@@ -2073,6 +2127,22 @@ commandant = {
 		modifier = {
 			drill_gain_modifier = 0.04
 		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = U10_military_path_1
+			}
+		}
+		modifier = { assault_fort_ability = 0.25 artillery_barrage_cost = -0.25 }
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = U10_military_path_2
+			}
+		}
+		modifier = { attrition = -0.2 attrition = 1 }
 	}
 
 	skill_scaled_modifier = {
@@ -2098,17 +2168,17 @@ commandant = {
 ######################################################
 quartermaster = {
 	monarch_power = MIL
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -2123,7 +2193,7 @@ quartermaster = {
 	
 	# Bonus
 	reinforce_speed = 0.33
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -2144,6 +2214,7 @@ quartermaster = {
 	# 	modifier = { meritocracy = 0.25 }
 	# }
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -2154,8 +2225,8 @@ quartermaster = {
 	}
 
 	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
+		trigger = {
+			owner = {
 				has_government_attribute = command_dragon_elevation_modifier
 			}
 		}
@@ -2202,18 +2273,18 @@ quartermaster = {
 ######################################################
 recruitmaster = {
 	monarch_power = MIL
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-	
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -2227,7 +2298,7 @@ recruitmaster = {
 	
 	# Bonus
 	global_manpower_modifier = 0.10
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -2248,6 +2319,7 @@ recruitmaster = {
 	# 	modifier = { meritocracy = 0.25 }
 	# }
 	
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = {  
@@ -2258,8 +2330,8 @@ recruitmaster = {
 	}
 
 	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
+		trigger = {
+			owner = {
 				has_government_attribute = command_dragon_elevation_modifier
 			}
 		}
@@ -2267,7 +2339,7 @@ recruitmaster = {
 			land_attrition = -0.03
 		}
 	}
-
+	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
@@ -2295,17 +2367,17 @@ recruitmaster = {
 ######################################################
 fortification_expert = {
 	monarch_power = MIL
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -2320,7 +2392,7 @@ fortification_expert = {
 	
 	# Bonus
 	defensiveness = 0.2
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -2341,9 +2413,10 @@ fortification_expert = {
 	# 	modifier = { meritocracy = 0.25 }
 	# }
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
-			owner = { 
+			owner = {  
 				has_age_ability = ab_sun_cult_resurgence
 			}
 		}
@@ -2371,7 +2444,14 @@ fortification_expert = {
 			artillery_power = 0.02 
 		} 
 	}
-
+	skill_scaled_modifier = {
+		trigger = { owner = { has_country_flag = U10_military_path_1 } }
+		modifier = { assault_fort_ability = 0.25 artillery_barrage_cost = -0.25 }
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { has_country_flag = U10_military_path_2 } }
+		modifier = { attrition = -0.2 attrition = 1 }
+	}
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
@@ -2396,20 +2476,20 @@ fortification_expert = {
 ######################################################
 grand_captain = {
 	monarch_power = MIL
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { 
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = { 
-			monthly_russian_modernization = 0.02
-		}
-	}
+	#skill_scaled_modifier = {
+	#	trigger = {
+	#		owner = {
+	#			has_government_mechanic = russian_modernization
+	#			NOT = { culture_group = PREV }
+	#		}
+	#	}
+	#	modifier = {
+	#		monthly_russian_modernization = 0.02
+	#	}
+	#}
 
 	skill_scaled_modifier = {
-		trigger = { 
+		trigger = {
 			owner = { 
 				has_government_attribute = advisors_generate_innovativeness 
 			}
@@ -2421,7 +2501,7 @@ grand_captain = {
 	
 	# Bonus
 	land_maintenance_modifier = -0.10
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -2442,11 +2522,12 @@ grand_captain = {
 	# 	modifier = { meritocracy = 0.25 }
 	# }
 
+	#Anbennar
 	skill_scaled_modifier = {
 		trigger = { 
-			owner = { 
+			owner = {  
 				has_age_ability = ab_sun_cult_resurgence
-		}
+			}
 		}
 		modifier = { army_tradition_decay = -0.002 }
 	}
@@ -2459,9 +2540,9 @@ grand_captain = {
 		}
 		modifier = {
 			war_exhaustion = -0.01
+		}
 	}
-	}
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
@@ -2482,7 +2563,7 @@ grand_captain = {
 		modifier = {
 			factor = 1.5
 			is_at_war = no
-	}
+		}
 	}
 }
 
@@ -2490,7 +2571,7 @@ grand_captain = {
 ######################################################
 court_mage = {
 	monarch_power = ADM
-	
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -2499,19 +2580,19 @@ court_mage = {
 		}
 		modifier = {
 			yearly_innovativeness = 0.02 
-	}
+		}
 	}
 	
 	# Bonus
 	all_power_cost = -0.025
 	
 	skill_scaled_modifier = {
-		trigger = { 
+		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
+		modifier = { 
 			#meritocracy = 0.25
 			republican_tradition = 0.02 
 		}
@@ -2538,7 +2619,7 @@ court_mage = {
 		}
 		modifier = {
 			governing_capacity_modifier = 0.03
-	}
+		}
 	}
 
 	skill_scaled_modifier = {

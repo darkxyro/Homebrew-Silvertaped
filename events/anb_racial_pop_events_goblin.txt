@@ -11,7 +11,7 @@ country_event = {
 	hidden = yes
 	
 	is_triggered_only = yes
-	
+
 	trigger = {
 		if = {
 			limit = { ai = no }
@@ -43,12 +43,12 @@ country_event = {
 			2 = { }
 			# ensure there's an empty option first in case none of the others are available
 			# and also because this one should be picked rarely even if the others are available
-						
+
 			#ai external migration simulation
 			10 = {
 				trigger = {
 					ai_external_migration_trigger = { race = goblin }
-						}
+				}
 				modifier = {
 					factor = 0.5
 					all_neighbor_country = {
@@ -97,8 +97,8 @@ country_event = {
 					NOT = {
 						has_country_modifier = racial_pop_goblin_purge
 						has_country_modifier = racial_pop_goblin_expulsion
-						}
 					}
+				}
 				modifier = {
 					factor = 0.67
 					ai = yes
@@ -110,7 +110,7 @@ country_event = {
 						has_country_modifier = racial_pop_goblin_expulsion
 					}
 				}
-					random_owned_province = {
+				random_owned_province = {
 					limit = {
 						has_goblin_minority_trigger = yes
 						OR = {
@@ -120,8 +120,8 @@ country_event = {
 						}
 					}
 					province_event = { id = racial_pop_events_goblin.5 }
-					}
 				}
+			}
 			5 = { #Internal migration occurs
 				trigger = {
 					pop_internal_migration_trigger = { race = goblin }
@@ -149,8 +149,8 @@ country_event = {
 				}
 				modifier = {
 					factor = 1.5
-						num_of_cities = 10
-						NOT = { fast_owns_num_pops_of_race = { race = goblin amount = 5 } }
+					num_of_cities = 10
+					NOT = { fast_owns_num_pops_of_race = { race = goblin amount = 5 } }
 				}
 				modifier = {
 					factor = 1.5
@@ -164,35 +164,34 @@ country_event = {
 				}
 				modifier = {
 					factor = 1.5
-						num_of_cities = 100
-						NOT = { fast_owns_num_pops_of_race = { race = goblin amount = 50 } }
+					num_of_cities = 100
+					NOT = { fast_owns_num_pops_of_race = { race = goblin amount = 50 } }
 				}
 				modifier = {
 					factor = 0.5
-						low_tolerance_goblin_race_trigger = yes
+					low_tolerance_goblin_race_trigger = yes
 				}
 				modifier = {
 					factor = 2
 					culture_is_goblin = yes
 				}
-		
+				
 				country_event = { id = racial_pop_events_goblin.7 }
-			}	
+			}
 			#events 100-200 are reserved for custom migration events, put their triggers here
 			3 = {
 				trigger = {
 					num_of_colonists = 1
 					num_of_colonies = 1
+					fast_owns_num_pops_of_race = { race = goblin amount = 1 }
 					NOT = {
+						culture_is_goblin = yes
 						capital_scope = {
 							OR = {
 								continent = north_america
 								continent = south_america
 							}
 						}
-					}
-					any_owned_province = {
-						culture_is_goblin = yes
 					}
 					any_owned_province = {
 						is_colony = yes
@@ -207,7 +206,7 @@ country_event = {
 		}
 	}
 }
-		
+
 #generic migration arrival notif - for destination
 country_event = {
 	id = racial_pop_events_goblin.1
@@ -215,15 +214,15 @@ country_event = {
 	desc = racial_pop_events_goblin.1.d
 	picture = CITY_DEVELOPMENT_eventPicture
 	goto = destination_province
-		
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 		event_target:destination_province = {
 			owned_by = ROOT
-			}
 		}
-		
+	}
+
 	option = {
 		name = racial_pop_events_goblin.1.a
 		event_target:destination_province = {
@@ -239,9 +238,9 @@ country_event = {
 	desc = racial_pop_events_goblin.2.d
 	picture = BAD_WITH_MONARCH_eventPicture
 	goto = origin_province
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = racial_pop_events_goblin.2.a
 		add_prestige = -5
@@ -255,9 +254,9 @@ country_event = {
 	desc = racial_pop_events_goblin.3.d
 	picture = REFUGEES_ESCAPING_eventPicture
 	goto = origin_province
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #good luck in [destination country]!
 		name = racial_pop_events_goblin.3.a
 		ai_chance = {
@@ -265,7 +264,7 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				low_tolerance_goblin_race_trigger = yes
-	}
+			}
 			modifier = {
 				factor = 2
 				NOT = { stability = 0 }
@@ -273,8 +272,8 @@ country_event = {
 			modifier = {	#this is to push refugees essentially
 				factor = 1.5
 				is_at_war = yes
-				}
-				}
+			}
+		}
 
 		if = {
 			limit = {
@@ -282,7 +281,7 @@ country_event = {
 			}
 			clr_country_flag = migration_bribe_@FROM
 			add_dip_power = 50
-			}
+		}
 		racial_pop_migration_random_leave = { race = goblin }
 		FROM = {
 			country_event = { id = racial_pop_events_goblin.1 days = 1 random = 364 }
@@ -310,7 +309,7 @@ country_event = {
 		hidden_effect = {
 			FROM = {
 				country_event = { id = racial_pop_events_goblin.2 days = 1 random = 364 }
-		}
+			}
 		}
 	}
 }
@@ -328,8 +327,8 @@ province_event = {
 	option = {		#The more the merrier?
 		name = racial_pop_events_goblin.4.a
 		ai_chance = { factor = 1 }
-			add_goblin_minority_size_effect = yes
-		}
+		add_goblin_minority_size_effect = yes
+	}
 	
 }
 
@@ -368,11 +367,11 @@ country_event = {
 		hidden_effect = {
 			choose_pop_internal_origin_province = { race = goblin }
 			choose_pop_internal_destination_province = { race = goblin }
-				}
+		}
 	}
 	
 	#Fund the migration
-	option = {		
+	option = {
 		name = racial_pop_events_goblin.6.a
 		goto = destination_province
 		ai_chance = {
@@ -388,14 +387,14 @@ country_event = {
 		event_target:destination_province = {
 			racial_pop_migration_arrive = { race = goblin }
 		}
-		}
-		
+	}
+	
 	#They can do as they please
 	option = {		
 		name = racial_pop_events_goblin.6.b
 		ai_chance = {
 			factor = 50
-			}
+		}
 		event_target:origin_province = { racial_pop_migration_leave = { race = goblin } }
 		event_target:destination_province = {
 			racial_pop_migration_arrive = { race = goblin }
@@ -440,7 +439,7 @@ country_event = {
 			random_neighbor_country = {
 				limit = {
 					pop_wants_to_leave = { race = goblin }
-					}
+				}
 				choose_pop_origin_province = { race = goblin }
 			}
 		}
@@ -465,7 +464,7 @@ country_event = {
 		if = {
 			limit = { event_target:origin_province = { owner = { ai = yes } } }
 			custom_tooltip = racial_pop_migration_happens_tt
-			}
+		}
 		else = {
 			custom_tooltip = racial_pop_migration_bribe_tt
 		}
@@ -474,17 +473,17 @@ country_event = {
 	}
 	
 	#Let them do as they wish 
-	option = {		
+	option = {
 		name = racial_pop_events_goblin.7.b
 		ai_chance = {
 			factor = 50
-			}
+		}
 		custom_tooltip = racial_pop_migration_attempt_tt
 		hidden_effect = { event_target:origin_province = { owner = { country_event = { id = racial_pop_events_goblin.3 } } } }
-		}
-		
+	}
+
 	#Close our borders
-	option = {		
+	option = {
 		name = racial_pop_events_goblin.7.c
 		ai_chance = {
 			factor = 50
@@ -509,9 +508,9 @@ country_event = {
 			choose_pop_destination_province = { race = goblin }
 			choose_refugee_country_target = { race = goblin }
 			calculate_refugee_exploit_rewards = yes
-			}
 		}
-		
+	}
+	
 	#Let them in
 	option = {		
 		name = racial_pop_events_goblin.10.a
@@ -586,12 +585,12 @@ country_event = {
 		hidden_effect = {
 			var_effect = { effect = add_treasury var = ducats_gained_on_exploit sign = + }
 			var_effect_granular = { effect = add_manpower var = manpower_gained_on_exploit sign = + }
-			}
+		}
 		remove_country_modifier = non_primary_refugees
 		event_target:destination_province = { racial_pop_migration_arrive = { race = goblin } }
 		generic_decrease_of_racial_tolerance_effect = { race = goblin medium = yes }
-		}
-		
+	}
+
 	#special option for primary culture 
 	option = {
 		name = racial_pop_events_goblin.10.p
@@ -637,7 +636,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			event_target:racial_pop_migration_country  = {
+			event_target:racial_pop_migration_country = {
 				country_event = {
 					id = racial_pop_events_goblin.11
 					days = 31
@@ -744,8 +743,8 @@ country_event = {
 		#Add Minority to New Province
 		event_target:destination_province = { racial_pop_migration_arrive = { race = goblin } }
 		generic_decrease_of_racial_tolerance_effect = { race = goblin medium = yes }
-		}
-		
+	}
+
 	#special option for primary culture 
 	option = {
 		name = racial_pop_events_goblin.10.p
@@ -792,14 +791,14 @@ country_event = {
 		}
 		
 		random = {
-		chance = 50
+			chance = 50
 			event_target:destination_province = { racial_pop_migration_arrive = { race = goblin} }
-			}
+		}
 		add_mil_power = -30
-			if = {
+		if = {
 			limit = { culture_is_goblin = yes }
 			remove_country_modifier = primary_refugees
-			}
+		}
 		else = {
 			remove_country_modifier = non_primary_refugees
 		}
@@ -1118,6 +1117,7 @@ country_event = {
 		name = racial_pop_events_all_races.12.c
 		trigger = {
 			has_country_modifier = racial_pop_goblin_purge
+			NOT = { has_country_flag = cannot_end_goblin_purge }
 			adm_power = 100
 		}
 		
@@ -1224,7 +1224,14 @@ country_event = {
 		}
 		ai_chance = { factor = 0 }
 		custom_tooltip = pop_menu_purge_desc_tt
-		custom_tooltip = pop_menu_cannot_stop_purge_not_enough_adm_tt
+		if = {
+			limit = { has_country_flag = cannot_end_goblin_purge }
+			custom_tooltip = purge_cannot_end_tt
+		}
+		if = {
+			limit = { NOT = { adm_power = 100 } }
+			custom_tooltip = pop_menu_cannot_stop_purge_not_enough_adm_tt 
+		}
 		hidden_effect = {
 			country_event = { id = racial_pop_events_goblin.24 }
 		}
@@ -1579,7 +1586,7 @@ country_event = {
 					}
 			}
 			add_dip_power = -50
-		}	
+		}
 		generic_start_focus = { race = goblin }
 		
 		hidden_effect = {
@@ -1620,7 +1627,7 @@ country_event = {
 		name = racial_pop_events_all_races.12.z
 		trigger = { ai = no }
 		hidden_effect = {
-			country_event = { id = racial_pop_misc.3 }
+			country_event = { id = racial_pop_misc.1 }
 		}
 	}
 }	
@@ -1792,6 +1799,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_goblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_goblin_expulsion
 		}
 		modifier = {
 			factor = 0.1
@@ -2033,7 +2044,7 @@ country_event = {
 					has_saved_event_target = racial_pop_migration_country
 				}
 				#Calls Migrants Arrive to Migration Country
-				event_target:racial_pop_migration_country  = {
+				event_target:racial_pop_migration_country = {
 					country_event = {
 						id = racial_pop_events_goblin.10
 						days = 14
@@ -2105,7 +2116,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_goblin_expulsion
-		
+	
 		fast_owns_num_pops_of_race = { race = goblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_goblin_majority_trigger = yes
@@ -2119,6 +2130,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_goblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_goblin_expulsion
 		}
 		modifier = {
 			factor = 0.1
@@ -2374,7 +2389,7 @@ country_event = {
 					has_saved_event_target = racial_pop_migration_country
 				}
 				#Calls Migrants Arrive to Migration Country
-				event_target:racial_pop_migration_country  = {
+				event_target:racial_pop_migration_country = {
 					country_event = {
 						id = racial_pop_events_goblin.10
 						days = 14
@@ -2421,6 +2436,7 @@ country_event = {
 			medium_decrease_of_goblin_tolerance_effect = yes
 		}
 	}
+	
 }
 
 
@@ -2434,7 +2450,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_goblin_purge
-		
+	
 		fast_owns_num_pops_of_race = { race = goblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_goblin_minority_trigger = yes
@@ -2446,6 +2462,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_goblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_goblin_purging
 		}
 		modifier = {
 			factor = 0.1
@@ -2476,11 +2496,6 @@ country_event = {
 				}
 				amount = 25
 			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			has_country_flag = mithradhum_purging #Mithradhûm MT Reward, let Ditto know if changing in some fashion.
 		}
 		
 		#Distances
@@ -2680,7 +2695,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_goblin_purge
-		
+	
 		fast_owns_num_pops_of_race = { race = goblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_goblin_majority_trigger = yes
@@ -2694,6 +2709,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_goblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_goblin_purging
 		}
 		modifier = {
 			factor = 0.1
@@ -2727,11 +2746,6 @@ country_event = {
 				}
 				amount = 25
 			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			has_country_flag = mithradhum_purging #Mithradhum MT Reward, let Ditto know if changing in some fashion.
 		}
 		
 		#Distances
@@ -2926,6 +2940,7 @@ country_event = {
 		}
 	}
 	
+	
 }
 
 
@@ -2940,7 +2955,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_goblin_purge
-		
+	
 		fast_owns_num_pops_of_race = { race = goblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_goblin_minority_trigger = yes
@@ -2952,6 +2967,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_goblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_goblin_purging
 		}
 		modifier = {
 			factor = 0.1
@@ -3193,7 +3212,7 @@ country_event = {
 					has_saved_event_target = racial_pop_migration_country
 				}
 				#Calls Migrants Arrive to Migration Country
-				event_target:racial_pop_migration_country  = {
+				event_target:racial_pop_migration_country = {
 					country_event = {
 						id = racial_pop_events_goblin.10
 						days = 14
@@ -3237,7 +3256,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = racial_pop_goblin_purge
-		
+	
 		fast_owns_num_pops_of_race = { race = goblin amount = 1 } # this must at least be true for the below to be true, and is much faster	
 		any_owned_province = {
 			has_goblin_majority_trigger = yes
@@ -3251,6 +3270,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			has_country_modifier = racial_focus_goblin
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = mission_faster_goblin_purging
 		}
 		modifier = {
 			factor = 0.1
@@ -3506,7 +3529,7 @@ country_event = {
 					has_saved_event_target = racial_pop_migration_country
 				}
 				#Calls Migrants Arrive to Migration Country
-				event_target:racial_pop_migration_country  = {
+				event_target:racial_pop_migration_country = {
 					country_event = {
 						id = racial_pop_events_goblin.10
 						days = 14
@@ -3554,6 +3577,7 @@ country_event = {
 			medium_decrease_of_goblin_tolerance_effect = yes
 		}
 	}
+	
 	
 }
 
@@ -3834,7 +3858,16 @@ country_event = {	#Send Smallfolks to Aelantir
 			random_owned_province = {
 				limit = { culture_is_goblin = yes }
 				save_event_target_as = settlers_origin
-			}	
+			}
+			if = {
+				limit = {
+					NOT = { has_saved_event_target = settlers_origin }
+				}
+				random_owned_province = {
+					limit = { fast_has_pop_of_race = { race = goblin } }
+					save_event_target_as = settlers_origin
+				}
+			}
 			random_owned_province = {
 				limit = { is_colony = yes }
 				save_event_target_as = settlers_destinations

@@ -19,7 +19,7 @@ AIG_industrial_ideas = {
 		movement_speed_in_fleet_modifier = 1 #not 100% bonus, adds +1 to ships' movement speed
 	}
 	AIG_artificer_grants = {
-		#grants +5 artifice capacity #might bump this up, +5 on its own is kinda useless
+		#allows mage towers to be built + double bonus from precursor relics
 	}
 	AIG_sending_stone_proliferation = {
 		diplomats = 1

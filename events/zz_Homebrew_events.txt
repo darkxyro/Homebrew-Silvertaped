@@ -388,6 +388,8 @@ province_event = {
 						province_id = 4300 #Dwarovrod / Gronstunad MT
 						province_id = 4302 #Dwarovrod / Gronstunad MT
 
+						province_id = 5052 #Spiderswretch MT
+
 						has_active_triggered_province_modifier = harpy_roost
 						
 						NOT = {
