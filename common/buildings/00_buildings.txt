@@ -11,6 +11,8 @@ marketplace = {
 			type = production
 			value = 1
 		}
+		
+		#Anbennar
 		anbennar_building_effect = yes
 
 		if = {
@@ -119,6 +121,7 @@ workshop = {
 		local_production_efficiency = 0.5
 	}
 	on_built = {
+		on_built_production_building_effect = yes
 		hb_add_development_from_building = {
 			building = workshop
 			type = production
@@ -363,6 +366,7 @@ barracks = {
 		local_manpower_modifier = 0.5
 	}
 	on_built = {
+		on_built_manpower_building_effect = yes 
 	 	if = {
 			limit = {
 				FROM = {
@@ -427,6 +431,11 @@ barracks = {
 		update_improved_military_buildings_modifier = {
 			building = barracks #1.35
 		}
+
+		if = { #Degakheion
+			limit = { FROM = { has_country_flag = degakheion_manpower_building_buff } }
+			remove_province_modifier = G46_barracks_buff
+		}
 	}
 	ai_will_do = {
 		factor = 1.75
@@ -443,29 +452,6 @@ barracks = {
 			remove_province_modifier = G46_barracks_buff
 		}
 	}
-	
-	#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-	#	on_built = {
-	#		FROM = {
-	#			add_army_professionalism = 0.005
-	#		}
-	#	}
-	#
-	#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-	#	on_destroyed = {
-	#		FROM = {
-	#			add_army_professionalism = -0.01
-	#		}
-	#	}
-	#
-	#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-	#	on_obsolete = {
-	#		hidden_effect = {
-	#			FROM = {
-	#				add_army_professionalism = -0.005
-	#			}
-	#		}
-	#	}
 
 	ai_will_do = {
 		factor = 2.5
@@ -700,7 +686,9 @@ fort_15th = {
 		owner = { accretive_path_naamjyut_chi_stacking_effect = { amount = 40 } }
 
 		#Anbennar
-		anbennar_building_effect = yes				
+		
+		#Anbennar
+		anbennar_building_effect = yes
 
 		gronstunad_building_authority_effect = { value = 2 }
 
@@ -856,8 +844,7 @@ courthouse = {
 			value = 1
 		}
 		#Anbennar
-		anbennar_building_effect = yes		
-
+		anbennar_building_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = learning_by_doing_reform_effect } }
 			FROM = { change_government_reform_progress = 4 }
@@ -979,9 +966,9 @@ dock = {
 			# }
 		# }
 		add_development_from_building = {
-				building = dock
-				type = production
-				value = 1
+			building = dock
+			type = production
+			value = 1
 		}
 		#Anbennar
 		anbennar_building_effect = yes
@@ -1084,16 +1071,16 @@ dock = {
 		}
 		modifier = {
 			owner = {
-				capital_scope = { 
-					has_port = yes 
-					is_island = yes 
+				capital_scope = {
+					has_port = yes
+					is_island = yes
 				}
 			}
 			factor = 1.35
 		}
 		modifier = {
 			owner = {
-				sailors_percentage = 0.75 
+				sailors_percentage = 0.75
 			}
 			factor = 0
 		}
@@ -1127,7 +1114,7 @@ regimental_camp = {
 			value = 1
 		}
 		#Anbennar
-		anbennar_building_effect = yes		
+		anbennar_building_effect = yes
 		if = {
 			limit = { FROM = { has_estate_privilege = estate_boar_command_war_room_rights } }
 			FROM = { add_legitimacy = 0.5 }
@@ -2793,6 +2780,7 @@ fort_18th = {
 		#Anbennar
 
 		owner = { accretive_path_xiaken_chi_stacking_effect = { amount = 40 } }
+		owner = { accretive_path_naamjyut_chi_stacking_effect = { amount = 40 } }
 
 		anbennar_building_effect = yes
 
@@ -3104,6 +3092,8 @@ weapons = {
 		anbennar_building_effect = yes
 
 		gronstunad_building_authority_effect = { value = 5 }
+
+		on_built_manufactory_effect = yes
 	}
 
 	on_destroyed = {
@@ -3191,7 +3181,7 @@ textile = {
 		dyes
 	}
 	onmap = yes
-	
+
 	on_built = {
 	
 	 	if = { limit = { FROM = { has_idea = AIG_factory_towns } }
@@ -3208,7 +3198,6 @@ textile = {
 			type = production 
 			value = 1 
 		}
-
 		# ANBENNAR
 		if = {
 			limit = {
@@ -3237,6 +3226,8 @@ textile = {
 		anbennar_building_effect = yes
 
 		gronstunad_building_authority_effect = { value = 5 }
+
+		on_built_manufactory_effect = yes
 	}
 
 	on_destroyed = {
@@ -3252,7 +3243,7 @@ textile = {
 			building = manufactory 
 			type = production 
 			value = 1
-	}
+		}
 		if = {
 			limit = { FROM = { has_reform = kai_diligent_bureucracy } }
 			anb_manufactory_discount_remove = yes
@@ -3315,7 +3306,7 @@ plantations = {
 		cocoa
 	}
 	onmap = yes
-	
+
 	on_built = {
 	
 	 	if = { limit = { FROM = { has_idea = AIG_factory_towns } }
@@ -3363,6 +3354,8 @@ plantations = {
 		owner = { accretive_path_naamjyut_chi_stacking_effect = { amount = 100 } }
 
 		gronstunad_building_authority_effect = { value = 5 }
+
+		on_built_manufactory_effect = yes
 	}
 
 	on_destroyed = {
@@ -3378,7 +3371,7 @@ plantations = {
 			building = manufactory 
 			type = production 
 			value = 1
-	}
+		}
 		if = {
 			limit = { FROM = { has_reform = kai_diligent_bureucracy } }
 			anb_manufactory_discount_remove = yes
@@ -3386,7 +3379,7 @@ plantations = {
 	}
 	on_obsolete = {
 	}
-	
+
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -4830,7 +4823,8 @@ mage_tower = {
 				duration = -1
 			}
 		}
-				#Rezankand
+
+		#Rezankand
 		if = {
 			limit = {
 				owner = { 

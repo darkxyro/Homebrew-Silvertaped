@@ -43,7 +43,7 @@ philosopher = {
 			governing_capacity_modifier = 0.03
 		}
 	}	
-	
+
 	# skill_scaled_modifier = {
 	# 	trigger = { 
 	# 		owner = { 

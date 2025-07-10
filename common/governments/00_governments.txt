@@ -515,7 +515,7 @@ monarchy = {
 				anbennar_T5_human_ruinborn
 				anbennar_T5_human_troll
 				anbennar_T5_human_army_of_halann
-	
+
 				#Ruinborn
 				anbennar_T5_ruinborn_artificery
 				anbennar_T5_ruinborn_cav_quality
@@ -1418,6 +1418,8 @@ republic = {
 				breluslad_north_confluence
 				goblin_cabinet_positions
 				circle_of_hands_reform
+				xedaxhaz
+				z22_silver_diet
 
 			}
 		}

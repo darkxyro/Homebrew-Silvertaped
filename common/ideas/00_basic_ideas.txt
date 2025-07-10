@@ -16,7 +16,7 @@ aristocracy_ideas = {
 		# ANBENNAR
 		uppercastes_loyalty_modifier = 0.05 #half because Aristo/Divine/Religious also gives 5%
 	}
-		
+
 	trigger = {
 		OR = {
 			has_government_attribute = enables_aristocratic_idea_group
@@ -78,6 +78,7 @@ aristocracy_ideas = {
 	}
 }
 
+
 plutocracy_ideas = {
 	category = ADM
 
@@ -89,7 +90,7 @@ plutocracy_ideas = {
 		castonath_patricians_loyalty_modifier = 0.1
 		middlecastes_loyalty_modifier = 0.1
 	}
-		
+
 	trigger = {
 		has_government_attribute = enables_plutocratic_idea_group
 	}	
