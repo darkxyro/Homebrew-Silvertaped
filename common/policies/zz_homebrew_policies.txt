@@ -2529,11 +2529,11 @@ homebrew.policy.127 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = AIG_magocratic_ideas
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = AIG_magocratic_ideas
 	}
 	
@@ -2548,11 +2548,11 @@ homebrew.policy.128 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = monstrous_ideas
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = monstrous_ideas
 	}
 	
@@ -2567,11 +2567,11 @@ homebrew.policy.129 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = AIG_imperial_ideas
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = AIG_imperial_ideas
 	}
 	

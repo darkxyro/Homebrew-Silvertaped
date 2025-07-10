@@ -11,10 +11,6 @@ marketplace = {
 			type = production
 			value = 1
 		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 0.5
-		}
 		anbennar_building_effect = yes
 
 		if = {
@@ -487,13 +483,6 @@ barracks = {
 		}
 		#FROM AUTONOMY
 		modifier = {
-			factor = 0.05
-			OR = {
-				NOT = { num_free_building_slots = 2 }
-				xorme_has_production_buildings_trigger = no
-			}
-		}
-		modifier = {
 			factor = 0.4
 			local_autonomy = 75
 		}
@@ -517,16 +506,6 @@ barracks = {
 		modifier = {
 			factor = 9.0
 			base_manpower = 8
-		}
-		#FROM TRADE GOODS
-		modifier = {
-			factor = 10.0
-			xorme_additional_manpower_goods_trigger = yes
-		}
-		#BUILDINGS
-		modifier = {
-			factor = 10.0
-			xorme_has_production_buildings_trigger = yes
 		}
 		#FROM CASH
 		modifier = {
@@ -561,10 +540,6 @@ shipyard = {
 			building = shipyard
 			type = production
 			value = 1
-		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 0.5
 		}
 		#Anbennar
 		anbennar_building_effect = yes
@@ -882,10 +857,7 @@ courthouse = {
 		}
 		#Anbennar
 		anbennar_building_effect = yes		
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 0.5
-		}
+
 		if = {
 			limit = { FROM = { has_government_attribute = learning_by_doing_reform_effect } }
 			FROM = { change_government_reform_progress = 4 }
@@ -1553,6 +1525,7 @@ cathedral = {
 			infernal_deity_upgrade_effect = yes
 		}
 		spirit_fort_awakening_effect = yes
+	}
 	}
 	on_destroyed = {
 		homebrew_liquidation = { value = 300 }
@@ -2539,10 +2512,7 @@ drydock = {
 			value = 2
 			upgrade_value = 1
 		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 0.5
-		}
+
 		#Anbennar
 		anbennar_building_effect = yes
 
@@ -2674,10 +2644,7 @@ conscription_center = {
 			value = 2
 			upgrade_value = 1
 		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 0.5
-		}
+
 		update_improved_military_buildings_modifier = { #1.35
 			building = conscription_center
 		}
@@ -3099,10 +3066,7 @@ weapons = {
 			type = manpower 
 			value = 1 
 		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 2.5
-		}
+
 		
 		# ANBENNAR
 		log = "WEAPONS BUILT"
@@ -3244,10 +3208,7 @@ textile = {
 			type = production 
 			value = 1 
 		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 2.5
-		}
+
 		# ANBENNAR
 		if = {
 			limit = {
@@ -3371,10 +3332,7 @@ plantations = {
 			type = production 
 			value = 1 
 		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 2.5
-		}
+
 		# ANBENNAR
 		if = {
 			limit = {
@@ -4064,6 +4022,7 @@ ramparts = {
 		grain
 		fungi
 		livestock
+		tea
 	}
 	build_trigger = {
 		NOT = { has_province_modifier = adjacent_fort_penalty }
@@ -4089,6 +4048,7 @@ ramparts = {
 		local_hostile_attrition = 2
 		local_defensiveness = 0.25
 		local_state_maintenance_modifier = 0.25
+		local_hostile_movement_speed = -0.2
 	}
 	bonus_modifier = {
 		local_hostile_attrition = 2
@@ -4769,10 +4729,6 @@ mage_tower = {
 			building = mage_tower
 			type = tax
 			value = 2
-		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 5
 		}
 		hidden_effect = {
 			owner = {

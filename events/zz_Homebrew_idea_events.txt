@@ -77,10 +77,7 @@ country_event = {
 			has_faction = nl_cooperatists
 		}
 		add_manpower = -5
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 10
-		}
+
 	}
 }
 #factory fire
@@ -158,10 +155,7 @@ country_event = {
 				name = workers_justice
 				duration = 3650
 			}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 15
-		}
+
 		every_owned_province = {
 			limit = {
 				has_province_flag = factory_fire
@@ -301,10 +295,7 @@ country_event = {
 				duration = 7300
 			}
 		}
-		add_faction_influence = {
-			faction = nl_cooperatists
-			influence = 10
-		}
+
 	}
 }
 #expand labor pools

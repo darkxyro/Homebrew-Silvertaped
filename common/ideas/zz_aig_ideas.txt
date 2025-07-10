@@ -106,7 +106,7 @@ monstrous_ideas = {
 	}
 }
 
-AIG_infrastructure_ideas = {
+infrastructure_ideas = {
 	category = ADM
 	bonus = {
 		development_cost = -0.075

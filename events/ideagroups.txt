@@ -14,7 +14,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_idea_group = monarchie0
+		has_idea_group = aristocracy_ideas
 		stability = 0
 	}	
 
@@ -40,7 +40,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 		NOT = {
 			OR = {
 				government = tribal
@@ -80,7 +80,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 	}
 	
 	mean_time_to_happen = {
@@ -103,7 +103,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 	}		
 	
 	mean_time_to_happen = {
@@ -136,7 +136,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 	}
 
 	mean_time_to_happen = {
@@ -217,7 +217,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 	}		
 
 	mean_time_to_happen = {
@@ -245,7 +245,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0
+		has_idea_group = aristocracy_ideas
 		NOT = {	has_country_modifier =  "freesubjects_modifier" }
 		NOT = {	has_country_modifier =  "serf_exploitation" }
 	}
@@ -274,7 +274,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 		NOT = {	has_country_modifier =  "freesubjects_modifier" }
 		NOT = {	has_country_modifier =  "serfdom_modifier" }
 	}
@@ -335,7 +335,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 	}
 
 	mean_time_to_happen = {
@@ -360,7 +360,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 		NOT = {	has_country_modifier =  "unhappy_merchants" }
 		NOT = {	has_country_modifier =  "plutocracy_modifier" }
 	}
@@ -415,7 +415,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 		war_exhaustion = 5
 	}
 
@@ -440,7 +440,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0	
+		has_idea_group = aristocracy_ideas	
 	}
 
 	mean_time_to_happen = {
@@ -469,7 +469,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = monarchie0
+		has_idea_group = aristocracy_ideas
 		NOT = { manpower_percentage = 0.9 }
 	}
 
@@ -8836,7 +8836,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 	}
 
 	mean_time_to_happen = {
@@ -8870,7 +8870,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 		is_at_war = yes
 		NOT = { 
 			has_country_modifier = defensive_stance
@@ -8900,7 +8900,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 	}
 
 	mean_time_to_happen = {
@@ -8927,7 +8927,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 		NOT = { 
 			has_country_modifier = disrespecting_the_ancestors
 		}
@@ -8957,7 +8957,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 	}
 
 	mean_time_to_happen = {
@@ -8980,7 +8980,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 		NOT = { 
 			has_country_modifier = overconfidence
 		}
@@ -9009,7 +9009,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 		NOT = {
 			religion_group = effelai
 		}
@@ -9037,7 +9037,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 		is_at_war = no
 	}
 
@@ -9080,7 +9080,7 @@ country_event = {
 		is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 		any_owned_province = { 
 			has_owner_culture = no
 			OR = {
@@ -9145,7 +9145,7 @@ country_event = {
 		is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = exploration_ideas
 	}
 
 	mean_time_to_happen = {
@@ -10533,7 +10533,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = soldnerheer0 
 		is_at_war = yes 
 		NOT = { has_country_modifier = great_reputation_modifier } 
 	}
@@ -10561,7 +10561,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = soldnerheer0 
 		if = {
 			limit = { has_dlc = "Cradle of Civilization" } 
 			NOT = { army_professionalism = 0.5 }
@@ -10601,7 +10601,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 		NOT = { has_country_modifier = "trust_from_mercs" }
 	}
 
@@ -10628,7 +10628,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 		NOT = { has_country_modifier = "glut_of_mercs" }
 	}
 
@@ -10657,7 +10657,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 		NOT = { has_country_modifier = "payment_demands" }
 		is_at_war = yes	
 		num_of_mercenaries = 1
@@ -10686,7 +10686,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = soldnerheer0 
 	}
 
 	mean_time_to_happen = {
@@ -10709,7 +10709,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = soldnerheer0 
 		NOT = { has_country_modifier = mercenary_leadership }
 	}
 
@@ -10779,7 +10779,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = soldnerheer0 
 		any_hired_mercenary_company = {
 			NOT = { has_company_manpower = 0.75 }
 		}
@@ -10819,7 +10819,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = mercenary_ideas 
+		has_idea_group = soldnerheer0 
 		NOT = { has_country_modifier = negative_mercenary_reputation }
 		num_of_hired_mercenary_companies = 4
 	}

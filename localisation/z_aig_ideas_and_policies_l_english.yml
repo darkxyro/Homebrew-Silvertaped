@@ -47,7 +47,7 @@
  AIG_industrial_ideas_bonus:0 "Full Industrial"
 
 ### Infrastructure Ideas ###
- AIG_infrastructure_ideas:0 "Infrastructure Ideas"
+ infrastructure_ideas:0 "Infrastructure Ideas"
  AIG_infrastructure_ideas_bonus:0 "Full Infrastructure"
  AIG_ideas_spread:0 "Spread of Ideas"
  AIG_ideas_spread_desc:0 "Our citizens are vehicles of knowledge, transporting books and experiences between towns."
