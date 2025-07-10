@@ -302,7 +302,7 @@ AIG_legionary_ideas = {
 	}
 	AIG_always_on_campaign = {
 		army_tradition_decay = -0.005
-		missionary_strength = 0.05
+		global_missionary_strength = 0.05
 	}
 	#AIG_foreign_auxilleries = {
 	#	merc_maintenance_modifier = -0.10

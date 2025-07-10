@@ -3507,6 +3507,7 @@ country_event = {
 		
 			medium_decrease_of_ruinborn_tolerance_effect = yes
 		}
+	}
 	
 }
 

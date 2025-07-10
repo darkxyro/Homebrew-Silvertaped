@@ -113,3 +113,7 @@
  
  death_war:0 "Desperate Struggle"
 
+ homebrew_highlight_fort_exceptions_title: "Homebrew: Highlight Fort Exceptions"
+ homebrew_highlight_fort_exceptions_desc: "This decision will §YHighlight§! all provinces which currently are excluded from adjacent fort penalty. You can build forts and ramparts there freely."
+ homebrew_highlight_fort: " Click me for highlight"
+ homebrew_highlight: "Click me for refresh"

@@ -256,12 +256,12 @@ serpentspine_infrastructure = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = AIG_serpentspine_ideas
 	}
 	
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = AIG_serpentspine_ideas
 	}
 
@@ -516,12 +516,12 @@ artificery_infrastructure = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = AIG_artificery_ideas
 	}
 	
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = AIG_artificery_ideas
 	}
 
@@ -754,12 +754,12 @@ legionary_infrastructure = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = AIG_legionary_ideas
 	}
 	
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = AIG_legionary_ideas
 	}
 

@@ -337,7 +337,7 @@ nationalismus0 = {
 	}
 	
 	assimilation6 = {
-		shock_damage_received = -0.04
+		shock_damage_received = -0.1
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
@@ -775,6 +775,7 @@ wehrpflicht0 = {
 
 	bonus = {
 		regiment_manpower_usage = -0.15
+		movement_speed = -0.15
 	}
 		
 		trigger = {
@@ -875,13 +876,14 @@ festung0 = {
 	category = MIL
 
 	bonus = {
-		garrison_size = 0.6
+		garrison_size = 0.75
 	}
 	festung1 = {
 		global_garrison_growth = 0.33
 	}
 	festung4 = {
-		defensiveness = 0.2
+		defensiveness = 0.3
+		fort_maintenance_modifier = -0.1
 	}
 	festung6 = {
 		shock_damage_received = -0.075
@@ -891,7 +893,7 @@ festung0 = {
 	}
 	festung5 = {
 		hostile_attrition = 1
-		max_hostile_attrition = 1
+		max_hostile_attrition = 2
 	}
 	festung3 = {
 		artillery_power = 0.05
@@ -1115,7 +1117,7 @@ militarismus0 = {
 	category = MIL
 
 	bonus = {
-		war_exhaustion = -0.02
+		war_exhaustion = -0.05
 	}
 		
 	

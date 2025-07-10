@@ -4107,12 +4107,12 @@ idea_variation_act_17 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = waffenqualitat0
 			
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = waffenqualitat0
 	}
 	
@@ -4132,12 +4132,12 @@ idea_variation_act_18 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = trade_ideas 
 			
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = trade_ideas 
 	}
 	
@@ -4175,12 +4175,12 @@ idea_variation_act_19 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = maritime_ideas 
 			
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = maritime_ideas 
 	}
 	
@@ -4205,12 +4205,12 @@ idea_variation_act_20 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = generalstab0
 		
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = generalstab0
 	}
 	
@@ -4227,12 +4227,12 @@ idea_variation_act_21 = {
 	monarch_power = ADM			
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = quantity_ideas
 			
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = quantity_ideas
 		
 		NOT = {
@@ -4264,7 +4264,7 @@ idea_variation_act_22 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 		OR = {
 		has_idea_group = konigreich0
@@ -4273,7 +4273,7 @@ idea_variation_act_22 = {
 			
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		OR = {
 		full_idea_group = imperialismus0
@@ -4339,12 +4339,12 @@ idea_variation_act_24 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = quality_ideas
 			
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = quality_ideas
 	}
 	
@@ -7094,12 +7094,12 @@ idea_variation_act_118 = {
 
 	potential = {
 		has_idea_group = kolonialimperium0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = kolonialimperium0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	colonist_placement_chance = 0.10			
@@ -7574,12 +7574,12 @@ idea_variation_act_138 = {
 
 	potential = {
 		has_idea_group = homebrew_amphibious_ideas
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = homebrew_amphibious_ideas
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -8016,12 +8016,12 @@ idea_variation_act_153 = {
 
 	potential = {
 		has_idea_group = court_ideas
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 	}
 	allow = {
 		full_idea_group = court_ideas
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -8565,12 +8565,12 @@ idea_variation_act_169 = {
 
 	potential = {
 		has_idea_group = nationalismus0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = nationalismus0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -9057,12 +9057,12 @@ idea_variation_act_183 = {
 
 	potential = {
 		has_idea_group = gesellschaft0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = gesellschaft0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	global_tariffs = 0.25
@@ -9382,12 +9382,12 @@ idea_variation_act_194 = {
 
 	potential = {
 		has_idea_group = assimilation0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = assimilation0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	
@@ -10153,12 +10153,12 @@ idea_variation_act_215 = {
 
 	potential = {
 		has_idea_group = diplomatic_ideas
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = diplomatic_ideas
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -10428,12 +10428,12 @@ idea_variation_act_226 = {
 
 	potential = {
 		has_idea_group = spy_ideas 
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = spy_ideas 
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	spy_offence = 0.5
@@ -10732,12 +10732,12 @@ idea_variation_act_238 = {
 
 	potential = {
 		has_idea_group = exploration_ideas
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 	}
 	allow = {
 		full_idea_group = exploration_ideas
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -10960,12 +10960,12 @@ idea_variation_act_247 = {
 
 	potential = {
 		has_idea_group = influence_ideas 
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = influence_ideas 
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	diplomatic_annexation_cost = -0.10
@@ -11776,12 +11776,12 @@ idea_variation_act_276 = {
 
 	potential = {
 		has_idea_group = defensive_ideas
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = defensive_ideas
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	defensiveness = 0.15
@@ -11841,12 +11841,12 @@ idea_variation_act_281 = {
 
 	potential = {
 		has_idea_group = offensive_ideas
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 	
 	}
 	allow = {
 		full_idea_group = offensive_ideas
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	global_regiment_cost = -0.15
@@ -12342,12 +12342,12 @@ idea_variation_act_302 = {
 
 	potential = {
 		has_idea_group = stehendesheer0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = stehendesheer0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -12552,12 +12552,12 @@ idea_variation_act_312 = {
 
 	potential = {
 		has_idea_group = soldnerheer0 
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = soldnerheer0 
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	siege_ability = 0.1
@@ -12832,12 +12832,12 @@ idea_variation_act_322 = {
 
 	potential = {
 		has_idea_group = wehrpflicht0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = wehrpflicht0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	land_forcelimit_modifier = 0.2
@@ -13319,12 +13319,12 @@ idea_variation_act_340 = {
 
 	potential = {
 		has_idea_group = festung0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 	}
 	allow = {
 		full_idea_group = festung0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -13633,12 +13633,12 @@ idea_variation_act_351 = {
 
 	potential = {
 		has_idea_group = kriegsproduktion0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = kriegsproduktion0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	fire_damage = 0.08
@@ -13806,7 +13806,7 @@ idea_variation_act_357 = {
 monarch_power = ADM
 
 	potential = {
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		OR = {
 		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
@@ -13814,7 +13814,7 @@ monarch_power = ADM
 		
 	}
 	allow = {
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		OR = {
 		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
@@ -14602,12 +14602,12 @@ idea_variation_act_380 = {
 
 	potential = {
 		has_idea_group = militarismus0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
 		full_idea_group = militarismus0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	fort_maintenance_modifier = -0.15
@@ -15283,7 +15283,7 @@ idea_variation_act_409 = {
 		has_idea_group = AIG_serpentspine_ideas
 		has_idea_group = AIG_legionary_ideas
 		}
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 	}
 	allow = {
@@ -15292,7 +15292,7 @@ idea_variation_act_409 = {
 		full_idea_group = AIG_serpentspine_ideas
 		full_idea_group = AIG_legionary_ideas
 		}
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -16704,12 +16704,12 @@ idea_variation_act_452 = {
 
 	potential = {
 		has_idea_group = shock0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 	}
 	allow = {
 		full_idea_group = shock0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 		
 		NOT = {
 		calc_true_if = {
@@ -17659,12 +17659,12 @@ idea_variation_act_482 = {
 
 	potential = {
 		has_idea_group = fire0
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 	}
 	allow = {
 		full_idea_group = fire0
-		full_idea_group = AIG_infrastructure_ideas
+		full_idea_group = infrastructure_ideas
 	}
 	
 	siege_ability = 0.1

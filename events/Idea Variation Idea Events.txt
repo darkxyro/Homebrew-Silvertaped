@@ -384,7 +384,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		NOT = { has_country_modifier = iv_modifier_event_8 }
 		
 	}	
@@ -416,7 +416,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		NOT = { has_country_modifier = iv_modifier_event_9 }
 		
 	}	
@@ -448,7 +448,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		NOT = { has_country_modifier = iv_modifier_event_10 }	
 		
 	}	
@@ -481,7 +481,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 		
 	}	
@@ -510,7 +510,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		NOT = { has_country_modifier = iv_modifier_event_11 }
 		
 	}	
@@ -542,7 +542,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		NOT = { has_country_modifier = iv_modifier_event_12 }
 		
 	}	
@@ -574,7 +574,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		NOT = { has_country_modifier = iv_modifier_event_13 }
 		
 	}	
@@ -606,7 +606,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		
 		
 	}	
@@ -635,7 +635,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		NOT = { has_country_modifier = iv_modifier_event_14 }
 		
 	}	
@@ -667,7 +667,7 @@ country_event = {
 
 	trigger = {
 		
-		has_idea_group = AIG_infrastructure_ideas
+		has_idea_group = infrastructure_ideas
 		NOT = { has_country_modifier = iv_modifier_event_15 }
 		
 	}	

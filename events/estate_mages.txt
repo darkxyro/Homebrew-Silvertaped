@@ -26,7 +26,6 @@ country_event = {
 			has_estate_privilege = estate_mages_maidens_of_mists
 		}
 			has_idea = hb_magical_tournaments
-}
 	}
 	
 	mean_time_to_happen = {

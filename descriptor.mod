@@ -1,4 +1,4 @@
-version="0.1"
+version="0.2"
 tags={
 	"Alternative History"
 	"Total Conversion"
@@ -11,5 +11,6 @@ dependencies={
 	"Anbennar-PublicFork"
 	"Anbennar-Steam-Release"
 }
-supported_version="1.37.*.*"
+supported_version="1.37.5.0"
+
 remote_file_id="3105283657"
