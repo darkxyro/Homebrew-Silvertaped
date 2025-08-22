@@ -12,5 +12,4 @@ dependencies={
 	"Anbennar-Steam-Release"
 }
 supported_version="1.37.5.0"
-
 remote_file_id="3105283657"

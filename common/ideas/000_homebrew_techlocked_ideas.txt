@@ -316,7 +316,7 @@ AIG_artificery_ideas = {
 		}
 		modifier = {
 			factor = 5
-			is_technocracy = yes
+			has_government_attribute = is_technocracy
 		}
 	}
 }

@@ -65,27 +65,6 @@ country_event = {
 	}
 }	
 
-#end
-country_event = {
-
-	id = hb_deathwar.2
-	title = hb_deathwar.2.t
-	desc = hb_deathwar.2.d
-	picture = BIG_BOOK_eventPicture
-	is_triggered_only = yes
-	
-	trigger = {
-	}
-	immediate = {
-	}
-	
-	mean_time_to_happen = { days = 1 }
-
-	option = {
-		name = "hb_deathwar.2.1"
-	}
-}	
-
 #choose a plan
 country_event = {
 
@@ -164,7 +143,10 @@ province_event = {
 		name = "hb_deathwar.100.1"
 		remove_province_modifier = dw_cultist_circle
 		kill_units = {} 
-		add_stability = -1
+		ROOT = {
+			add_stability = -1
+		}
+
 		#dw_enemy also loses stability in their notification event
 	}
 }	
@@ -289,7 +271,10 @@ province_event = {
 
 	option = {
 		name = "hb_deathwar.100.1"
-		add_stability = -1
+		event_target:dw_enemy = {
+			add_stability = -1
+		}
+
 	}
 }	
 province_event = {
@@ -309,7 +294,10 @@ province_event = {
 
 	option = {
 		name = "hb_deathwar.101.1"
-		add_war_exhaustion = 1
+		event_target:dw_enemy = {
+			add_war_exhaustion = 1
+		}
+
 	}
 }	
 #107 is skipped for consistency
@@ -350,6 +338,8 @@ province_event = {
 
 	option = {
 		name = "hb_deathwar.104.1"
-		add_war_exhaustion = 1
+		ROOT = {
+			add_war_exhaustion = 1
+		}
 	}
 }	

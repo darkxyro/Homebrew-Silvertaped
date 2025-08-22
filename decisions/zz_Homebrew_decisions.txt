@@ -135,7 +135,7 @@ country_decisions = {
 		}
 		effect = {
 			if = { limit = { ai = yes }
-				add_country_modifier = { name = metropolis_update duration = 7600 }
+				add_country_modifier = { name = nurael_suggestion duration = 7600 } #metropolis_update
 			}
 			every_owned_province = {
 				if = {
@@ -1111,7 +1111,7 @@ country_decisions = {
 		color = { 102 102 255 }
 
 		potential = {
-			is_ai = no
+			ai = no
 		}
 
 		provinces_to_highlight = {

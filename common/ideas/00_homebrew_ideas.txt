@@ -103,6 +103,7 @@ homebrew_amphibious_ideas = {
 	}
 
 	homebrew_overseasprojection = {
+		justify_trade_conflict_cost = -0.1
 		#add_cb = cb_coast
 	}
 

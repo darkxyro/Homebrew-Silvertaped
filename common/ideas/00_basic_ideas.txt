@@ -244,7 +244,6 @@ spy_ideas = {
 	}
 }
 
-
 diplomatic_ideas = {
 	category = DIP
 	bonus = {
@@ -1270,5 +1269,47 @@ humanist_ideas = {
 			religious_unity = 1.0
 		}
 		
+	}
+}
+
+indigenous_ideas = {
+	category = ADM
+
+	bonus = {
+		global_institution_spread = 0.25
+	}
+
+	trigger = {
+		has_government_attribute = enables_natives_idea_group
+	}
+
+	indigenous_bountiful_land = {
+		tribal_development_growth = 0.015
+		development_cost = -0.05
+	}
+	indigenous_irregular_warfare = {
+		hostile_attrition = 1
+	}
+	indigenous_constitution = {
+		monthly_reform_progress_modifier = 0.25
+	}
+	indigenous_braves = {
+		land_morale = 0.10
+	}
+	indigenous_controlled_burns = {
+		global_manpower_modifier = 0.15
+	}
+	indigenous_trade_with_foreigners = {
+		idea_cost = -0.1
+	}
+	indigenous_treaties = {
+		province_warscore_cost = -0.2
+		#Anbennar
+		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
+		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
+	}
+
+	ai_will_do = {
+		factor = 10
 	}
 }

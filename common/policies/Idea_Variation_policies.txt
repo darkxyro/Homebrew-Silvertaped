@@ -3812,12 +3812,12 @@ idea_variation_act_6 = {
 
 	potential = {
 		has_idea_group = staatsverwaltung0
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 			
 	}
 	allow = {
 		full_idea_group = staatsverwaltung0
-		full_idea_group = soldnerheer0  
+		full_idea_group = mercenary_ideas  
 	}
 	
 	mercenary_discipline = 0.05	
@@ -5666,7 +5666,7 @@ idea_variation_act_75 = {
 
 	potential = {
 	
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 	
 		OR = {
 		has_idea_group = konigreich0
@@ -5677,7 +5677,7 @@ idea_variation_act_75 = {
 	}
 	allow = {
 	
-	full_idea_group = soldnerheer0 
+	full_idea_group = mercenary_ideas 
 		OR = {
 		full_idea_group = imperialismus0
 		full_idea_group = konigreich0
@@ -6271,12 +6271,12 @@ idea_variation_act_91 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = expansion_ideas
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = expansion_ideas
 	}
 	
@@ -6292,12 +6292,12 @@ idea_variation_act_92 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = economic_ideas
 		
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = economic_ideas
 		NOT = {
 		calc_true_if = {
@@ -6348,12 +6348,12 @@ idea_variation_act_93 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = innovativeness_ideas
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = innovativeness_ideas
 	}
 	
@@ -6373,12 +6373,12 @@ idea_variation_act_94 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = humanist_ideas 
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = humanist_ideas 
 	}
 	
@@ -6395,12 +6395,12 @@ idea_variation_act_95 = {
 	monarch_power = DIP			# Besonderer Fall
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = trade_ideas 
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = trade_ideas 
 	}
 	
@@ -6416,12 +6416,12 @@ idea_variation_act_96 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = diplomatic_ideas
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = diplomatic_ideas
 		
 		NOT = {
@@ -7183,12 +7183,12 @@ idea_variation_act_123 = {
 
 	potential = {
 		has_idea_group = kolonialimperium0
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		
 	}
 	allow = {
 		full_idea_group = kolonialimperium0
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	mercenary_manpower = 0.25
@@ -7633,12 +7633,12 @@ idea_variation_act_141 = {
 
 	potential = {
 		has_idea_group = homebrew_amphibious_ideas
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 			
 	}
 	allow = {
 		full_idea_group = homebrew_amphibious_ideas
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	mercenary_cost = -0.1
@@ -8198,12 +8198,12 @@ idea_variation_act_158 = {
 
 	potential = {
 		has_idea_group = court_ideas
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 			
 	}
 	allow = {
 		full_idea_group = court_ideas
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	mercenary_discipline = 0.05	
@@ -8644,12 +8644,12 @@ idea_variation_act_171 = {
 
 	potential = {
 		has_idea_group = nationalismus0
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 			
 	}
 	allow = {
 		full_idea_group = nationalismus0
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	hostile_attrition = 2
@@ -9103,12 +9103,12 @@ idea_variation_act_185 = {
 
 	potential = {
 		has_idea_group = gesellschaft0
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		
 	}
 	allow = {
 		full_idea_group = gesellschaft0
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	mercenary_discipline = 0.05
@@ -9448,12 +9448,12 @@ idea_variation_act_197 = {
 
 	potential = {
 		has_idea_group = assimilation0
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		
 	}
 	allow = {
 		full_idea_group = assimilation0
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	
@@ -10589,12 +10589,12 @@ idea_variation_act_233 = {
 
 	potential = {
 		has_idea_group = spy_ideas 
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		
 	}
 	allow = {
 		full_idea_group = spy_ideas 
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	war_exhaustion = -0.01
@@ -10873,12 +10873,12 @@ idea_variation_act_243 = {
 
 	potential = {
 		has_idea_group = exploration_ideas
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 			
 	}
 	allow = {
 		full_idea_group = exploration_ideas
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	mercenary_manpower = 0.25
@@ -11060,12 +11060,12 @@ idea_variation_act_252 = {
 
 	potential = {
 		has_idea_group = influence_ideas 
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 			
 	}
 	allow = {
 		full_idea_group = influence_ideas 
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	mercenary_discipline = 0.05	
@@ -11402,12 +11402,12 @@ idea_variation_act_264 = {
 
 	potential = {
 		has_idea_group = maritime_ideas
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 			
 	}
 	allow = {
 		full_idea_group = maritime_ideas
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 	}
 	
 	naval_maintenance_modifier = -0.15
@@ -12408,12 +12408,12 @@ idea_variation_act_305 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = administrative_ideas
 		
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = administrative_ideas
 	}
 	
@@ -12430,7 +12430,7 @@ idea_variation_act_306 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		OR = {
 		has_idea_group = religious_ideas   
 		has_idea_group = AIG_elven_supremacy_ideas
@@ -12438,7 +12438,7 @@ idea_variation_act_306 = {
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		OR = {
 			full_idea_group = religious_ideas 
 			full_idea_group = AIG_elven_supremacy_ideas
@@ -12458,7 +12458,7 @@ idea_variation_act_307 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		OR = {
 		has_idea_group = theocracy_gov_ideas
 		has_idea_group = aristocracy_ideas
@@ -12467,7 +12467,7 @@ idea_variation_act_307 = {
 		
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		OR = {
 		full_idea_group = theocracy_gov_ideas
 		full_idea_group = aristocracy_ideas
@@ -12488,12 +12488,12 @@ idea_variation_act_308 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = plutocracy_ideas
 		
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = plutocracy_ideas
 	}
 	
@@ -12509,12 +12509,12 @@ idea_variation_act_310 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = justiz0
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = justiz0
 	}
 	
@@ -12530,12 +12530,12 @@ idea_variation_act_311 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = gesundheit0
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = gesundheit0
 	}
 	
@@ -12551,12 +12551,12 @@ idea_variation_act_312 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		has_idea_group = infrastructure_ideas
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		full_idea_group = infrastructure_ideas
 	}
 	
@@ -13919,7 +13919,7 @@ idea_variation_act_360 = {
 monarch_power = DIP
 
 		potential = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		OR = {
 		has_idea_group = naval_ideas
 		has_idea_group = homebrew_amphibious_ideas
@@ -13927,7 +13927,7 @@ monarch_power = DIP
 			
 	}
 	allow = {
-		full_idea_group = soldnerheer0 
+		full_idea_group = mercenary_ideas 
 		OR = {
 		full_idea_group = naval_ideas
 		full_idea_group = homebrew_amphibious_ideas
@@ -18742,12 +18742,12 @@ idea_variation_act_520 = {
 
 	potential = {
 		has_idea_group = zentra0
-		has_idea_group = soldnerheer0
+		has_idea_group = mercenary_ideas
 		
 	}
 	allow = {
 		full_idea_group = zentra0
-		full_idea_group = soldnerheer0
+		full_idea_group = mercenary_ideas
 	}
 	
 	mercenary_manpower = 0.5
@@ -19469,12 +19469,12 @@ idea_variation_act_549 = {
 
 	potential = {
 		has_idea_group = dezentra0
-		has_idea_group = soldnerheer0
+		has_idea_group = mercenary_ideas
 		
 	}
 	allow = {
 		full_idea_group = dezentra0
-		full_idea_group = soldnerheer0
+		full_idea_group = mercenary_ideas
 	}
 	
 	mercenary_manpower = 0.25

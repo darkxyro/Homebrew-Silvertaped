@@ -252,6 +252,20 @@ assimilation0 = {
 	assimilation7 = {
 		global_manpower_modifier = 0.1
 		manpower_in_accepted_culture_provinces = 0.1
+		effect = { 
+			set_country_flag = focusing_is_free_flag 
+			hidden_effect = {
+				change_variable = { which = remaining_free_focus value = 3 }
+			}
+
+		}
+		removed_effect = { 
+			clr_country_flag = focusing_is_free_flag 
+			hidden_effect = {
+				subtract_variable = { which = remaining_free_focus value = 3 }
+			}
+
+		}
 	}
 
 	assimilation4 = {
@@ -268,6 +282,7 @@ assimilation0 = {
 	}
 	
 	homebrew_melting_pot = {
+		development_cost_in_primary_culture = -0.05
 		#grants buff based on # of races
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
@@ -316,7 +331,22 @@ nationalismus0 = {
 
 	homebrew_x_for_xians = {
 		#buffs expelling/purging races
-		administrative_efficiency = 0.025
+		administrative_efficiency = 0.001
+		effect = { 
+			set_country_flag = focusing_is_free_flag 
+			hidden_effect = {
+				change_variable = { which = remaining_free_focus value = 1 }
+				change_variable = { which = remaining_free_genocide value = 2 }
+			}
+
+		}
+		removed_effect = { 
+			clr_country_flag = focusing_is_free_flag 
+			hidden_effect = {
+				subtract_variable = { which = remaining_free_focus value = 1 }
+				subtract_variable = { which = remaining_free_genocide value = 2 }
+			}
+		}
 	}
 
 	nationalismus4 = {
@@ -625,7 +655,7 @@ stehendesheer0 = {
 		
 		trigger = {
 			NOT = {
-				has_idea_group = soldnerheer0
+				has_idea_group = mercenary_ideas
 				has_idea_group = wehrpflicht0 
 				}
 			}
@@ -685,7 +715,7 @@ stehendesheer0 = {
 ########################################################
 
 
-soldnerheer0 = {
+mercenary_ideas = {
 	category = MIL
 
 	bonus = {
@@ -781,7 +811,7 @@ wehrpflicht0 = {
 		trigger = {
 			NOT = {
 				has_idea_group = stehendesheer0
-				has_idea_group = soldnerheer0
+				has_idea_group = mercenary_ideas
 			}
 		}
 	

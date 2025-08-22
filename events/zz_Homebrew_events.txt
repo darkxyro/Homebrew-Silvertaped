@@ -1985,7 +1985,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 		set_country_flag = wildcard_chose_trade_power
 		add_country_modifier = {
-			name = wildcard_trade_power
+			name = wildcard_tradepower
 			duration = -1
 		}
 	}
@@ -2729,7 +2729,7 @@ country_event = {
 		reset_wildcard_flags = yes
 		set_country_flag = wildcard_chose_trade_power
 		add_country_modifier = {
-			name = wildcard_trade_power
+			name = wildcard_tradepower
 			duration = -1
 		}
 	}

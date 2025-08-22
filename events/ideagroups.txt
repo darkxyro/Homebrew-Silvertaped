@@ -10625,7 +10625,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		is_at_war = yes 
 		NOT = { has_country_modifier = great_reputation_modifier } 
 	}
@@ -10653,7 +10653,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		if = {
 			limit = { has_dlc = "Cradle of Civilization" } 
 			NOT = { army_professionalism = 0.5 }
@@ -10693,7 +10693,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0
+		has_idea_group = mercenary_ideas
 		NOT = { has_country_modifier = "trust_from_mercs" }
 	}
 
@@ -10720,7 +10720,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0
+		has_idea_group = mercenary_ideas
 		NOT = { has_country_modifier = "glut_of_mercs" }
 	}
 
@@ -10749,7 +10749,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0
+		has_idea_group = mercenary_ideas
 		NOT = { has_country_modifier = "payment_demands" }
 		is_at_war = yes	
 		num_of_mercenaries = 1
@@ -10778,7 +10778,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 	}
 
 	mean_time_to_happen = {
@@ -10801,7 +10801,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		NOT = { has_country_modifier = mercenary_leadership }
 	}
 
@@ -10871,7 +10871,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		any_hired_mercenary_company = {
 			NOT = { has_company_manpower = 0.75 }
 		}
@@ -10911,7 +10911,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = soldnerheer0 
+		has_idea_group = mercenary_ideas 
 		NOT = { has_country_modifier = negative_mercenary_reputation }
 		num_of_hired_mercenary_companies = 4
 	}

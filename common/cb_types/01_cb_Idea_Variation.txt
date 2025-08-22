@@ -73,7 +73,7 @@ cb_dynastie = {
 	valid_for_subject = no
 
 	prerequisites = {
-		has_idea = homebrew_pu_war
+		full_idea_group = diplomatic_ideas
 		#full_idea_group = dynasty0
 		is_revolution_target = no
 		

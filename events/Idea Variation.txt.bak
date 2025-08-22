@@ -904,7 +904,7 @@ country_event = {          # Monarchie ---> Republik/Aristokratie
 		NOT = { has_idea = monarchie1 }
 		}
 		remove_idea_group = aristocracy_ideas
-		add_idea_group = theocracy_gov_ideas
+		add_idea_group = aristocracy_ideas
 		}
 		
 		if = {
@@ -914,7 +914,7 @@ country_event = {          # Monarchie ---> Republik/Aristokratie
 		NOT = { has_idea = monarchie2 }
 		}
 		remove_idea_group = aristocracy_ideas
-		add_idea_group = theocracy_gov_ideas
+		add_idea_group = aristocracy_ideas
 		add_idea = aristo1
 		}
 		
@@ -925,7 +925,7 @@ country_event = {          # Monarchie ---> Republik/Aristokratie
 		NOT = { has_idea = monarchie3 }
 		}
 		remove_idea_group = aristocracy_ideas
-		add_idea_group = theocracy_gov_ideas
+		add_idea_group = aristocracy_ideas
 		add_idea = aristo1
 		add_idea = aristo2
 		}
@@ -937,7 +937,7 @@ country_event = {          # Monarchie ---> Republik/Aristokratie
 		NOT = { has_idea = monarchie4 }
 		}
 		remove_idea_group = aristocracy_ideas
-		add_idea_group = theocracy_gov_ideas
+		add_idea_group = aristocracy_ideas
 		add_idea = aristo1
 		add_idea = aristo2
 		add_idea = aristo3
@@ -950,7 +950,7 @@ country_event = {          # Monarchie ---> Republik/Aristokratie
 		NOT = { has_idea = monarchie5 }
 		}
 		remove_idea_group = aristocracy_ideas
-		add_idea_group = theocracy_gov_ideas
+		add_idea_group = aristocracy_ideas
 		add_idea = aristo1
 		add_idea = aristo2
 		add_idea = aristo3
@@ -964,7 +964,7 @@ country_event = {          # Monarchie ---> Republik/Aristokratie
 		NOT = { has_idea = monarchie6 }
 		}
 		remove_idea_group = aristocracy_ideas
-		add_idea_group = theocracy_gov_ideas
+		add_idea_group = aristocracy_ideas
 		add_idea = aristo1
 		add_idea = aristo2
 		add_idea = aristo3
@@ -979,7 +979,7 @@ country_event = {          # Monarchie ---> Republik/Aristokratie
 		NOT = { has_idea = monarchie7 }
 		}
 		remove_idea_group = aristocracy_ideas
-		add_idea_group = theocracy_gov_ideas
+		add_idea_group = aristocracy_ideas
 		add_idea = aristo1
 		add_idea = aristo2
 		add_idea = aristo3
@@ -995,7 +995,7 @@ country_event = {          # Monarchie ---> Republik/Aristokratie
 		
 		}
 		remove_idea_group = aristocracy_ideas
-		add_idea_group = theocracy_gov_ideas
+		add_idea_group = aristo0
 		add_idea = aristo1
 		add_idea = aristo2
 		add_idea = aristo3
