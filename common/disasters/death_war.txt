@@ -55,26 +55,26 @@ death_war = {
 			factor = 1
 			always = yes
 		}
-		# modifier = {
-		# 	factor = -20
-		# 	warscore = 20
-		# }
-		# modifier = {
-		# 	factor = 3
-		# 	warscore = -20
-		# }
-		# modifier = {
-		# 	factor = 3
-		# 	warscore = -40
-		# }
-		# modifier = {
-		# 	factor = 3
-		# 	warscore = -60
-		# }
-		# modifier = {
-		# 	factor = 3
-		# 	warscore = -80
-		# }
+		modifier = {
+			factor = -20
+			warscore = 20
+		}
+		modifier = {
+			factor = 3
+			warscore = -20
+		}
+		modifier = {
+			factor = 3
+			warscore = -40
+		}
+		modifier = {
+			factor = 3
+			warscore = -60
+		}
+		modifier = {
+			factor = 3
+			warscore = -80
+		}
 		modifier = {
 			factor = 2
 			has_wartaxes = yes
@@ -83,10 +83,10 @@ death_war = {
 			factor = 2
 			num_of_loans = 10
 		}
-		# modifier = {
-		# 	factor = 2
-		# 	army_size = 1
-		# }
+		modifier = {
+			factor = 2
+			army_size = 1.1
+		}
 		modifier = {
 			factor = 2
 			manpower_percentage = 0.5
@@ -110,26 +110,26 @@ death_war = {
 		all_power_cost = 0.1
 		army_tradition_from_battle = 1
 		war_exhaustion = -0.03
-		# peace_desire = -20
+		peace_desire = -20
 	}
 	on_start = hb_deathwar.1
 	on_end = hb_deathwar.2
 	on_monthly = {
 		events = {
 			hb_deathwar.3 #merchants give lower interest
-			# hb_deathwar.4 #merchants money for CL
-			# hb_deathwar.5 #merchants give money for statutory rights
-			# hb_deathwar.6 #clergy reduce WE
-			# hb_deathwar.7 #nobles give manpower for CL
-			# hb_deathwar.8 #nobles give merc discount
-			# hb_deathwar.9 #deal with the devil
-			# hb_deathwar.10 #make them bleed
-			# hb_deathwar.11 #begin counteroffensive
-			# hb_deathwar.12 #partisan attacks
-			# hb_deathwar.13 #miracle on the [Root.GetRiver]
+			hb_deathwar.4 #merchants money for CL
+			hb_deathwar.5 #merchants give money for statutory rights
+			hb_deathwar.6 #clergy reduce WE
+			hb_deathwar.7 #nobles give manpower for CL
+			hb_deathwar.8 #nobles give merc discount
+			hb_deathwar.9 #deal with the devil
+			hb_deathwar.10 #make them bleed
+			hb_deathwar.11 #begin counteroffensive
+			hb_deathwar.12 #partisan attacks
+			hb_deathwar.13 #miracle on the [Root.GetRiver]
 		}
-		# random_events = {
-		# 	hb_deathwar.10
-		# }
+		random_events = {
+			hb_deathwar.10
+		}
 	}
 }

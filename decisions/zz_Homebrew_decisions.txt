@@ -135,7 +135,7 @@ country_decisions = {
 		}
 		effect = {
 			if = { limit = { ai = yes }
-				add_country_modifier = { name = nurael_suggestion duration = 7600 } #metropolis_update
+				add_country_modifier = { name = metropolis_update duration = 7600 }
 			}
 			every_owned_province = {
 				if = {
@@ -401,10 +401,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 		factor = 1
-			modifier = {
-			factor = 0
-			has_country_flag = nurael_convention
-			}
 		}
 	}
 	
@@ -424,53 +420,6 @@ country_decisions = {
 			modifier = {
 			factor = 0
 			has_country_modifier = nurael_suggestion
-			}
-		}
-	}
-	
-	#sign nurael convention
-	nurael_convention_start = {
-		potential = {
-			has_country_flag = initialized_nurael_convention
-			NOT = { has_country_flag = nurael_convention }
-		}
-		allow = {
-			always = yes
-		}
-		effect = {
-			set_country_flag = nurael_convention
-			remove_country_modifier = nurael_suggestion
-		}
-		ai_will_do = {
-		factor = 1
-			modifier = {
-			factor = 0
-			has_country_modifier = chief_artificer
-			}
-		}
-	}
-	
-	nurael_convention_end = {
-		potential = {
-			has_country_flag = nurael_convention
-			NOT = { has_country_modifier = nurael_suggestion }
-		}
-		allow = {
-			always = yes
-		}
-		effect = {
-			add_stability = -1
-			add_country_modifier = {
-				name = nurael_suggestion
-				duration = -1
-				}
-			clr_country_flag = nurael_convention
-		}
-		ai_will_do = {
-		factor = 0
-			modifier = {
-			factor = 0
-			NOT = { has_country_modifier = chief_artificer }
 			}
 		}
 	}
@@ -1111,7 +1060,7 @@ country_decisions = {
 		color = { 102 102 255 }
 
 		potential = {
-			ai = no
+			is_ai = no
 		}
 
 		provinces_to_highlight = {

@@ -34,7 +34,7 @@
  homebrew_marineracademies2_desc:0 "By founding state-funded schools for prospecting sailors, we can nurture a growing pool of available seamen and ship industries."
  
  #replacements for vanilla
- religious_ideas:0 "§Y***§! Religious Ideas §Y***§!"
+ religious_ideas:0 "*** Religious Ideas ***"
  encourage_prosperity:0 "Encourage Prosperity"
  encourage_prosperity_desc:0 "A properous land is a wealthy one, but to acheive properity is a task in of itself. We should encourage the growth of local developments, and be all the richer for it."
  new_taxation:0 "New Taxes"
@@ -104,8 +104,8 @@
  imperialismus4_desc: "Any citizen of our empire should know that their freedoms are a privilege, that must be repaid in kind. \n\n§TEnables subject upgrades for Dominions§!"
  stehendesheer6: "Artificery Integration"
  stehendesheer6_desc: "By honing our forces with rigorous training, we can expand our corps of elite soldiers that field cutting-edge artificery, and fight like no other army can."
- mercenary_ideas: "§O***§W Heroism Ideas §O***§W"
- mercenary_ideas_desc: "The mercenary bands wandering our lands demand a high wage, but they don't call them heroes for nothing."
+ soldnerheer0: "§O***§W Heroism Ideas §O***§W"
+ soldnerheer0_desc: "The mercenary bands wandering our lands demand a high wage, but they don't call them heroes for nothing."
  soldnerheer1: "Rightful Heirs"
  soldnerheer1_desc: "It is shockingly common to see exiled or long-lost heirs taking up the sword and working as a mercenary. If we were to employ these heirs, then we can justify our conquests as "bringing the rightful heir to power." Of course, their restored titles comes with the condition of serving us."
  soldnerheer2: "Revised Contracts"
@@ -217,7 +217,7 @@
  hb_silver_lining:0 "Silver Lining"
  hb_silver_lining_desc:0 "There are those who say nothing good can come out of a loss. By reminding them of what a defeat can bring us, both bad and good, we can bolster our war enthusiasm."
  hb_magical_tournaments:0 "Host Magical Tournaments"
- hb_magical_tournaments_desc:0 "By hosting tournaments of magical prowess, we can better scout for mages of great potential\n\n§TAllows War Wizards to appear. Chance increases with the Battlemage Academies privilege§!"
+ hb_magical_tournaments_desc:0 "By hosting tournaments of magical prowess, we can better scout for mages of great potential and recruit them for our armies!"
  
  #replacements for AL
  AIG_serpentspine_ideas:0 "§P***§! Serpentspine Ideas §P***§!"
@@ -253,7 +253,7 @@
  AIG_loyal_mages:0 "Ancient Tradition"
  AIG_loyal_mages_desc:0 "Mages have always held a position of power in society, this has resulted in an increased stability in ours."
  AIG_mage_archives:0 "Private Studies"
- AIG_mage_archives_desc:0 "Education is the foremost cocnern of any well-to-do mage, and our ruler has the entire resources of the country to use in their own pursuit of knowledge.\n\nMagical Study experience: §G+25%§W"
+ AIG_mage_archives_desc:0 "Education is the foremost cocnern of any well-to-do mage, and our mages have the entire resources of the country to use in their own pursuit of knowledge."
  AIG_wizard_tax:0 "The Magic Tax"
  AIG_wizard_tax_desc:0 "We do not patronize the magical elite without expecting something in return. Though they may complain, the mages of our realm will happily pay a small fee for the privilege of working here."
  AIG_scriers:0 "Cloak and Wand"
@@ -290,7 +290,7 @@
  AIG_rural_industries_desc:0 "Out in the rough wilds, land is cheap and local businesses can prosper unopposed. We should take advantage of the investment opprtunities found in these lands. \n\nBuilding slots in rough terrain: §G+1§! \n\nConstruction Cost in rough terrain: §G-5%§!"
  AIG_emergency_responders:0 "National Guard"
  AIG_emergency_responders_desc:0 "Settlements have often relied on local crews to respond to emergencies. With our improved infrastructure, we can send in our National Guard to assist in local crises, wherever they may be."
- AIG_elven_supremacy_ideas:0 "§Y***§! Elven Supremacy Ideas §Y***§!"
+ AIG_elven_supremacy_ideas:0 "*** Elven Supremacy Ideas ***"
  AIG_elven_forebears:0 "Remember the Forebears"
  AIG_elven_forebears_desc:0 "Our people have a long and complex history, stretching back to the days when elves dominated the ancient world."
  AIG_reclaiming_birthright:0 "Reclaiming Our Birthright"

@@ -82,6 +82,7 @@ AIG_elven_supremacy_ideas = {
 			has_country_modifier = elven_administration
 			NOT = { dominant_religion = the_jadd }
 			NOT = { has_idea_group = religious_ideas }
+			dip_tech = 20
 		}
 	}
 	AIG_elven_forebears = {
@@ -142,8 +143,8 @@ formation0 = {
 	category = MIL
 
 	bonus = {
-		army_tradition_decay = -0.0075
-		military_tactics = 0.15
+		army_tradition_decay = -0.01
+		military_tactics = 0.1
 	}
 	trigger = {
 		NOT = {
@@ -161,14 +162,9 @@ formation0 = {
 	}
 	hb_silver_lining = {
 		global_supply_limit_modifier = 1
-		land_attrition = -0.15
+		land_attrition = -0.35
 	}
-	#hb_slow_and_steady = {
-	#	defensiveness = 0.05
-	#	#grants fort level +1 upon sieging an enemy fort
-	#}
 	hb_fob = {
-		#defensiveness = 0.05
 		#lets you build forts in occupied land
 	}
 	hb_relentless = {
@@ -178,9 +174,6 @@ formation0 = {
 		province_warscore_cost = -0.1
 		global_regiment_recruit_speed = 0.33
 	}
-	#hb_decisive_victory = {
-	#	#deals additional casualties on victory #can't make it work properly :(
-	#}
 	hb_objective_warfare = {
 		defensiveness = 0.15
 	}
@@ -193,14 +186,14 @@ formation0 = {
 	ai_will_do = {
 		factor = 0.5
 		modifier = { #very useful for elves
-			factor = 1.5
+			factor = 5
 			OR = {
 				has_country_modifier = elven_administration
 				has_country_modifier = elven_military
 			}
 		}
 		modifier = { #diplomats see the bigger picture
-			factor = 1.5
+			factor = 3
 			OR = {
 				ruler_has_personality = careful_personality
 				ruler_has_personality = fierce_negotiator_personality
@@ -222,7 +215,6 @@ formation0 = {
 AIG_serpentspine_ideas = {
 	category = MIL
 	bonus = {
-		defensiveness = 0.2
 		can_chain_claim = yes
 	}
 	trigger = {
@@ -239,27 +231,27 @@ AIG_serpentspine_ideas = {
 	}
 	AIG_dwarven_citadels = {
 		#fort level +1 in serpentspine
-		fort_maintenance_modifier = 0.50
+		fort_maintenance_modifier = -0.50
 	}
 	AIG_hostile_ground = {
-		build_time = -0.075
+		build_time = -0.15
 	}
 	AIG_under_fire = {
-		infantry_power = 0.05
+		infantry_power = 0.1
 	}
 	AIG_serpentsbeat = {
 		#movement_speed = 0.2 on has_terrain = dwarven_road
-		fire_damage = 0.075
+		defensiveness = 0.2
 	}
 	AIG_your_last_stand = {
-		shock_damage_received = -0.05
+		shock_damage_received = -0.1
 	}
 	AIG_make_your_bullets_count = {
-		backrow_artillery_damage = 0.075
-		reinforce_speed = -0.20
+		backrow_artillery_damage = 0.1
+		reinforce_speed = -0.50
 	}
 	AIG_push_them_back = {
-		army_tradition = 0.35
+		army_tradition = 0.5
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 		removed_effect = { decrease_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
 	}
@@ -267,7 +259,7 @@ AIG_serpentspine_ideas = {
 		factor = 0.31
 
 		modifier = {
-			factor = 2
+			factor = 6
 			OR = {
 				technology_group = tech_dwarven #born underground, suckled from a teat of stone
 			}
@@ -278,12 +270,14 @@ AIG_serpentspine_ideas = {
 AIG_legionary_ideas = {
 	category = MIL
 	bonus = {
-		discipline = 0.035
+		discipline = 0.075
 	}
 	trigger = {
-		any_owned_province = {
-			is_capital = yes
-			superregion = bulwar_superregion
+		OR = {
+			any_owned_province = {
+				is_capital = yes
+				superregion = bulwar_superregion
+			}
 		}
 		NOT = {
 			OR = {
@@ -297,28 +291,22 @@ AIG_legionary_ideas = {
 		reserves_organisation = -0.20
 	}
 	AIG_infantry_en_masse = {
-		infantry_cost = -0.10
-		infantry_power = 0.05
+		infantry_cost = -0.15
 	}
 	AIG_always_on_campaign = {
 		army_tradition_decay = -0.005
 		global_missionary_strength = 0.05
 	}
-	#AIG_foreign_auxilleries = {
-	#	merc_maintenance_modifier = -0.10
-	#	mercenary_manpower = 0.10
-	#}
 	AIG_religious_wars = {
 		manpower_recovery_speed = 0.15
 		#gain manpower from converting land
 	}
 	AIG_centralising_our_base = {
-		reduced_liberty_desire = 5
 		vassal_forcelimit_bonus = 0.50
+		infantry_power = 0.1
 	}
 	AIG_sun_elf_battlemages = {
-		shock_damage = 0.05
-		fire_damage = 0.05
+		shock_damage = 0.15
 	}
 	AIG_administering_the_fringes = {
 		liberty_desire_from_subject_development = -0.20
@@ -333,6 +321,7 @@ AIG_legionary_ideas = {
 			factor = 3
 			OR = {
 				technology_group = tech_bulwari
+				technology_group = tech_elven
 			}
 		}
 	}

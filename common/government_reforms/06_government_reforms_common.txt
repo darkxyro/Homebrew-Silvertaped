@@ -2479,7 +2479,7 @@ anbennar_T5_generic_adventurer_contracts = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_idea_group = mercenary_ideas
+			has_idea_group = soldnerheer0
 			AND = {
 				NOT = { has_adventurer_reform = yes }
 				NOT = { has_reform = wood_elf_salla }
@@ -2504,7 +2504,7 @@ anbennar_T5_generic_adventurer_contracts = {
 
 	}
 	trigger = {
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 	}
 	modifiers = {
 		mercenary_cost = -0.1
@@ -3921,7 +3921,7 @@ anbennar_T5_ruinborn_cannor = {
 		}
  	}
  	trigger = {
- 		full_idea_group = mercenary_ideas
+ 		full_idea_group = soldnerheer0
  		if = {
  			limit = { has_modifier_locking_military_tier = yes }
  			OR = {

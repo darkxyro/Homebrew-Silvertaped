@@ -1813,6 +1813,8 @@ navigator = {
 			}
 		}
 		modifier = {
+			factor = 3
+			has_idea_group = flottenbasis0 
 			monthly_kalsyto_influence = 0.03
 		}
 	}

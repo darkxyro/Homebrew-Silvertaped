@@ -552,11 +552,11 @@ kriegsprod_forcelimit_3 = {
 
 full_merc_1 = {
 	potential = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 		army_professionalism = 0.9
 	}
 	trigger = {
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 		army_professionalism = 0.9
 	}
 	yearly_army_professionalism = -0.025
@@ -565,12 +565,12 @@ full_merc_1 = {
 
 full_merc_2 = {
 	potential = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 		army_professionalism = 0.8
 		NOT = { army_professionalism = 0.9 }
 	}
 	trigger = {
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 		army_professionalism = 0.8
 		NOT = { army_professionalism = 0.9 }
 	}
@@ -580,13 +580,13 @@ full_merc_2 = {
 
 full_merc_3 = {
 	potential = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 		army_professionalism = 0.7
 		NOT = { army_professionalism = 0.8 }
 		
 	}
 	trigger = {
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 		army_professionalism = 0.7
 		NOT = { army_professionalism = 0.8 }
 	}
@@ -596,12 +596,12 @@ full_merc_3 = {
 
 full_merc_4 = {
 	potential = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 		army_professionalism = 0.6
 		NOT = { army_professionalism = 0.7 }
 	}
 	trigger = {
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 		army_professionalism = 0.6
 		NOT = { army_professionalism = 0.7 }
 		
@@ -612,12 +612,12 @@ full_merc_4 = {
 
 full_merc_5 = {
 	potential = {
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 		army_professionalism = 0.5
 		NOT = { army_professionalism = 0.6 }
 	}
 	trigger = {
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 		army_professionalism = 0.5
 		NOT = { army_professionalism = 0.6 }
 	}

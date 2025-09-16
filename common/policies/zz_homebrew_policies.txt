@@ -424,11 +424,11 @@ homebrew.policy.20 = {
 
 	potential = {
 		has_idea_group = AIG_magocratic_ideas
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 	}
 	allow = {
 		full_idea_group = AIG_magocratic_ideas
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 	}
 	
 	mercenary_discipline = 0.035
@@ -1114,11 +1114,11 @@ homebrew.policy.55 = {
 
 	potential = {
 		has_idea_group = monstrous_ideas
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 	}
 	allow = {
 		full_idea_group = monstrous_ideas
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 	}
 	
 	diplomatic_reputation = 1.5
@@ -1321,11 +1321,11 @@ homebrew.policy.66 = {
 
 	potential = {
 		has_idea_group = monstrous_ideas
-		has_idea_group = AIG_industrial_ideas
+		has_idea_group = industrial_ideas
 	}
 	allow = {
 		full_idea_group = monstrous_ideas
-		full_idea_group = AIG_industrial_ideas
+		full_idea_group = industrial_ideas
 	}
 	
 	global_trade_goods_size_modifier = 0.075
@@ -1739,11 +1739,11 @@ homebrew.policy.88 = {
 
 	potential = {
 		has_idea_group = AIG_industrial_ideas
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 	}
 	allow = {
 		full_idea_group = AIG_industrial_ideas
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 	}
 	
 	mercenary_cost = -0.2
@@ -2287,11 +2287,11 @@ homebrew.policy.115 = {
 
 	potential = {
 		has_idea_group = AIG_imperial_ideas
-		has_idea_group = mercenary_ideas
+		has_idea_group = soldnerheer0
 	}
 	allow = {
 		full_idea_group = AIG_imperial_ideas
-		full_idea_group = mercenary_ideas
+		full_idea_group = soldnerheer0
 	}
 	
 	mercenary_cost = -0.2

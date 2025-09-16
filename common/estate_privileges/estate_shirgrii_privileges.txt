@@ -2068,8 +2068,8 @@ estate_khelorvalshi_church_power = {
 		legitimacy = -0.5
 		devotion = -0.5
 		horde_unity = -0.5
-		meritocracy = -0.5
-		republican_tradition = -0.25
+		meritocracy = -0.25
+		republican_tradition = -0.2
 	}
 	benefits = {
 		church_power_modifier = 0.2

@@ -472,15 +472,15 @@ on_province_religion_changed = {
 }
 
 on_province_culture_changed = {
-
-	#homebrew
-	if = {
-		limit = { owner = { has_country_flag = hb_has_melting_pot } }
-		hidden_effect = {
-			province_event = { id = homebrew.39 days = 5 } #old event to update modifiers, delayed to account for automatic pop event
+	events = {
+		#homebrew
+		if = {
+			limit = { owner = { has_country_flag = hb_has_melting_pot } }
+			hidden_effect = {
+				province_event = { id = homebrew.39 days = 5 } #old event to update modifiers, delayed to account for automatic pop event
+			}
 		}
 	}
-
 }
 
 on_province_owner_change = {

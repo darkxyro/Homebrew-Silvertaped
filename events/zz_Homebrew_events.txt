@@ -76,70 +76,7 @@ province_event = {
 		add_permanent_province_modifier = { name = serpent_cure duration = 1825 }
 	}
 }
-#enable nurael convention
-#set to bi-yearly pulse
-country_event = {
 
-	id = homebrew.4
-	title = homebrew.4.t
-	desc = homebrew.4.d
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
-	fire_only_once = yes
-	major = yes
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		is_religion_enabled = ravelian
-		owns_core_province = 351 #Nurael 
-	}
-	
-	mean_time_to_happen = { days = 1 }
-	immediate = {
-		set_global_flag = nurael_convention_global
-		set_country_flag = initialized_nurael_convention
-		hidden_effect = {
-			every_country = { country_event = { id = homebrew.5 } }
-		}
-	}
-
-	option = {
-		name = "homebrew.4.1"
-		add_dip_power = 100
-	}
-}	
-#nurael convention generic
-country_event = {
-
-	id = homebrew.5
-	title = homebrew.5.t
-	desc = homebrew.5.d
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
-	
-	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 1 }
-	immediate = {
-		set_country_flag = initialized_nurael_convention
-	}
-	option = {
-		name = "homebrew.5.1"
-		ai_chance = { 
-			factor = 50 
-			modifier = {
-				factor = 0
-				has_country_modifier = chief_artificer
-			}
-		}
-		add_prestige = 5
-		set_country_flag = nurael_convention
-	}
-	option = {
-		name = "homebrew.5.2"
-		ai_chance = { factor = 1 }
-		add_country_modifier = { name = nurael_suggestion duration = -1 }
-	}
-}	
 #superfort update
 province_event = {
 	id = homebrew.6
@@ -1985,7 +1922,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 		set_country_flag = wildcard_chose_trade_power
 		add_country_modifier = {
-			name = wildcard_tradepower
+			name = wildcard_trade_power
 			duration = -1
 		}
 	}
@@ -2729,7 +2666,7 @@ country_event = {
 		reset_wildcard_flags = yes
 		set_country_flag = wildcard_chose_trade_power
 		add_country_modifier = {
-			name = wildcard_tradepower
+			name = wildcard_trade_power
 			duration = -1
 		}
 	}
